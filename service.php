@@ -1,25 +1,27 @@
+<?php require __DIR__ . "/city_bootstrap.php"; ?>
 <!DOCTYPE html>
-<html lang="fr" data-title="Services - LCR DIGITAL" data-description="Nos services web : creation de site, SEO, marketing digital et accompagnement.">
+<html lang="fr" data-title="Services digitaux<?= city_phrase(' à ') ?> – Création de sites & applis | LCR DIGITAL" data-description="Découvrez tous les services de LCR DIGITAL : création de site web (vitrine, e-commerce, catalogue, one page), appli mobile et développement personnalisé<?= city_phrase(' à ') ?>.">
 <head>
     <meta charset="UTF-8">
     <script src="./assets/js/head.js"></script>
 </head>
-<body>
-    <!-- Header Section -->
+<body data-city="<?= e($city) ?>" data-city-slug="<?= e($city_slug) ?>">
+    
     <div id="site-header"></div>
 
-    <!-- Sidebar Section -->
+    
     <div id="site-sidebar"></div>
 
-    <!-- Main Style -->
+    
     <main>
-        <!-- Banner Section -->
+        
         <div class="section banner-inner">
             <div class="hero-container">
                 <div class="d-flex flex-column gspace-2">
                     <h2>Services</h2>
+                    <h1 class="banner-h1">Nos services de création digitale<?= city_phrase(' à ') ?></h1>
                     <nav class="breadcrumb">
-                        <a href="/agence-digital-site-web-rouen-normandie">Home</a>
+                        <a href="/agence-web-<?= e($city_slug) ?>">Accueil</a>
                         <span class="separator"><i class="fa-solid fa-chevron-right"></i></span>
                         <a href="#" class="current">Services</a>
                     </nav>
@@ -28,7 +30,7 @@
         </div>
 
 
-        <!-- Service Section -->
+        
         <div class="section">
             <div class="hero-container">
                 <div class="d-flex flex-column gspace-4">
@@ -41,12 +43,12 @@
                         <div class="card card-service-wrapper animate-box animated animate__animated" data-animate="animate__fadeIn">
                             <div class="card card-service">
                                 <div>
-                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
+                                    <img src="./assets/images/S4.webp" alt="" class="img-fluid">
                                 </div>
                                 <h4>One Page</h4>
                                 <p>Une landing page claire et rapide pour capter des leads et valider votre offre.</p>
                                 <div class="service-cta">
-                                    <a href="/service-one-page" class="service-link">En savoir plus</a>
+                                    <a href="/creation-site-one-page-<?= e($city_slug) ?>" class="service-link">En savoir plus</a>
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -55,12 +57,12 @@
                         <div class="card card-service-wrapper animate-box animated animate__animated" data-animate="animate__fadeIn">
                             <div class="card card-service highlight-service">
                                 <div>
-                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
+                                    <img src="./assets/images/S5.webp" alt="" class="img-fluid">
                                 </div>
                                 <h4>Site vitrine</h4>
                                 <p>Présentez votre activité avec un site professionnel, rassurant et optimisé pour le local.</p>
                                 <div class="service-cta">
-                                    <a href="/service-site-vitrine" class="service-link">En savoir plus</a>
+                                    <a href="/creation-site-vitrine-<?= e($city_slug) ?>" class="service-link">En savoir plus</a>
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -69,12 +71,12 @@
                         <div class="card card-service-wrapper animate-box animated animate__animated" data-animate="animate__fadeIn">
                             <div class="card card-service">
                                 <div>
-                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
+                                    <img src="./assets/images/S1.webp" alt="" class="img-fluid">
                                 </div>
                                 <h4>Site catalogue</h4>
                                 <p>Exposez vos produits et services avec des fiches claires et une navigation fluide.</p>
                                 <div class="service-cta">
-                                    <a href="/service-site-catalogue" class="service-link">En savoir plus</a>
+                                    <a href="/creation-site-catalogue-<?= e($city_slug) ?>" class="service-link">En savoir plus</a>
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -83,12 +85,12 @@
                         <div class="card card-service-wrapper animate-box animated animate__animated" data-animate="animate__fadeIn">
                             <div class="card card-service">
                                 <div>
-                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
+                                    <img src="./assets/images/S3.webp" alt="" class="img-fluid">
                                 </div>
                                 <h4>Site e-commerce</h4>
                                 <p>Boutique en ligne prête à vendre : tunnel d’achat optimisé et paiements sécurisés.</p>
                                 <div class="service-cta">
-                                    <a href="/service-ecommerce" class="service-link">En savoir plus</a>
+                                    <a href="/creation-site-ecommerce-<?= e($city_slug) ?>" class="service-link">En savoir plus</a>
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -97,12 +99,12 @@
                         <div class="card card-service-wrapper animate-box animated animate__animated" data-animate="animate__fadeIn">
                             <div class="card card-service">
                                 <div>
-                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
+                                    <img src="./assets/images/S6.webp" alt="" class="img-fluid">
                                 </div>
                                 <h4>Application mobile</h4>
                                 <p>Applications iOS/Android pour fidéliser et simplifier l’expérience client.</p>
                                 <div class="service-cta">
-                                    <a href="/service-app-mobile" class="service-link">En savoir plus</a>
+                                    <a href="/creation-application-mobile-<?= e($city_slug) ?>" class="service-link">En savoir plus</a>
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -111,12 +113,12 @@
                         <div class="card card-service-wrapper animate-box animated animate__animated" data-animate="animate__fadeIn">
                             <div class="card card-service">
                                 <div>
-                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
+                                    <img src="./assets/images/S4.webp" alt="" class="img-fluid">
                                 </div>
                                 <h4>Développement personnalisé</h4>
                                 <p>Fonctionnalités sur mesure, intégrations métier et automatisations.</p>
                                 <div class="service-cta">
-                                    <a href="/service-sur-mesure" class="service-link">En savoir plus</a>
+                                    <a href="/developpement-web-sur-mesure-<?= e($city_slug) ?>" class="service-link">En savoir plus</a>
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -127,7 +129,7 @@
         </div>
 
 
-        <!-- Why Choose Us Section -->
+        
         <div class="section whychooseus-banner">
             <div class="hero-container">
                 <div class="whychooseus-wrapper">
@@ -180,20 +182,20 @@
             </div>
         </div>
 
-        <!-- Contact CTA Section -->
+        
         <div class="section contactus-banner">
             <div class="hero-container">
                 <div class="contactus-content">
                     <h3 class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Parlons de votre projet digital</h3>
                     <p class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Nous cadrons vos besoins et construisons un site qui apporte des résultats mesurables.</p>
                     <div>
-                        <a href="/contact-agence-digitale-rouen" class="btn btn-accent">Nous contacter</a>
+                    <a href="/contact-agence-web-<?= e($city_slug) ?>" class="btn btn-accent">Nous contacter</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Testimonial Section -->
+        
         <div class="section">
             <div class="hero-container">
                 <div class="row row-cols-xl-2 row-cols-1 grid-spacer-2">
@@ -212,7 +214,7 @@
                                         <div class="card card-testimonial">
                                             <div>
                                                 <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
+                                                    <i class="fa-solid fa-user"></i>
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
@@ -226,7 +228,7 @@
                                         <div class="card card-testimonial">
                                             <div>
                                                 <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
+                                                    <i class="fa-solid fa-user"></i>
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
@@ -234,62 +236,6 @@
                                             </p>
                                             <span class="testimonial-name">Marc D.</span>
                                             <span class="testimonial-title">Responsable marketing</span>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card card-testimonial">
-                                            <div>
-                                                <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <p class="testimonial-content">
-                                                Le SEO local a vraiment boosté notre visibilité.
-                                            </p>
-                                            <span class="testimonial-name">Claire P.</span>
-                                            <span class="testimonial-title">Gérante</span>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card card-testimonial">
-                                            <div>
-                                                <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <p class="testimonial-content">
-                                                Design moderne et parcours simple pour nos clients.
-                                            </p>
-                                            <span class="testimonial-name">Lucas M.</span>
-                                            <span class="testimonial-title">Fondateur</span> 
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card card-testimonial">
-                                            <div>
-                                                <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <p class="testimonial-content">
-                                                Résultats rapides et un vrai suivi après livraison.
-                                            </p>
-                                            <span class="testimonial-name">Nadia R.</span>
-                                            <span class="testimonial-title">E-commerçante</span>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card card-testimonial">
-                                            <div>
-                                                <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <p class="testimonial-content">
-                                                Site rapide, rassurant, et plus de ventes en ligne.
-                                            </p>
-                                            <span class="testimonial-name">Hugo V.</span>
-                                            <span class="testimonial-title">Consultant</span>
                                         </div>
                                     </div>
                                 </div>
@@ -301,7 +247,7 @@
         </div>
     </main>
 
-    <!-- Footer  -->
+    
     <div id="site-footer"></div>
 
     <script src="./assets/js/vendor/jquery.min.js"></script>
@@ -309,7 +255,7 @@
     <script src="./assets/js/vendor/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendor/isotope.pkgd.min.js"></script>
     <script src="./assets/js/vendor/fslightbox.js"></script>
-    <script src="./assets/js/layout.js"></script>
+    <script src="./assets/js/layout.js?v=4?v=4?v=3"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/swiper-script.js"></script>
     <script src="./assets/js/submit-form.js"></script>

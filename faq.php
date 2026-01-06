@@ -1,25 +1,27 @@
+<?php require __DIR__ . "/city_bootstrap.php"; ?>
 <!DOCTYPE html>
-<html lang="fr" data-title="FAQ - LCR DIGITAL" data-description="Questions frequentes sur nos services web, SEO et accompagnement.">
+<html lang="fr" data-title="FAQ – Vos questions sur la création de site web<?= city_phrase(' à ') ?> | LCR DIGITAL" data-description="Retrouvez les réponses aux questions les plus fréquentes sur nos services de création de sites web, applis mobiles et développement personnalisé<?= city_phrase(' à ') ?>.">
 <head>
     <meta charset="UTF-8">
     <script src="./assets/js/head.js"></script>
 </head>
-<body>
-    <!-- Header Section -->
+<body data-city="<?= e($city) ?>" data-city-slug="<?= e($city_slug) ?>">
+    
     <div id="site-header"></div>
 
-    <!-- Sidebar Section -->
+    
     <div id="site-sidebar"></div>
 
-    <!-- Main Style -->
+    
     <main>
-        <!-- Banner Section -->
+        
         <div class="section banner-inner">
             <div class="hero-container">
                 <div class="d-flex flex-column gspace-2">
                     <h2>FAQ</h2>
+                    <h1 class="banner-h1">Foire aux questions – Agence web LCR DIGITAL<?= city_phrase(' à ') ?></h1>
                     <nav class="breadcrumb">
-                        <a href="/agence-digital-site-web-rouen-normandie">Home</a>
+                        <a href="/agence-web-<?= e($city_slug) ?>">Accueil</a>
                         <span class="separator"><i class="fa-solid fa-chevron-right"></i></span>
                         <a href="#" class="current">FAQ</a>
                     </nav>
@@ -27,7 +29,7 @@
             </div>
         </div>
 
-        <!-- FAQ Section -->
+        
         <div class="section">
             <div class="hero-container">
                 <div class="row row-cols-md-2 row-cols-1 g-md-5 g-3">
@@ -206,7 +208,7 @@
                                 <h4>Lancer votre projet</h4>
                                 <p>Nous cadrons vos besoins et vos priorités pour un site efficace.</p>
                                 <div>
-                                    <a href="/contact-agence-digitale-rouen" class="btn btn-accent">Nous contacter</a>
+                                    <a href="/contact-agence-web-<?= e($city_slug) ?>" class="btn btn-accent">Nous contacter</a>
                                 </div>
                             </div>
                         </div>
@@ -215,20 +217,20 @@
             </div>
          </div>
         
-        <!-- Contact CTA Section -->
+        
         <div class="section contactus-banner">
             <div class="hero-container">
                 <div class="contactus-content">
                     <h3 class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Parlons de votre projet digital</h3>
                     <p class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Un besoin, une idée, une urgence ? Nous trouvons la solution.</p>
                     <div>
-                        <a href="/contact-agence-digitale-rouen" class="btn btn-accent">Nous contacter</a>
+                        <a href="/contact-agence-web-<?= e($city_slug) ?>" class="btn btn-accent">Nous contacter</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Testimonial Section -->
+        
         <div class="section">
             <div class="hero-container">
                 <div class="row row-cols-xl-2 row-cols-1 grid-spacer-2">
@@ -247,7 +249,7 @@
                                         <div class="card card-testimonial">
                                             <div>
                                                 <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
+                                                    <i class="fa-solid fa-user"></i>
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
@@ -261,7 +263,7 @@
                                         <div class="card card-testimonial">
                                             <div>
                                                 <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
+                                                    <i class="fa-solid fa-user"></i>
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
@@ -269,62 +271,6 @@
                                             </p>
                                             <span class="testimonial-name">Marc D.</span>
                                             <span class="testimonial-title">Responsable marketing</span>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card card-testimonial">
-                                            <div>
-                                                <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <p class="testimonial-content">
-                                                La visibilité locale a vraiment progressé.
-                                            </p>
-                                            <span class="testimonial-name">Claire P.</span>
-                                            <span class="testimonial-title">Gérante</span>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card card-testimonial">
-                                            <div>
-                                                <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <p class="testimonial-content">
-                                                Un site rapide et simple à gérer au quotidien.
-                                            </p>
-                                            <span class="testimonial-name">Lucas M.</span>
-                                            <span class="testimonial-title">Fondateur</span> 
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card card-testimonial">
-                                            <div>
-                                                <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <p class="testimonial-content">
-                                                Un vrai gain en conversions après la refonte.
-                                            </p>
-                                            <span class="testimonial-name">Nadia R.</span>
-                                            <span class="testimonial-title">E-commerçante</span>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card card-testimonial">
-                                            <div>
-                                                <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <p class="testimonial-content">
-                                                Le site inspire confiance et convertit mieux.
-                                            </p>
-                                            <span class="testimonial-name">Hugo V.</span>
-                                            <span class="testimonial-title">Consultant</span>
                                         </div>
                                     </div>
                                 </div>
@@ -336,7 +282,7 @@
         </div>
     </main>
 
-    <!-- Footer  -->
+    
     <div id="site-footer"></div>
 
     <script src="./assets/js/vendor/jquery.min.js"></script>
@@ -344,7 +290,7 @@
     <script src="./assets/js/vendor/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendor/isotope.pkgd.min.js"></script>
     <script src="./assets/js/vendor/fslightbox.js"></script>
-    <script src="./assets/js/layout.js"></script>
+    <script src="./assets/js/layout.js?v=4?v=4?v=3"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/swiper-script.js"></script>
     <script src="./assets/js/submit-form.js"></script>

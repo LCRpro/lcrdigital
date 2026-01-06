@@ -1,45 +1,66 @@
+<?php require __DIR__ . "/city_bootstrap.php"; ?>
 <!DOCTYPE html>
-<html lang="fr" data-title="Accueil - LCR DIGITAL" data-description="Agence web LCR DIGITAL : creation de sites performants, SEO et conversion pour entreprises francaises.">
+<html lang="fr" data-title="Agence web<?= city_phrase(' à ') ?> – Création de site internet & applications | LCR DIGITAL" data-description="LCR DIGITAL, votre agence web<?= city_phrase(' à ') ?>, spécialisée en création de sites internet (vitrine, e-commerce, catalogue, one page) et applications mobiles sur mesure.">
 <head>
     <meta charset="UTF-8">
     <script src="./assets/js/head.js"></script>
 </head>
-<body>
-    <!-- Header Section -->
+<body data-city="<?= e($city) ?>" data-city-slug="<?= e($city_slug) ?>">
+    
     <div id="site-header"></div>
 
-    <!-- Sidebar Section -->
+    
     <div id="site-sidebar"></div>
 
-    <!-- Main Section -->
+    
     <main>
-        <!-- Banner Home Section -->
+        
         <div class="section banner-home">
             <div class="banner-video-container" id="videoContainer"></div>
             <div class="hero-container">
                 <div class="banner-content">
-                    <div class="align-items-center">
-                        <div class="banner-sub-heading">
-                            <h6>AGENCE DIGITALE</h6>
+                    <div class="banner-hero-grid">
+                        <div class="banner-hero-main">
+                            <div class="banner-sub-heading">
+                                <h6>AGENCE DIGITALE</h6>
+                            </div>
+                            <div class="brand-mark">
+                                <img src="./assets/images/lcr-digital-logo.png" alt="LCR DIGITAL" class="construction-logo img-fluid">
+                                <span>LCR DIGITAL</span>
+                            </div>
+                            <h1 class="animate-box animated animate__animated" data-animate="animate__fadeInUp">
+                                Des sites web
+                                <span class="h1-wrapper">qui convertissent</span>
+                            </h1>
+                            <p>Nous concevons des expériences web rapides, lisibles et SEO-ready pour générer plus de contacts qualifiés.</p>
+                            <div class="hero-cta">
+                                <a href="/agence-digitale-<?= e($city_slug) ?>" class="btn btn-accent">Nos services</a>
+                                <a href="/contact-agence-web-<?= e($city_slug) ?>" class="btn btn-accent-outline">Demander un devis</a>
+                            </div>
+                            <div class="hero-highlights">
+                                <span class="hero-highlight">SEO local &amp; technique</span>
+                                <span class="hero-highlight">UX orientee conversion</span>
+                                <span class="hero-highlight">Performance mesurable</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="construction-logo-wrap">
-                        <img src="./assets/images/lcr-digital-logo.png" alt="LCR DIGITAL" class="construction-logo img-fluid">
-                    </div>
-                    <h1 class="animate-box animated animate__animated" data-animate="animate__fadeInUp">
-                        LCR
-                        <span class="h1-wrapper">DIGITAL</span>
-                    </h1>
-                    <p>Des sites web pensés pour booster votre visibilité en ligne et transformer vos visiteurs en ventes.</p>
-                    <div>
-                        <a href="/lcr-digital-agence-digital-web-normandie-rouen" class="btn btn-accent">Nos services</a>
+                        <div class="banner-hero-side">
+                            <div class="hero-card">
+                                <h4>Inclus dans nos offres</h4>
+                                <ul class="hero-list">
+                                    <li>Application mobile client + modules dedies</li>
+                                    <li>SEO local &amp; technique pour une vraie visibilite</li>
+                                    <li>Performances, vitesse et suivi des conversions</li>
+                                </ul>
+                                <a href="/agence-digitale-<?= e($city_slug) ?>" class="hero-link">Voir tous nos services</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
 
-        <!-- About Section -->
+        
         <div class="section about-banner">
             <div class="hero-container">
                 <div class="row row-cols-xl-2 row-cols-1 grid-spacer-2">
@@ -80,7 +101,7 @@
                                 </div>
                             </div>
                             <div>
-                                <a href="/lcr-digital-agence-digital-web-normandie-rouen" class="btn btn-accent">En savoir plus</a>
+                                <a href="/agence-digitale-<?= e($city_slug) ?>" class="btn btn-accent">En savoir plus</a>
                             </div>
                         </div>
                     </div>
@@ -89,7 +110,7 @@
         </div>
 
 
-        <!-- Service Section -->
+        
         <div class="section">
             <div class="hero-container">
                 <div class="d-flex flex-column gspace-4">
@@ -102,12 +123,12 @@
                         <div class="card card-service-wrapper animate-box animated animate__animated" data-animate="animate__fadeIn">
                             <div class="card card-service">
                                 <div>
-                                <img src="./assets/images/S5.webp" alt="" class="img-fluid">
+                                <img src="./assets/images/S4.webp" alt="" class="img-fluid">
                                 </div>
                                 <h4>One Page</h4>
                                 <p>Une landing page claire et rapide pour capter des leads et valider votre offre.</p>
                                 <div class="service-cta">
-                                    <a href="/service-one-page" class="service-link">En savoir plus</a>
+                                <a href="/creation-site-one-page-<?= e($city_slug) ?>" class="service-link">En savoir plus</a>
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -121,7 +142,7 @@
                                 <h4>Site vitrine</h4>
                                 <p>Présentez votre activité avec un site professionnel, rassurant et optimisé pour le local.</p>
                                 <div class="service-cta">
-                                    <a href="/service-site-vitrine" class="service-link">En savoir plus</a>
+                                <a href="/creation-site-vitrine-<?= e($city_slug) ?>" class="service-link">En savoir plus</a>
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -130,12 +151,12 @@
                         <div class="card card-service-wrapper animate-box animated animate__animated" data-animate="animate__fadeIn">
                             <div class="card card-service">
                                 <div>
-                                <img src="./assets/images/S5.webp" alt="" class="img-fluid">
+                                <img src="./assets/images/S1.webp" alt="" class="img-fluid">
                                 </div>
                                 <h4>Site catalogue</h4>
                                 <p>Exposez vos produits et services avec des fiches claires et une navigation fluide.</p>
                                 <div class="service-cta">
-                                    <a href="/service-site-catalogue" class="service-link">En savoir plus</a>
+                                <a href="/creation-site-catalogue-<?= e($city_slug) ?>" class="service-link">En savoir plus</a>
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -144,12 +165,12 @@
                         <div class="card card-service-wrapper animate-box animated animate__animated" data-animate="animate__fadeIn">
                             <div class="card card-service">
                                 <div>
-                                <img src="./assets/images/S5.webp" alt="" class="img-fluid">
+                                <img src="./assets/images/S3.webp" alt="" class="img-fluid">
                                 </div>
                                 <h4>Site E-commerce</h4>
                                 <p>Boutique en ligne prête à vendre : tunnel d’achat optimisé et paiements sécurisés.</p>
                                 <div class="service-cta">
-                                    <a href="/service-ecommerce" class="service-link">En savoir plus</a>
+                                <a href="/creation-site-ecommerce-<?= e($city_slug) ?>" class="service-link">En savoir plus</a>
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -158,12 +179,12 @@
                         <div class="card card-service-wrapper animate-box animated animate__animated" data-animate="animate__fadeIn">
                             <div class="card card-service">
                                 <div>
-                                <img src="./assets/images/S5.webp" alt="" class="img-fluid">
+                                <img src="./assets/images/S6.webp" alt="" class="img-fluid">
                                 </div>
                                 <h4>Application Mobile</h4>
                                 <p>Applications iOS/Android pour fidéliser et simplifier l’expérience client.</p>
                                 <div class="service-cta">
-                                    <a href="/service-app-mobile" class="service-link">En savoir plus</a>
+                                <a href="/creation-application-mobile-<?= e($city_slug) ?>" class="service-link">En savoir plus</a>
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -172,12 +193,12 @@
                         <div class="card card-service-wrapper animate-box animated animate__animated" data-animate="animate__fadeIn">
                             <div class="card card-service">
                                 <div>
-                                <img src="./assets/images/S5.webp" alt="" class="img-fluid">
+                                <img src="./assets/images/S4.webp" alt="" class="img-fluid">
                                 </div>
                                 <h4>Développement personnalisé</h4>
                                 <p>Fonctionnalités sur mesure, intégrations métier et automatisations adaptées.</p>
                                 <div class="service-cta">
-                                    <a href="/service-sur-mesure" class="service-link">En savoir plus</a>
+                                <a href="/developpement-web-sur-mesure-<?= e($city_slug) ?>" class="service-link">En savoir plus</a>
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -187,7 +208,7 @@
             </div>
         </div>
 
-        <!-- Why Choose Us Section -->
+        
         <div class="section whychooseus-banner">
             <div class="hero-container">
                 <div class="whychooseus-wrapper">
@@ -240,25 +261,25 @@
             </div>
         </div>
 
-        <!-- Contact CTA Section -->
+        
         <div class="section contactus-banner">
             <div class="hero-container">
                 <div class="contactus-content">
                     <h3 class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Parlons de votre projet digital</h3>
                     <p class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Un site performant commence par une bonne stratégie. Nous vous aidons à cadrer le message, la structure et les priorités pour générer plus de contacts et de ventes.</p>
                     <div>
-                        <a href="/contact-agence-digitale-rouen" class="btn btn-accent">Nous contacter</a>
+                        <a href="/contact-agence-web-<?= e($city_slug) ?>" class="btn btn-accent">Nous contacter</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Portfolio Section -->
+        
         <div class="section portfolio-banner">
             <div class="hero-container">
                 <div class="d-flex flex-column gspace-4 position-relative z-2">
                     <div class="d-flex flex-column gspace-2 align-items-center text-center">
-                        <h6 class="accent-color">Portfolio</h6>
+                        <h6 class="accent-color">Réalisations</h6>
                         <h3>Des projets qui transforment</h3>
                         <p>Une sélection de réalisations et d’accompagnements pensés pour la performance et la visibilité.</p>
                     </div>
@@ -298,7 +319,7 @@
                                         <div class="portfolio-btn-wrapper">
                                             <div>
                                                 <div class="portfolio-btn">
-                                                    <a href="/projet-detail-agence-digitale-rouen" class="button"><i class="fa-solid fa-arrow-right"></i></a>
+                                                    <a href="/projet-detail-agence-digitale-<?= e($city_slug) ?>" class="button"><i class="fa-solid fa-arrow-right"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -341,7 +362,7 @@
                                         <div class="portfolio-btn-wrapper">
                                             <div>
                                                 <div class="portfolio-btn">
-                                                    <a href="/projet-detail-agence-digitale-rouen" class="button"><i class="fa-solid fa-arrow-right"></i></a>
+                                                    <a href="/projet-detail-agence-digitale-<?= e($city_slug) ?>" class="button"><i class="fa-solid fa-arrow-right"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -384,136 +405,7 @@
                                         <div class="portfolio-btn-wrapper">
                                             <div>
                                                 <div class="portfolio-btn">
-                                                    <a href="/projet-detail-agence-digitale-rouen" class="button"><i class="fa-solid fa-arrow-right"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="portfolio-layout animate-box animated fast animate__animated" data-animate="animate__fadeInUp">
-                                <div class="portfolio-header">
-                                    <div class="portfolio-image-wrapper">
-                                        <div class="image-container portfolio-image">
-                                            <img src="./assets/images/dummy-img-600x400.jpg" alt="" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <h4 class="number">04</h4>
-                                </div>
-                                <div class="portfolio-content">
-                                    <h5>Application mobile de réservation</h5>
-                                    <div class="d-flex flex-row gspace-4">
-                                        <div class="portfolio-meta">
-                                            <i class="fa-solid fa-users"></i>
-                                            <div class="d-grid">
-                                                <span class="title">Client</span>
-                                                <p>Rouen City Pass</p>
-                                            </div>
-                                        </div>
-                                        <div class="portfolio-meta">
-                                            <i class="fa-solid fa-calendar-days"></i>
-                                            <div class="d-grid">
-                                                <span class="title">Date</span>
-                                                <p>11 mars 2024</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-description">
-                                        <p>
-                                            Réservation simplifiée, notifications et accès rapide aux services.
-                                        </p>
-                                        <div class="portfolio-btn-wrapper">
-                                            <div>
-                                                <div class="portfolio-btn">
-                                                    <a href="/projet-detail-agence-digitale-rouen" class="button"><i class="fa-solid fa-arrow-right"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="portfolio-layout animate-box animated animate__animated" data-animate="animate__fadeInUp">
-                                <div class="portfolio-header">
-                                    <div class="portfolio-image-wrapper">
-                                        <div class="image-container portfolio-image">
-                                            <img src="./assets/images/dummy-img-600x400.jpg" alt="" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <h4 class="number">05</h4>
-                                </div>
-                                <div class="portfolio-content">
-                                    <h5>SEO & contenus pour B2B</h5>
-                                    <div class="d-flex flex-row gspace-4">
-                                        <div class="portfolio-meta">
-                                            <i class="fa-solid fa-users"></i>
-                                            <div class="d-grid">
-                                                <span class="title">Client</span>
-                                                <p>Norma Industrie</p>
-                                            </div>
-                                        </div>
-                                        <div class="portfolio-meta">
-                                            <i class="fa-solid fa-calendar-days"></i>
-                                            <div class="d-grid">
-                                                <span class="title">Date</span>
-                                                <p>27 février 2024</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-description">
-                                        <p>
-                                            Optimisation technique et contenus ciblés pour générer des leads qualifiés.
-                                        </p>
-                                        <div class="portfolio-btn-wrapper">
-                                            <div>
-                                                <div class="portfolio-btn">
-                                                    <a href="/projet-detail-agence-digitale-rouen" class="button"><i class="fa-solid fa-arrow-right"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="portfolio-layout animate-box animated slow animate__animated" data-animate="animate__fadeInUp">
-                                <div class="portfolio-header">
-                                    <div class="portfolio-image-wrapper">
-                                        <div class="image-container portfolio-image">
-                                            <img src="./assets/images/dummy-img-600x400.jpg" alt="" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <h4 class="number">06</h4>
-                                </div>
-                                <div class="portfolio-content">
-                                    <h5>Catalogue produits BTP</h5>
-                                    <div class="d-flex flex-row gspace-4">
-                                        <div class="portfolio-meta">
-                                            <i class="fa-solid fa-users"></i>
-                                            <div class="d-grid">
-                                                <span class="title">Client</span>
-                                                <p>Groupe Lenoir</p>
-                                            </div>
-                                        </div>
-                                        <div class="portfolio-meta">
-                                            <i class="fa-solid fa-calendar-days"></i>
-                                            <div class="d-grid">
-                                                <span class="title">Date</span>
-                                                <p>05 février 2024</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-description">
-                                        <p>
-                                            Présentation claire des gammes, filtres et demandes de devis en ligne.
-                                        </p>
-                                        <div class="portfolio-btn-wrapper">
-                                            <div>
-                                                <div class="portfolio-btn">
-                                                    <a href="/projet-detail-agence-digitale-rouen" class="button"><i class="fa-solid fa-arrow-right"></i></a>
+                                                    <a href="/projet-detail-agence-digitale-<?= e($city_slug) ?>" class="button"><i class="fa-solid fa-arrow-right"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -526,7 +418,7 @@
             </div>
         </div>
 
-        <!-- Featured Section -->
+        
         <div class="section">
             <div class="hero-container">
                 <div class="row row-cols-xl-2 row-cols-1 grid-spacer-2">
@@ -536,7 +428,7 @@
                                 <h4>Stratégie créative</h4>
                                 <p>Positionnement, message et design pour capter l’attention et déclencher l’action.</p>
                                 <div>
-                                    <a href="/lcr-digital-agence-digital-web-normandie-rouen" class="btn btn-accent-2">
+                                    <a href="/agence-digitale-<?= e($city_slug) ?>" class="btn btn-accent-2">
                                         <div class="d-flex flex-row align-items-center gspace-1">
                                             <span>En savoir plus</span>
                                             <i class="fa-solid fa-arrow-right"></i>
@@ -573,7 +465,7 @@
                                     <h4>Développement solide</h4>
                                     <p>Sites fiables, rapides et sécurisés, prêts pour le SEO et la croissance.</p>
                                     <div>
-                                        <a href="/services-agence-digitale-rouen" class="btn btn-accent-2">
+                                        <a href="/services-web-<?= e($city_slug) ?>" class="btn btn-accent-2">
                                             <div class="d-flex flex-row align-items-center gspace-1">
                                                 <span>En savoir plus</span>
                                                 <i class="fa-solid fa-arrow-right"></i>
@@ -586,7 +478,7 @@
                                 <h4>Expérience fluide</h4>
                                 <p>Un parcours client clair, de la prise de contact à la mise en ligne.</p>
                                 <div>
-                                        <a href="/services-agence-digitale-rouen" class="btn btn-accent-2">
+                                        <a href="/services-web-<?= e($city_slug) ?>" class="btn btn-accent-2">
                                         <div class="d-flex flex-row align-items-center gspace-1">
                                             <span>En savoir plus</span>
                                             <i class="fa-solid fa-arrow-right"></i>
@@ -600,7 +492,7 @@
             </div>
         </div>
 
-        <!-- Testimonial Section -->
+        
         <div class="section">
             <div class="hero-container">
                 <div class="row row-cols-xl-2 row-cols-1 grid-spacer-2">
@@ -619,7 +511,7 @@
                                         <div class="card card-testimonial">
                                             <div>
                                                 <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
+                                                    <i class="fa-solid fa-user"></i>
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
@@ -633,7 +525,7 @@
                                         <div class="card card-testimonial">
                                             <div>
                                                 <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
+                                                    <i class="fa-solid fa-user"></i>
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
@@ -641,62 +533,6 @@
                                             </p>
                                             <span class="testimonial-name">Marc D.</span>
                                             <span class="testimonial-title">Responsable marketing</span>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card card-testimonial">
-                                            <div>
-                                                <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <p class="testimonial-content">
-                                                Le SEO local a fait la différence. On nous trouve enfin sur Google.
-                                            </p>
-                                            <span class="testimonial-name">Claire P.</span>
-                                            <span class="testimonial-title">Gérante</span>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card card-testimonial">
-                                            <div>
-                                                <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <p class="testimonial-content">
-                                                Livraison rapide, design moderne et une vraie logique de conversion.
-                                            </p>
-                                            <span class="testimonial-name">Lucas M.</span>
-                                            <span class="testimonial-title">Fondateur</span> 
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card card-testimonial">
-                                            <div>
-                                                <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <p class="testimonial-content">
-                                                Une équipe disponible et des résultats concrets sur nos ventes en ligne.
-                                            </p>
-                                            <span class="testimonial-name">Nadia R.</span>
-                                            <span class="testimonial-title">E-commerçante</span>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card card-testimonial">
-                                            <div>
-                                                <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <p class="testimonial-content">
-                                                Le site est fluide et rassurant, on a gagné en crédibilité dès la mise en ligne.
-                                            </p>
-                                            <span class="testimonial-name">Hugo V.</span>
-                                            <span class="testimonial-title">Consultant</span>
                                         </div>
                                     </div>
                                 </div>
@@ -708,7 +544,7 @@
         </div>
     </main>
 
-    <!-- Footer Section -->
+    
     <div id="site-footer"></div>
 
     <script src="./assets/js/vendor/jquery.min.js"></script>
@@ -716,7 +552,7 @@
     <script src="./assets/js/vendor/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendor/isotope.pkgd.min.js"></script>
     <script src="./assets/js/vendor/fslightbox.js"></script>
-    <script src="./assets/js/layout.js"></script>
+    <script src="./assets/js/layout.js?v=4?v=4?v=3"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/banner.js"></script>
     <script src="./assets/js/swiper-script.js"></script>

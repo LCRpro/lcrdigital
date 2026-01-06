@@ -1,25 +1,27 @@
+<?php require __DIR__ . "/city_bootstrap.php"; ?>
 <!DOCTYPE html>
-<html lang="fr" data-title="Contact - LCR DIGITAL" data-description="Contactez LCR DIGITAL pour parler de votre projet web ou SEO.">
+<html lang="fr" data-title="Contactez votre agence web<?= city_phrase(' à ') ?> | LCR DIGITAL" data-description="Un projet web ? Une question ? Contactez LCR DIGITAL, agence web<?= city_phrase(' à ') ?>, pour obtenir un devis ou échanger avec notre équipe.">
 <head>
     <meta charset="UTF-8">
     <script src="./assets/js/head.js"></script>
 </head>
-<body>
-    <!-- Header Section -->
+<body data-city="<?= e($city) ?>" data-city-slug="<?= e($city_slug) ?>">
+    
     <div id="site-header"></div>
 
-    <!-- Sidebar Section -->
+    
     <div id="site-sidebar"></div>
 
-    <!-- Main Style -->
+    
     <main>
-        <!-- Banner Section -->
+        
         <div class="section banner-inner">
             <div class="hero-container">
                 <div class="d-flex flex-column gspace-2">
                     <h2>Contact</h2>
+                    <h1 class="banner-h1">Contactez LCR DIGITAL – Votre agence web<?= city_phrase(' à ') ?></h1>
                     <nav class="breadcrumb">
-                        <a href="/agence-digital-site-web-rouen-normandie">Home</a>
+                        <a href="/agence-web-<?= e($city_slug) ?>">Accueil</a>
                         <span class="separator"><i class="fa-solid fa-chevron-right"></i></span>
                         <a href="#" class="current">Contact</a>
                     </nav>
@@ -27,7 +29,7 @@
             </div>
         </div>
 
-        <!-- Contact Section -->
+        
         <div class="section">
             <div class="hero-container">
                 <div class="row row-cols-xl-2 row-cols-1 grid-spacer-2">
@@ -66,7 +68,7 @@
                                         </div>
                                         <div class="d-flex flex-column gspace-1">
                                             <h5>Localisation</h5>
-                                            <p class="mb-0">76000 Rouen</p>
+                                            <p class="mb-0"><?= city_or_default('Rouen') ?></p>
                                         </div>
                                     </div>
                                 </div>
@@ -136,19 +138,19 @@
             </div>
         </div>
 
-        <!-- Maps Section -->
+        
         <div class="section">
             <div class="hero-container">
                 <iframe loading="lazy" class="maps"
-                        src="https://maps.google.com/maps?q=76000%20Rouen&amp;t=m&amp;z=13&amp;output=embed&amp;iwloc=near"
-                        title="76000 Rouen" aria-label="76000 Rouen">
+                        src="https://maps.google.com/maps?q=<?= rawurlencode($city === '' ? 'France' : $city) ?>&amp;t=m&amp;z=13&amp;output=embed&amp;iwloc=near"
+                        title="<?= city_or_default('France') ?>" aria-label="<?= city_or_default('France') ?>">
                 </iframe>
             </div>
         </div>
 
     </main>
 
-    <!-- Footer  -->
+    
     <div id="site-footer"></div>
 
     <script src="./assets/js/vendor/jquery.min.js"></script>
@@ -156,7 +158,7 @@
     <script src="./assets/js/vendor/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendor/isotope.pkgd.min.js"></script>
     <script src="./assets/js/vendor/fslightbox.js"></script>
-    <script src="./assets/js/layout.js"></script>
+    <script src="./assets/js/layout.js?v=4?v=4?v=3"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/swiper-script.js"></script>
     <script src="./assets/js/submit-form.js"></script>

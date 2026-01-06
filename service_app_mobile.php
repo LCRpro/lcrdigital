@@ -1,35 +1,37 @@
+<?php require __DIR__ . "/city_bootstrap.php"; ?>
 <!DOCTYPE html>
-<html lang="fr" data-title="Développement personnalisé - LCR DIGITAL" data-description="Developpement sur mesure pour vos besoins metier et vos integrations.">
+<html lang="fr" data-title="Développement d’application mobile<?= city_phrase(' à ') ?> – iOS & Android | LCR DIGITAL" data-description="LCR DIGITAL conçoit des applications mobiles iOS et Android sur mesure<?= city_phrase(' à ') ?>. Design, performance et accompagnement de A à Z.">
 <head>
     <meta charset="UTF-8">
     <script src="./assets/js/head.js"></script>
 </head>
-<body>
-    <!-- Header Section -->
+<body data-city="<?= e($city) ?>" data-city-slug="<?= e($city_slug) ?>">
+    
     <div id="site-header"></div>
 
-    <!-- Sidebar Section -->
+    
     <div id="site-sidebar"></div>
 
-    <!-- Main Style -->
+    
     <main>
-        <!-- Banner Section -->
+        
         <div class="section banner-inner">
             <div class="hero-container">
                 <div class="d-flex flex-column gspace-2">
-                    <h2>Développement personnalisé</h2>
+                    <h2>Application mobile</h2>
+                    <h1 class="banner-h1">Création d’application mobile<?= city_phrase(' à ') ?> – Votre projet sur iOS & Android</h1>
                     <nav class="breadcrumb">
-                        <a href="/agence-digital-site-web-rouen-normandie">Home</a>
+                        <a href="/agence-web-<?= e($city_slug) ?>">Accueil</a>
                         <span class="separator"><i class="fa-solid fa-chevron-right"></i></span>
-                        <a href="/services-agence-digitale-rouen">Services</a>
+                        <a href="/services-web-<?= e($city_slug) ?>">Services</a>
                         <span class="separator"><i class="fa-solid fa-chevron-right"></i></span>
-                        <a href="#" class="current">Développement personnalisé</a>
+                        <a href="#" class="current">Application mobile</a>
                     </nav>
                 </div>
             </div>
         </div>
 
-        <!-- Service Detail Section -->
+        
         <div class="section">
             <div class="hero-container">
                 <div class="row row-cols-md-2 row-cols-1 grid-spacer-2">
@@ -38,10 +40,10 @@
                             <h3 class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Vue d’ensemble</h3>
                                                         <div>
                                 <p>
-                                    Des fonctionnalités spécifiques et des intégrations métier adaptées à votre activité.
+                                    Une application mobile pour offrir une expérience fluide et accessible à vos utilisateurs.
                                 </p>
                                 <p>
-                                    Nous développons des solutions fiables, évolutives et sécurisées.
+                                    Nous concevons des apps utiles, simples et performantes.
                                 </p>
                             </div>
                             <h4>Bénéfices</h4>
@@ -50,19 +52,19 @@
                                     <div class="d-flex flex-column gspace-2">
                                         <div>
                                             <p>
-                                                Une solution sur mesure pour gagner du temps et automatiser.
+                                                Un outil puissant pour fidéliser et automatiser.
                                             </p>
                                             <p>
-                                                Conçue pour s’intégrer à vos outils existants.
+                                                Pensé pour une expérience mobile optimale.
                                             </p>
                                         </div>
                                         <ul class="check-list">
-                                            <li>Fonctionnalités métier</li>
-                                            <li>Intégrations API</li>
-                                            <li>Automatisations</li>
-                                            <li>Architecture évolutive</li>
-                                            <li>Sécurité renforcée</li>
-                                            <li>Support technique</li>
+                                            <li>UX mobile adaptée</li>
+                                            <li>Notifications et engagement</li>
+                                            <li>Fonctionnalités sur mesure</li>
+                                            <li>Design cohérent</li>
+                                            <li>Maintenance évolutive</li>
+                                            <li>Suivi performance</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -78,27 +80,27 @@
                         <div class="d-flex flex-column gspace-2">
                                                         <div class="card-other-service animate-box animated animate__animated" data-animate="animate__fadeInRight">
                                 <h4>Autres services</h4>
-                                <a href="/service-one-page" class="btn-other-service">
+                                <a href="/creation-site-one-page-<?= e($city_slug) ?>" class="btn-other-service">
                                     <i class="fa-solid fa-solid fa-arrow-right"></i>
                                     <span>One Page</span>
                                 </a>
-                                <a href="/service-site-vitrine" class="btn-other-service">
+                                <a href="/creation-site-vitrine-<?= e($city_slug) ?>" class="btn-other-service">
                                     <i class="fa-solid fa-solid fa-arrow-right"></i>
                                     <span>Site vitrine</span>
                                 </a>
-                                <a href="/service-site-catalogue" class="btn-other-service">
+                                <a href="/creation-site-catalogue-<?= e($city_slug) ?>" class="btn-other-service">
                                     <i class="fa-solid fa-solid fa-arrow-right"></i>
                                     <span>Site catalogue</span>
                                 </a>
-                                <a href="/service-ecommerce" class="btn-other-service">
+                                <a href="/creation-site-ecommerce-<?= e($city_slug) ?>" class="btn-other-service">
                                     <i class="fa-solid fa-solid fa-arrow-right"></i>
                                     <span>Site e-commerce</span>
                                 </a>
-                                <a href="/service-app-mobile" class="btn-other-service">
+                                <a href="/creation-application-mobile-<?= e($city_slug) ?>" class="btn-other-service">
                                     <i class="fa-solid fa-solid fa-arrow-right"></i>
                                     <span>Application mobile</span>
                                 </a>
-                                <a href="/service-sur-mesure" class="btn-other-service">
+                                <a href="/developpement-web-sur-mesure-<?= e($city_slug) ?>" class="btn-other-service">
                                     <i class="fa-solid fa-solid fa-arrow-right"></i>
                                     <span>Développement personnalisé</span>
                                 </a>
@@ -107,7 +109,7 @@
                                 <h4>Prêt à accélérer votre visibilité ?</h4>
                                 <p>Nous vous aidons à clarifier vos objectifs et lancer un plan d’action efficace.</p>
                                 <div>
-                                    <a href="/contact-agence-digitale-rouen" class="btn btn-accent">Nous contacter</a>
+                                    <a href="/contact-agence-web-<?= e($city_slug) ?>" class="btn btn-accent">Nous contacter</a>
                                 </div>
                             </div>
                         </div>
@@ -118,7 +120,7 @@
 
 
 
-        <!-- Why Choose Us Section -->
+        
         <div class="section whychooseus-banner">
             <div class="hero-container">
                 <div class="whychooseus-wrapper">
@@ -171,7 +173,7 @@
             </div>
         </div>
 
-        <!-- Testimonial Section -->
+        
         <div class="section">
             <div class="hero-container">
                 <div class="row row-cols-xl-2 row-cols-1 grid-spacer-2">
@@ -190,7 +192,7 @@
                                         <div class="card card-testimonial">
                                             <div>
                                                 <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
+                                                    <i class="fa-solid fa-user"></i>
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
@@ -204,7 +206,7 @@
                                         <div class="card card-testimonial">
                                             <div>
                                                 <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
+                                                    <i class="fa-solid fa-user"></i>
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
@@ -214,62 +216,7 @@
                                             <span class="testimonial-title">Responsable marketing</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="card card-testimonial">
-                                            <div>
-                                                <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <p class="testimonial-content">
-                                                Les campagnes sont enfin rentables et bien ciblées.
-                                            </p>
-                                            <span class="testimonial-name">Claire P.</span>
-                                            <span class="testimonial-title">Gérante</span>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card card-testimonial">
-                                            <div>
-                                                <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <p class="testimonial-content">
-                                                Nous avons gagné en visibilité locale rapidement.
-                                            </p>
-                                            <span class="testimonial-name">Lucas M.</span>
-                                            <span class="testimonial-title">Fondateur</span> 
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card card-testimonial">
-                                            <div>
-                                                <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <p class="testimonial-content">
-                                                Une stratégie claire et un accompagnement efficace.
-                                            </p>
-                                            <span class="testimonial-name">Nadia R.</span>
-                                            <span class="testimonial-title">E-commerçante</span>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card card-testimonial">
-                                            <div>
-                                                <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <p class="testimonial-content">
-                                                Des leads qualifiés et un meilleur taux de conversion.
-                                            </p>
-                                            <span class="testimonial-name">Hugo V.</span>
-                                            <span class="testimonial-title">Consultant</span>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -279,7 +226,7 @@
         </div>
     </main>
 
-    <!-- Footer  -->
+    
     <div id="site-footer"></div>
 
     <script src="./assets/js/vendor/jquery.min.js"></script>
@@ -287,7 +234,7 @@
     <script src="./assets/js/vendor/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendor/isotope.pkgd.min.js"></script>
     <script src="./assets/js/vendor/fslightbox.js"></script>
-    <script src="./assets/js/layout.js"></script>
+    <script src="./assets/js/layout.js?v=4?v=4?v=3"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/swiper-script.js"></script>
     <script src="./assets/js/submit-form.js"></script>

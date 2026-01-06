@@ -37,6 +37,25 @@
     .about-banner{
         background-position: center left;
     }
+    .banner-home{
+        padding: 10em 1.5em 5em 1.5em;
+        min-height: auto;
+    }
+    .banner-hero-grid{
+        grid-template-columns: 1fr;
+        gap: 40px 40px;
+        text-align: center;
+    }
+    .banner-hero-main{
+        align-items: center;
+        text-align: center;
+    }
+    .hero-cta{
+        justify-content: center;
+    }
+    .hero-highlights{
+        justify-content: center;
+    }
     .about-detail{
         padding: 0;
     }
@@ -115,6 +134,12 @@
     }
     .about-banner{
         background-position: center center;
+    }
+    .banner-home{
+        padding: 9em 1em 4em 1em;
+    }
+    .hero-card{
+        padding: 24px;
     }
     .achievement-icon{
         max-width: 50%;

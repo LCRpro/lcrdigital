@@ -1,25 +1,27 @@
+<?php require __DIR__ . "/city_bootstrap.php"; ?>
 <!DOCTYPE html>
-<html lang="fr" data-title="Tarifs - LCR DIGITAL" data-description="Nos offres et tarifs pour la creation de sites et services digitaux.">
+<html lang="fr" data-title="Tarifs création site web & développement<?= city_phrase(' à ') ?> | LCR DIGITAL" data-description="Consultez nos tarifs pour la création de site internet, le développement d’applications mobiles et les services web personnalisés<?= city_phrase(' à ') ?>.">
 <head>
     <meta charset="UTF-8">
     <script src="./assets/js/head.js"></script>
 </head>
-<body>
-    <!-- Header Section -->
+<body data-city="<?= e($city) ?>" data-city-slug="<?= e($city_slug) ?>">
+    
     <div id="site-header"></div>
 
-    <!-- Sidebar Section -->
+    
     <div id="site-sidebar"></div>
 
-    <!-- Main Style -->
+    
     <main>
-        <!-- Banner Section -->
+        
         <div class="section banner-inner">
             <div class="hero-container">
                 <div class="d-flex flex-column gspace-2">
                     <h2>Tarifs</h2>
+                    <h1 class="banner-h1">Nos tarifs pour vos projets web et mobiles<?= city_phrase(' à ') ?></h1>
                     <nav class="breadcrumb">
-                        <a href="/agence-digital-site-web-rouen-normandie">Home</a>
+                        <a href="/agence-web-<?= e($city_slug) ?>">Accueil</a>
                         <span class="separator"><i class="fa-solid fa-chevron-right"></i></span>
                         <a href="#" class="current">Tarifs</a>
                     </nav>
@@ -27,7 +29,7 @@
             </div>
         </div>
 
-        <!-- Pricing Section -->
+        
         <div class="section">
             <div class="hero-container overflow-visible">
                 <div class="d-flex flex-column gspace-4">
@@ -59,7 +61,7 @@
                                         <span class="price">400€</span>
                                         <p class="price-details">Mise en place</p>
                                     </div>
-                                    <a href="/contact-agence-digitale-rouen" class="btn btn-accent">Demander un devis</a>
+                                    <a href="/contact-agence-web-<?= e($city_slug) ?>" class="btn btn-accent">Demander un devis</a>
                                 </div>
                             </div>
                         </div>
@@ -88,7 +90,7 @@
                                         <span class="price primary-accent">600€</span>
                                         <p class="price-details">Mise en place</p>
                                     </div>
-                                    <a href="/contact-agence-digitale-rouen" class="btn btn-accent-3">Demander un devis</a>
+                                    <a href="/contact-agence-web-<?= e($city_slug) ?>" class="btn btn-accent-3">Demander un devis</a>
                                 </div>
                             </div>
                         </div>
@@ -115,7 +117,7 @@
                                         <span class="price">900€</span>
                                         <p class="price-details">Mise en place</p>
                                     </div>
-                                    <a href="/contact-agence-digitale-rouen" class="btn btn-accent">Demander un devis</a>
+                                    <a href="/contact-agence-web-<?= e($city_slug) ?>" class="btn btn-accent">Demander un devis</a>
                                 </div>
                             </div>
                         </div>
@@ -135,7 +137,7 @@
                                         <li>Maintenance</li>
                                         <li>Déploiement iOS/Android</li>
                                     </ul>
-                                    <a href="/contact-agence-digitale-rouen" class="btn btn-accent">Nous contacter</a>
+                                    <a href="/contact-agence-web-<?= e($city_slug) ?>" class="btn btn-accent">Nous contacter</a>
                                 </div>
                             </div>
                         </div>
@@ -153,7 +155,7 @@
                                         <li>Architecture évolutive</li>
                                         <li>Support technique</li>
                                     </ul>
-                                    <a href="/contact-agence-digitale-rouen" class="btn btn-accent">Nous contacter</a>
+                                    <a href="/contact-agence-web-<?= e($city_slug) ?>" class="btn btn-accent">Nous contacter</a>
                                 </div>
                             </div>
                         </div>
@@ -163,7 +165,7 @@
         </div>
 
 
-        <!-- Why Choose Us Section -->
+        
         <div class="section whychooseus-banner">
             <div class="hero-container">
                 <div class="whychooseus-wrapper">
@@ -216,20 +218,20 @@
             </div>
         </div>
 
-        <!-- Contact CTA Section -->
+        
         <div class="section contactus-banner">
             <div class="hero-container">
                 <div class="contactus-content">
                     <h3 class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Parlons de votre budget</h3>
                     <p class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Nous définissons une solution adaptée à vos besoins et à votre croissance.</p>
                     <div>
-                        <a href="/contact-agence-digitale-rouen" class="btn btn-accent">Demander un devis</a>
+                        <a href="/contact-agence-web-<?= e($city_slug) ?>" class="btn btn-accent">Demander un devis</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Testimonial Section -->
+        
         <div class="section">
             <div class="hero-container">
                 <div class="row row-cols-xl-2 row-cols-1 grid-spacer-2">
@@ -248,7 +250,7 @@
                                         <div class="card card-testimonial">
                                             <div>
                                                 <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
+                                                    <i class="fa-solid fa-user"></i>
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
@@ -262,7 +264,7 @@
                                         <div class="card card-testimonial">
                                             <div>
                                                 <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
+                                                    <i class="fa-solid fa-user"></i>
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
@@ -270,62 +272,6 @@
                                             </p>
                                             <span class="testimonial-name">Marc D.</span>
                                             <span class="testimonial-title">Responsable marketing</span>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card card-testimonial">
-                                            <div>
-                                                <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <p class="testimonial-content">
-                                                Très bon accompagnement et des explications simples.
-                                            </p>
-                                            <span class="testimonial-name">Claire P.</span>
-                                            <span class="testimonial-title">Gérante</span>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card card-testimonial">
-                                            <div>
-                                                <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <p class="testimonial-content">
-                                                Un site rapide et une vraie hausse des conversions.
-                                            </p>
-                                            <span class="testimonial-name">Lucas M.</span>
-                                            <span class="testimonial-title">Fondateur</span> 
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card card-testimonial">
-                                            <div>
-                                                <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <p class="testimonial-content">
-                                                Une équipe sérieuse et un rendu très pro.
-                                            </p>
-                                            <span class="testimonial-name">Nadia R.</span>
-                                            <span class="testimonial-title">E-commerçante</span>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card card-testimonial">
-                                            <div>
-                                                <div class="testimonial-image">
-                                                    <img src="./assets/images/dummy-img-400x400.jpg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <p class="testimonial-content">
-                                                Le SEO local a vraiment fait la différence.
-                                            </p>
-                                            <span class="testimonial-name">Hugo V.</span>
-                                            <span class="testimonial-title">Consultant</span>
                                         </div>
                                     </div>
                                 </div>
@@ -337,7 +283,7 @@
         </div>
     </main>
 
-    <!-- Footer  -->
+    
     <div id="site-footer"></div>
 
     <script src="./assets/js/vendor/jquery.min.js"></script>
@@ -345,7 +291,7 @@
     <script src="./assets/js/vendor/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendor/isotope.pkgd.min.js"></script>
     <script src="./assets/js/vendor/fslightbox.js"></script>
-    <script src="./assets/js/layout.js"></script>
+    <script src="./assets/js/layout.js?v=4?v=4?v=3"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/swiper-script.js"></script>
     <script src="./assets/js/submit-form.js"></script>

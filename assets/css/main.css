@@ -734,7 +734,7 @@ ul{
 .card-pricing.popular{
     background-color: var(--accent-color-2);
     color: var(--primary);
-    background-image: url('../images/dummy-img-600x800.jpg');
+    background-image: url('../images/BG441-e1715086371342.webp');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -954,6 +954,11 @@ ul{
     height: 50px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.testimonial-image i{
+    font-size: 48px;
+    color: var(--accent-color);
 }
 
 /* 10. Color Styles */
@@ -1451,7 +1456,7 @@ textarea.error-border{
     justify-content: center;
     align-items: center;
     padding: 12em 1em 6em 1em;
-    background-image: url('../images/BG-Hero.webp');
+    background-image: linear-gradient(120deg, rgba(1, 0, 1, 0.9) 0%, rgba(1, 0, 1, 0.4) 55%, rgba(1, 0, 1, 0.9) 100%), url('../images/BG-Hero.webp');
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -1464,7 +1469,8 @@ textarea.error-border{
     content: '';
     position: absolute;
     background-color: var(--accent-transparent);
-    background-image: radial-gradient(at center center, var(--accent-transparent) 0%, var(--secondary) 80%);
+    background-image: radial-gradient(at top left, rgba(255, 47, 179, 0.2) 0%, rgba(1, 0, 1, 0.1) 60%),
+        radial-gradient(at bottom right, rgba(106, 75, 255, 0.2) 0%, rgba(1, 0, 1, 0.2) 65%);
     top: 0;
     left: 0;
     width: 100%;
@@ -1488,15 +1494,122 @@ textarea.error-border{
     display: flex;
     flex-direction: column;
     gap: 30px 30px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
     position: relative;
+    width: 100%;
     z-index: 3;
 }
 
+.banner-hero-grid{
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    gap: 60px 60px;
+    align-items: center;
+}
+
+.banner-hero-main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 22px 22px;
+}
+
+.banner-hero-main .banner-sub-heading{
+    width: auto;
+}
+
+.brand-mark{
+    display: inline-flex;
+    align-items: center;
+    gap: 12px 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.75rem;
+    color: var(--primary);
+}
+
+.brand-mark img{
+    width: 100%;
+    max-width: 48px;
+}
+
+.hero-cta{
+    display: flex;
+    align-items: center;
+    gap: 16px 16px;
+    flex-wrap: wrap;
+}
+
+.hero-highlights{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+}
+
+.hero-highlight{
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.06);
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.banner-hero-side{
+    display: flex;
+    justify-content: center;
+}
+
+.hero-card{
+    width: 100%;
+    max-width: 420px;
+    padding: 32px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: linear-gradient(160deg, rgba(255, 255, 255, 0.08) 0%, rgba(0, 0, 0, 0.35) 100%);
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(6px);
+}
+
+.hero-list{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px 12px;
+}
+
+.hero-list li{
+    position: relative;
+    padding-left: 24px;
+}
+
+.hero-list li::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--accent-color) 0%, var(--accent-color-3) 100%);
+}
+
+.hero-link{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px 8px;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding-bottom: 2px;
+}
+
 .banner-content h1{
-    max-width: 75%
+    max-width: 100%;
 }
 
 .banner-content .h1-wrapper{
@@ -1507,7 +1620,7 @@ textarea.error-border{
 }
 
 .banner-content p{
-    max-width: 63%;
+    max-width: 90%;
 }
 
 .construction-logo-wrap{
@@ -1553,7 +1666,7 @@ textarea.error-border{
     text-align: center;
     align-items: center;
     padding: 12em 1em 6em 1em;
-    background-image: url('../images/dummy-img-1920x900.jpg');
+    background-image: url('../images/BG-Page.webp');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1571,6 +1684,15 @@ textarea.error-border{
     width: 100%;
     height: 100%;
     z-index: -1;
+}
+
+.banner-inner .banner-h1{
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 0;
+    opacity: 0.8;
 }
 
 .about-banner{
@@ -1609,14 +1731,14 @@ textarea.error-border{
 }
 
 .whychooseus-banner{
-    background-image: url('../images/dummy-img-1920x900-2.jpg');
+    background-image: url('../images/BG8.webp');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .contactus-banner{
-    background-image: url('../images/dummy-img-1920x900.jpg');
+    background-image: url('../images/04-e1715052051327.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1645,7 +1767,7 @@ textarea.error-border{
 }
 
 .cta-banner{
-    background-image: url('../images/dummy-img-1920x900.jpg');
+    background-image: url('../images/BG-Page.webp');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1717,7 +1839,7 @@ textarea.error-border{
 }
 
 .portfolio-banner{
-    background-image: url('../images/dummy-img-1920x900-2.jpg');
+    background-image: url('../images/BG-Portfolio.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1754,7 +1876,7 @@ textarea.error-border{
     display: flex;
     flex-direction: column;
     padding: 4em 1em 1em 1em;
-    background-image: url('../images/dummy-img-1920x900.jpg');
+    background-image: url('../images/BG-Page.webp');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
