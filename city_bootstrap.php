@@ -46,3 +46,15 @@ function city_or_default($fallback) {
     global $city;
     return $city === "" ? $fallback : e($city);
 }
+
+function route_with_city($base, $city_slug) {
+    $base = ltrim($base, "/");
+    if ($city_slug === "") {
+        return "/" . $base;
+    }
+    return "/" . $base . "-" . $city_slug;
+}
+
+function city_text($fallback, $city) {
+    return $city === "" ? $fallback : e($city);
+}

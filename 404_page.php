@@ -26,7 +26,7 @@ $page_description = "Page introuvable. Revenez a l'accueil de LCR DIGITAL.";
                     <span class="text-notfound">404</span>
                     <h3>Page introuvable</h3>
                     <p>La page demandée n’existe pas ou a été déplacée.</p>
-                    <a href="/agence-web-rouen" class="btn btn-accent">Retour à l’accueil</a>
+                    <a href="<?= e(route_with_city("agence-web", $city_slug)) ?>" class="btn btn-accent">Retour à l’accueil</a>
                 </div>
             </div>
         </div>

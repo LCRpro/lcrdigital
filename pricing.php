@@ -27,7 +27,7 @@ $page_description = "Consultez nos tarifs pour la création de site internet, le
                     <h2>Tarifs</h2>
                     <h1 class="banner-h1">Nos tarifs pour vos projets web et mobiles<?= city_phrase(' à ') ?></h1>
                     <nav class="breadcrumb">
-                        <a href="/agence-web-<?= e($city_slug) ?>">Accueil</a>
+                        <a href="<?= e(route_with_city("agence-web", $city_slug)) ?>">Accueil</a>
                         <span class="separator"><i class="fa-solid fa-chevron-right"></i></span>
                         <a href="#" class="current">Tarifs</a>
                     </nav>
@@ -67,7 +67,7 @@ $page_description = "Consultez nos tarifs pour la création de site internet, le
                                         <span class="price">400€</span>
                                         <p class="price-details">Mise en place</p>
                                     </div>
-                                    <a href="/contact-agence-web-<?= e($city_slug) ?>" class="btn btn-accent">Demander un devis</a>
+                                    <a href="<?= e(route_with_city("contact-agence-web", $city_slug)) ?>" class="btn btn-accent">Demander un devis</a>
                                 </div>
                             </div>
                         </div>
@@ -96,7 +96,7 @@ $page_description = "Consultez nos tarifs pour la création de site internet, le
                                         <span class="price primary-accent">600€</span>
                                         <p class="price-details">Mise en place</p>
                                     </div>
-                                    <a href="/contact-agence-web-<?= e($city_slug) ?>" class="btn btn-accent-3">Demander un devis</a>
+                                    <a href="<?= e(route_with_city("contact-agence-web", $city_slug)) ?>" class="btn btn-accent-3">Demander un devis</a>
                                 </div>
                             </div>
                         </div>
@@ -123,7 +123,7 @@ $page_description = "Consultez nos tarifs pour la création de site internet, le
                                         <span class="price">900€</span>
                                         <p class="price-details">Mise en place</p>
                                     </div>
-                                    <a href="/contact-agence-web-<?= e($city_slug) ?>" class="btn btn-accent">Demander un devis</a>
+                                    <a href="<?= e(route_with_city("contact-agence-web", $city_slug)) ?>" class="btn btn-accent">Demander un devis</a>
                                 </div>
                             </div>
                         </div>
@@ -143,7 +143,7 @@ $page_description = "Consultez nos tarifs pour la création de site internet, le
                                         <li>Maintenance</li>
                                         <li>Déploiement iOS/Android</li>
                                     </ul>
-                                    <a href="/contact-agence-web-<?= e($city_slug) ?>" class="btn btn-accent">Nous contacter</a>
+                                    <a href="<?= e(route_with_city("contact-agence-web", $city_slug)) ?>" class="btn btn-accent">Nous contacter</a>
                                 </div>
                             </div>
                         </div>
@@ -161,7 +161,7 @@ $page_description = "Consultez nos tarifs pour la création de site internet, le
                                         <li>Architecture évolutive</li>
                                         <li>Support technique</li>
                                     </ul>
-                                    <a href="/contact-agence-web-<?= e($city_slug) ?>" class="btn btn-accent">Nous contacter</a>
+                                    <a href="<?= e(route_with_city("contact-agence-web", $city_slug)) ?>" class="btn btn-accent">Nous contacter</a>
                                 </div>
                             </div>
                         </div>
@@ -231,7 +231,7 @@ $page_description = "Consultez nos tarifs pour la création de site internet, le
                     <h3 class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Parlons de votre budget</h3>
                     <p class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Nous définissons une solution adaptée à vos besoins et à votre croissance.</p>
                     <div>
-                        <a href="/contact-agence-web-<?= e($city_slug) ?>" class="btn btn-accent">Demander un devis</a>
+                        <a href="<?= e(route_with_city("contact-agence-web", $city_slug)) ?>" class="btn btn-accent">Demander un devis</a>
                     </div>
                 </div>
             </div>

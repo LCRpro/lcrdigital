@@ -27,7 +27,7 @@ $page_description = "Un projet web ? Une question ? Contactez LCR DIGITAL, agenc
                     <h2>Contact</h2>
                     <h1 class="banner-h1">Contactez LCR DIGITAL – Votre agence web<?= city_phrase(' à ') ?></h1>
                     <nav class="breadcrumb">
-                        <a href="/agence-web-<?= e($city_slug) ?>">Accueil</a>
+                        <a href="<?= e(route_with_city("agence-web", $city_slug)) ?>">Accueil</a>
                         <span class="separator"><i class="fa-solid fa-chevron-right"></i></span>
                         <a href="#" class="current">Contact</a>
                     </nav>

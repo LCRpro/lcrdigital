@@ -27,7 +27,7 @@ $page_description = "Retrouvez les réponses aux questions les plus fréquentes 
                     <h2>FAQ</h2>
                     <h1 class="banner-h1">Foire aux questions – Agence web LCR DIGITAL<?= city_phrase(' à ') ?></h1>
                     <nav class="breadcrumb">
-                        <a href="/agence-web-<?= e($city_slug) ?>">Accueil</a>
+                        <a href="<?= e(route_with_city("agence-web", $city_slug)) ?>">Accueil</a>
                         <span class="separator"><i class="fa-solid fa-chevron-right"></i></span>
                         <a href="#" class="current">FAQ</a>
                     </nav>
@@ -214,7 +214,7 @@ $page_description = "Retrouvez les réponses aux questions les plus fréquentes 
                                 <h4>Lancer votre projet</h4>
                                 <p>Nous cadrons vos besoins et vos priorités pour un site efficace.</p>
                                 <div>
-                                    <a href="/contact-agence-web-<?= e($city_slug) ?>" class="btn btn-accent">Nous contacter</a>
+                                    <a href="<?= e(route_with_city("contact-agence-web", $city_slug)) ?>" class="btn btn-accent">Nous contacter</a>
                                 </div>
                             </div>
                         </div>
@@ -230,7 +230,7 @@ $page_description = "Retrouvez les réponses aux questions les plus fréquentes 
                     <h3 class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Parlons de votre projet digital</h3>
                     <p class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Un besoin, une idée, une urgence ? Nous trouvons la solution.</p>
                     <div>
-                        <a href="/contact-agence-web-<?= e($city_slug) ?>" class="btn btn-accent">Nous contacter</a>
+                        <a href="<?= e(route_with_city("contact-agence-web", $city_slug)) ?>" class="btn btn-accent">Nous contacter</a>
                     </div>
                 </div>
             </div>

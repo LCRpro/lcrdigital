@@ -40,8 +40,8 @@ $page_description = "LCR DIGITAL, votre agence web" . city_phrase(" à ") . ", s
                             </h1>
                             <p>Nous concevons des expériences web rapides, lisibles et SEO-ready pour générer plus de contacts qualifiés.</p>
                             <div class="hero-cta">
-                                <a href="/agence-digitale-<?= e($city_slug) ?>" class="btn btn-accent">Nos services</a>
-                                <a href="/contact-agence-web-<?= e($city_slug) ?>" class="btn btn-accent-outline">Demander un devis</a>
+                                <a href="<?= e(route_with_city("agence-digitale", $city_slug)) ?>" class="btn btn-accent">Nos services</a>
+                                <a href="<?= e(route_with_city("contact-agence-web", $city_slug)) ?>" class="btn btn-accent-outline">Demander un devis</a>
                             </div>
                             <div class="hero-highlights">
                                 <span class="hero-highlight">SEO local &amp; technique</span>
@@ -57,7 +57,7 @@ $page_description = "LCR DIGITAL, votre agence web" . city_phrase(" à ") . ", s
                                     <li>SEO local &amp; technique pour une vraie visibilite</li>
                                     <li>Performances, vitesse et suivi des conversions</li>
                                 </ul>
-                                <a href="/agence-digitale-<?= e($city_slug) ?>" class="hero-link">Voir tous nos services</a>
+                                <a href="<?= e(route_with_city("agence-digitale", $city_slug)) ?>" class="hero-link">Voir tous nos services</a>
                             </div>
                         </div>
                     </div>
@@ -107,7 +107,7 @@ $page_description = "LCR DIGITAL, votre agence web" . city_phrase(" à ") . ", s
                                 </div>
                             </div>
                             <div>
-                                <a href="/agence-digitale-<?= e($city_slug) ?>" class="btn btn-accent">En savoir plus</a>
+                                <a href="<?= e(route_with_city("agence-digitale", $city_slug)) ?>" class="btn btn-accent">En savoir plus</a>
                             </div>
                         </div>
                     </div>
@@ -134,7 +134,7 @@ $page_description = "LCR DIGITAL, votre agence web" . city_phrase(" à ") . ", s
                                 <h4>One Page</h4>
                                 <p>Une landing page claire et rapide pour capter des leads et valider votre offre.</p>
                                 <div class="service-cta">
-                                <a href="/creation-site-one-page-<?= e($city_slug) ?>" class="service-link">En savoir plus</a>
+                                <a href="<?= e(route_with_city("creation-site-one-page", $city_slug)) ?>" class="service-link">En savoir plus</a>
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -148,7 +148,7 @@ $page_description = "LCR DIGITAL, votre agence web" . city_phrase(" à ") . ", s
                                 <h4>Site vitrine</h4>
                                 <p>Présentez votre activité avec un site professionnel, rassurant et optimisé pour le local.</p>
                                 <div class="service-cta">
-                                <a href="/creation-site-vitrine-<?= e($city_slug) ?>" class="service-link">En savoir plus</a>
+                                <a href="<?= e(route_with_city("creation-site-vitrine", $city_slug)) ?>" class="service-link">En savoir plus</a>
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -162,7 +162,7 @@ $page_description = "LCR DIGITAL, votre agence web" . city_phrase(" à ") . ", s
                                 <h4>Site catalogue</h4>
                                 <p>Exposez vos produits et services avec des fiches claires et une navigation fluide.</p>
                                 <div class="service-cta">
-                                <a href="/creation-site-catalogue-<?= e($city_slug) ?>" class="service-link">En savoir plus</a>
+                                <a href="<?= e(route_with_city("creation-site-catalogue", $city_slug)) ?>" class="service-link">En savoir plus</a>
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -176,7 +176,7 @@ $page_description = "LCR DIGITAL, votre agence web" . city_phrase(" à ") . ", s
                                 <h4>Site E-commerce</h4>
                                 <p>Boutique en ligne prête à vendre : tunnel d’achat optimisé et paiements sécurisés.</p>
                                 <div class="service-cta">
-                                <a href="/creation-site-ecommerce-<?= e($city_slug) ?>" class="service-link">En savoir plus</a>
+                                <a href="<?= e(route_with_city("creation-site-ecommerce", $city_slug)) ?>" class="service-link">En savoir plus</a>
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -190,7 +190,7 @@ $page_description = "LCR DIGITAL, votre agence web" . city_phrase(" à ") . ", s
                                 <h4>Application Mobile</h4>
                                 <p>Applications iOS/Android pour fidéliser et simplifier l’expérience client.</p>
                                 <div class="service-cta">
-                                <a href="/creation-application-mobile-<?= e($city_slug) ?>" class="service-link">En savoir plus</a>
+                                <a href="<?= e(route_with_city("creation-application-mobile", $city_slug)) ?>" class="service-link">En savoir plus</a>
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -204,7 +204,7 @@ $page_description = "LCR DIGITAL, votre agence web" . city_phrase(" à ") . ", s
                                 <h4>Développement personnalisé</h4>
                                 <p>Fonctionnalités sur mesure, intégrations métier et automatisations adaptées.</p>
                                 <div class="service-cta">
-                                <a href="/developpement-web-sur-mesure-<?= e($city_slug) ?>" class="service-link">En savoir plus</a>
+                                <a href="<?= e(route_with_city("developpement-web-sur-mesure", $city_slug)) ?>" class="service-link">En savoir plus</a>
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -274,7 +274,7 @@ $page_description = "LCR DIGITAL, votre agence web" . city_phrase(" à ") . ", s
                     <h3 class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Parlons de votre projet digital</h3>
                     <p class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Un site performant commence par une bonne stratégie. Nous vous aidons à cadrer le message, la structure et les priorités pour générer plus de contacts et de ventes.</p>
                     <div>
-                        <a href="/contact-agence-web-<?= e($city_slug) ?>" class="btn btn-accent">Nous contacter</a>
+                        <a href="<?= e(route_with_city("contact-agence-web", $city_slug)) ?>" class="btn btn-accent">Nous contacter</a>
                     </div>
                 </div>
             </div>
@@ -434,7 +434,7 @@ $page_description = "LCR DIGITAL, votre agence web" . city_phrase(" à ") . ", s
                                 <h4>Stratégie créative</h4>
                                 <p>Positionnement, message et design pour capter l’attention et déclencher l’action.</p>
                                 <div>
-                                    <a href="/agence-digitale-<?= e($city_slug) ?>" class="btn btn-accent-2">
+                                    <a href="<?= e(route_with_city("agence-digitale", $city_slug)) ?>" class="btn btn-accent-2">
                                         <div class="d-flex flex-row align-items-center gspace-1">
                                             <span>En savoir plus</span>
                                             <i class="fa-solid fa-arrow-right"></i>
@@ -471,7 +471,7 @@ $page_description = "LCR DIGITAL, votre agence web" . city_phrase(" à ") . ", s
                                     <h4>Développement solide</h4>
                                     <p>Sites fiables, rapides et sécurisés, prêts pour le SEO et la croissance.</p>
                                     <div>
-                                        <a href="/services-web-<?= e($city_slug) ?>" class="btn btn-accent-2">
+                                        <a href="<?= e(route_with_city("services-web", $city_slug)) ?>" class="btn btn-accent-2">
                                             <div class="d-flex flex-row align-items-center gspace-1">
                                                 <span>En savoir plus</span>
                                                 <i class="fa-solid fa-arrow-right"></i>
@@ -484,7 +484,7 @@ $page_description = "LCR DIGITAL, votre agence web" . city_phrase(" à ") . ", s
                                 <h4>Expérience fluide</h4>
                                 <p>Un parcours client clair, de la prise de contact à la mise en ligne.</p>
                                 <div>
-                                        <a href="/services-web-<?= e($city_slug) ?>" class="btn btn-accent-2">
+                                        <a href="<?= e(route_with_city("services-web", $city_slug)) ?>" class="btn btn-accent-2">
                                         <div class="d-flex flex-row align-items-center gspace-1">
                                             <span>En savoir plus</span>
                                             <i class="fa-solid fa-arrow-right"></i>

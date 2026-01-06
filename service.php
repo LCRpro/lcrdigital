@@ -27,7 +27,7 @@ $page_description = "Découvrez tous les services de LCR DIGITAL : création de 
                     <h2>Services</h2>
                     <h1 class="banner-h1">Nos services de création digitale<?= city_phrase(' à ') ?></h1>
                     <nav class="breadcrumb">
-                        <a href="/agence-web-<?= e($city_slug) ?>">Accueil</a>
+                        <a href="<?= e(route_with_city("agence-web", $city_slug)) ?>">Accueil</a>
                         <span class="separator"><i class="fa-solid fa-chevron-right"></i></span>
                         <a href="#" class="current">Services</a>
                     </nav>
@@ -54,7 +54,7 @@ $page_description = "Découvrez tous les services de LCR DIGITAL : création de 
                                 <h4>One Page</h4>
                                 <p>Une landing page claire et rapide pour capter des leads et valider votre offre.</p>
                                 <div class="service-cta">
-                                    <a href="/creation-site-one-page-<?= e($city_slug) ?>" class="service-link">En savoir plus</a>
+                                    <a href="<?= e(route_with_city("creation-site-one-page", $city_slug)) ?>" class="service-link">En savoir plus</a>
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -68,7 +68,7 @@ $page_description = "Découvrez tous les services de LCR DIGITAL : création de 
                                 <h4>Site vitrine</h4>
                                 <p>Présentez votre activité avec un site professionnel, rassurant et optimisé pour le local.</p>
                                 <div class="service-cta">
-                                    <a href="/creation-site-vitrine-<?= e($city_slug) ?>" class="service-link">En savoir plus</a>
+                                    <a href="<?= e(route_with_city("creation-site-vitrine", $city_slug)) ?>" class="service-link">En savoir plus</a>
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@ $page_description = "Découvrez tous les services de LCR DIGITAL : création de 
                                 <h4>Site catalogue</h4>
                                 <p>Exposez vos produits et services avec des fiches claires et une navigation fluide.</p>
                                 <div class="service-cta">
-                                    <a href="/creation-site-catalogue-<?= e($city_slug) ?>" class="service-link">En savoir plus</a>
+                                    <a href="<?= e(route_with_city("creation-site-catalogue", $city_slug)) ?>" class="service-link">En savoir plus</a>
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -96,7 +96,7 @@ $page_description = "Découvrez tous les services de LCR DIGITAL : création de 
                                 <h4>Site e-commerce</h4>
                                 <p>Boutique en ligne prête à vendre : tunnel d’achat optimisé et paiements sécurisés.</p>
                                 <div class="service-cta">
-                                    <a href="/creation-site-ecommerce-<?= e($city_slug) ?>" class="service-link">En savoir plus</a>
+                                    <a href="<?= e(route_with_city("creation-site-ecommerce", $city_slug)) ?>" class="service-link">En savoir plus</a>
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -110,7 +110,7 @@ $page_description = "Découvrez tous les services de LCR DIGITAL : création de 
                                 <h4>Application mobile</h4>
                                 <p>Applications iOS/Android pour fidéliser et simplifier l’expérience client.</p>
                                 <div class="service-cta">
-                                    <a href="/creation-application-mobile-<?= e($city_slug) ?>" class="service-link">En savoir plus</a>
+                                    <a href="<?= e(route_with_city("creation-application-mobile", $city_slug)) ?>" class="service-link">En savoir plus</a>
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -124,7 +124,7 @@ $page_description = "Découvrez tous les services de LCR DIGITAL : création de 
                                 <h4>Développement personnalisé</h4>
                                 <p>Fonctionnalités sur mesure, intégrations métier et automatisations.</p>
                                 <div class="service-cta">
-                                    <a href="/developpement-web-sur-mesure-<?= e($city_slug) ?>" class="service-link">En savoir plus</a>
+                                    <a href="<?= e(route_with_city("developpement-web-sur-mesure", $city_slug)) ?>" class="service-link">En savoir plus</a>
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -195,7 +195,7 @@ $page_description = "Découvrez tous les services de LCR DIGITAL : création de 
                     <h3 class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Parlons de votre projet digital</h3>
                     <p class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Nous cadrons vos besoins et construisons un site qui apporte des résultats mesurables.</p>
                     <div>
-                    <a href="/contact-agence-web-<?= e($city_slug) ?>" class="btn btn-accent">Nous contacter</a>
+                    <a href="<?= e(route_with_city("contact-agence-web", $city_slug)) ?>" class="btn btn-accent">Nous contacter</a>
                     </div>
                 </div>
             </div>

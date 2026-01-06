@@ -27,7 +27,7 @@ $page_description = "En tant qu'agence digitale basée" . city_phrase(" à ") . 
                     <h2>À propos</h2>
                     <h1 class="banner-h1">Agence digitale de proximité<?= city_phrase(' à ') ?></h1>
                     <nav class="breadcrumb">
-                        <a href="/agence-web-<?= e($city_slug) ?>">Accueil</a>
+                        <a href="<?= e(route_with_city("agence-web", $city_slug)) ?>">Accueil</a>
                         <span class="separator"><i class="fa-solid fa-chevron-right"></i></span>
                         <a href="#" class="current">À propos</a>
                     </nav>
@@ -77,7 +77,7 @@ $page_description = "En tant qu'agence digitale basée" . city_phrase(" à ") . 
                                 </div>
                             </div>
                             <div>
-                                <a href="/agence-digitale-<?= e($city_slug) ?>" class="btn btn-accent">En savoir plus</a>
+                                <a href="<?= e(route_with_city("agence-digitale", $city_slug)) ?>" class="btn btn-accent">En savoir plus</a>
                             </div>
                         </div>
                     </div>
@@ -146,7 +146,7 @@ $page_description = "En tant qu'agence digitale basée" . city_phrase(" à ") . 
                     <h3 class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Parlons de votre projet digital</h3>
                     <p class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Nous vous aidons à clarifier vos besoins, structurer vos pages et définir les actions qui rapportent.</p>
                     <div>
-                        <a href="/contact-agence-web-<?= e($city_slug) ?>" class="btn btn-accent">Nous contacter</a>
+                        <a href="<?= e(route_with_city("contact-agence-web", $city_slug)) ?>" class="btn btn-accent">Nous contacter</a>
                     </div>
                 </div>
             </div>

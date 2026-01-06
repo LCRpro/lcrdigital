@@ -27,9 +27,9 @@ $page_description = "Vous avez un projet spécifique ? LCR DIGITAL propose du d�
                     <h2>Développement personnalisé</h2>
                     <h1 class="banner-h1">Développement personnalisé<?= city_phrase(' à ') ?> – Des solutions web adaptées à vos besoins</h1>
                     <nav class="breadcrumb">
-                        <a href="/agence-web-<?= e($city_slug) ?>">Accueil</a>
+                        <a href="<?= e(route_with_city("agence-web", $city_slug)) ?>">Accueil</a>
                         <span class="separator"><i class="fa-solid fa-chevron-right"></i></span>
-                        <a href="/services-web-<?= e($city_slug) ?>">Services</a>
+                        <a href="<?= e(route_with_city("services-web", $city_slug)) ?>">Services</a>
                         <span class="separator"><i class="fa-solid fa-chevron-right"></i></span>
                         <a href="#" class="current">Développement personnalisé</a>
                     </nav>
@@ -86,27 +86,27 @@ $page_description = "Vous avez un projet spécifique ? LCR DIGITAL propose du d�
                         <div class="d-flex flex-column gspace-2">
                                                         <div class="card-other-service animate-box animated animate__animated" data-animate="animate__fadeInRight">
                                 <h4>Autres services</h4>
-                                <a href="/creation-site-one-page-<?= e($city_slug) ?>" class="btn-other-service">
+                                <a href="<?= e(route_with_city("creation-site-one-page", $city_slug)) ?>" class="btn-other-service">
                                     <i class="fa-solid fa-solid fa-arrow-right"></i>
                                     <span>One Page</span>
                                 </a>
-                                <a href="/creation-site-vitrine-<?= e($city_slug) ?>" class="btn-other-service">
+                                <a href="<?= e(route_with_city("creation-site-vitrine", $city_slug)) ?>" class="btn-other-service">
                                     <i class="fa-solid fa-solid fa-arrow-right"></i>
                                     <span>Site vitrine</span>
                                 </a>
-                                <a href="/creation-site-catalogue-<?= e($city_slug) ?>" class="btn-other-service">
+                                <a href="<?= e(route_with_city("creation-site-catalogue", $city_slug)) ?>" class="btn-other-service">
                                     <i class="fa-solid fa-solid fa-arrow-right"></i>
                                     <span>Site catalogue</span>
                                 </a>
-                                <a href="/creation-site-ecommerce-<?= e($city_slug) ?>" class="btn-other-service">
+                                <a href="<?= e(route_with_city("creation-site-ecommerce", $city_slug)) ?>" class="btn-other-service">
                                     <i class="fa-solid fa-solid fa-arrow-right"></i>
                                     <span>Site e-commerce</span>
                                 </a>
-                                <a href="/creation-application-mobile-<?= e($city_slug) ?>" class="btn-other-service">
+                                <a href="<?= e(route_with_city("creation-application-mobile", $city_slug)) ?>" class="btn-other-service">
                                     <i class="fa-solid fa-solid fa-arrow-right"></i>
                                     <span>Application mobile</span>
                                 </a>
-                                <a href="/developpement-web-sur-mesure-<?= e($city_slug) ?>" class="btn-other-service">
+                                <a href="<?= e(route_with_city("developpement-web-sur-mesure", $city_slug)) ?>" class="btn-other-service">
                                     <i class="fa-solid fa-solid fa-arrow-right"></i>
                                     <span>Développement personnalisé</span>
                                 </a>
@@ -115,7 +115,7 @@ $page_description = "Vous avez un projet spécifique ? LCR DIGITAL propose du d�
                                 <h4>Prêt à accélérer votre visibilité ?</h4>
                                 <p>Nous vous aidons à clarifier vos objectifs et lancer un plan d’action efficace.</p>
                                 <div>
-                                    <a href="/contact-agence-web-<?= e($city_slug) ?>" class="btn btn-accent">Nous contacter</a>
+                                    <a href="<?= e(route_with_city("contact-agence-web", $city_slug)) ?>" class="btn btn-accent">Nous contacter</a>
                                 </div>
                             </div>
                         </div>
