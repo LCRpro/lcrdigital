@@ -789,6 +789,14 @@ ul{
     margin-bottom: 0;
 }
 
+.card-pricing .price-setup .price{
+    font-size: 1rem;
+}
+
+.card-pricing .price-setup .price-details{
+    font-size: 0.85rem;
+}
+
 .card-pricing.popular .price{
     color: var(--primary);
 }

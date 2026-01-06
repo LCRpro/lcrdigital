@@ -1,7 +1,8 @@
 function initSubmitContact() {
     var $form = $("#contactForm");
     var $emailInput = $("#email");
-    var $nameInput = $("#name");
+    var $firstNameInput = $("#first_name");
+    var $lastNameInput = $("#last_name");
     var $subjectInput = $("#subject");
     var $messageInput = $("#message");
     var $successMessage = $("#successMessage");
@@ -16,7 +17,8 @@ function initSubmitContact() {
 
         var isValid = true;
         $emailInput.removeClass("is-invalid");
-        $nameInput.removeClass("is-invalid");
+        $firstNameInput.removeClass("is-invalid");
+        $lastNameInput.removeClass("is-invalid");
         $subjectInput.removeClass("is-invalid");
         $messageInput.removeClass("is-invalid");
 
@@ -26,8 +28,13 @@ function initSubmitContact() {
             isValid = false;
         }
 
-        if ($.trim($nameInput.val()) === "") {
-            $nameInput.addClass("is-invalid");
+        if ($.trim($firstNameInput.val()) === "") {
+            $firstNameInput.addClass("is-invalid");
+            isValid = false;
+        }
+
+        if ($.trim($lastNameInput.val()) === "") {
+            $lastNameInput.addClass("is-invalid");
             isValid = false;
         }
 

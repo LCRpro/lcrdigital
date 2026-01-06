@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr" data-title="Contact - LCR DIGITAL" data-description="Contactez LCR DIGITAL pour parler de votre projet web ou SEO.">
 <head>
+    <meta charset="UTF-8">
     <script src="./assets/js/head.js"></script>
 </head>
 <body>
@@ -43,7 +44,7 @@
                                         </div>
                                         <div class="d-flex flex-column gspace-1">
                                             <h5>Téléphone</h5>
-                                            <p class="mb-0">02 35 00 00 00</p>
+                                            <p class="mb-0">06 66 15 80 58</p>
                                         </div>
                                     </div>
                                 </div>
@@ -65,7 +66,7 @@
                                         </div>
                                         <div class="d-flex flex-column gspace-1">
                                             <h5>Localisation</h5>
-                                            <p class="mb-0">Rouen, Normandie</p>
+                                            <p class="mb-0">76000 Rouen</p>
                                         </div>
                                     </div>
                                 </div>
@@ -86,13 +87,23 @@
                     <div class="col">
                         <div class="contact-form-layout">
                             <form action="contact.php" method="post" id="contactForm" class="form">
-                                <div class="d-flex flex-column gspace-1">
-                                    <label for="Name">Nom</label>
-                                    <input type="text" name="name" id="name" placeholder="Votre nom">
+                                <div class="row row-cols-md-2 row-cols-1 grid-spacer-2">
+                                    <div class="col">
+                                        <div class="d-flex flex-column gspace-1">
+                                            <label for="first_name">Prénom</label>
+                                            <input type="text" name="first_name" id="first_name" placeholder="Votre prénom" required>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex flex-column gspace-1">
+                                            <label for="last_name">Nom</label>
+                                            <input type="text" name="last_name" id="last_name" placeholder="Votre nom" required>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="d-flex flex-column gspace-1">
                                     <label for="Email">Email</label>
-                                    <input type="email" name="email" id="email" placeholder="Votre email">
+                                    <input type="email" name="email" id="email" placeholder="Votre email" required>
                                 </div>
                                 <div class="d-flex flex-column gspace-1">
                                     <label for="Phone">Téléphone</label>
@@ -100,11 +111,16 @@
                                 </div>
                                 <div class="d-flex flex-column gspace-1">
                                     <label for="Subject">Sujet</label>
-                                    <input type="text" name="subject" id="subject" placeholder="Sujet">
+                                    <select name="subject" id="subject" required>
+                                        <option value="" disabled selected>Choisir un sujet</option>
+                                        <option value="Contact">Contact</option>
+                                        <option value="Devis">Devis</option>
+                                        <option value="Autre">Autre</option>
+                                    </select>
                                 </div>
                                 <div class="d-flex flex-column gspace-1">
                                     <label for="Message">Message</label>
-                                    <textarea name="message" id="message" rows="4" placeholder="Décrivez votre besoin"></textarea>
+                                    <textarea name="message" id="message" rows="4" placeholder="Décrivez votre besoin" required></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-accent">Envoyer</button>
                                 <div id="successMessage" class="mt-2 success d-none">
@@ -124,8 +140,8 @@
         <div class="section">
             <div class="hero-container">
                 <iframe loading="lazy" class="maps"
-                        src="https://maps.google.com/maps?q=Rouen%2C%20France&amp;t=m&amp;z=13&amp;output=embed&amp;iwloc=near"
-                        title="Rouen, France" aria-label="Rouen, France">
+                        src="https://maps.google.com/maps?q=76000%20Rouen&amp;t=m&amp;z=13&amp;output=embed&amp;iwloc=near"
+                        title="76000 Rouen" aria-label="76000 Rouen">
                 </iframe>
             </div>
         </div>
