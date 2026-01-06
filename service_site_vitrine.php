@@ -65,12 +65,12 @@ $page_description = "LCR DIGITAL vous accompagne dans la création de site vitri
                                             </p>
                                         </div>
                                         <ul class="check-list">
-                                            <li>Design professionnel</li>
-                                            <li>Pages services optimisées</li>
-                                            <li>SEO local</li>
-                                            <li>Navigation claire</li>
-                                            <li>Formulaires efficaces</li>
-                                            <li>Site responsive</li>
+                                            <li>Présenter vos services clairement</li>
+                                            <li>Rassurer avec preuves et avis</li>
+                                            <li>Générer des demandes de devis</li>
+                                            <li>Améliorer votre visibilité locale</li>
+                                            <li>Image professionnelle et crédible</li>
+                                            <li>Site adapté mobile</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -202,10 +202,10 @@ $page_description = "LCR DIGITAL vous accompagne dans la création de site vitri
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
-                                                Notre trafic a progressé dès le premier mois de campagne.
+                                                Grâce au site vitrine, j'ai gagné en visibilité.
                                             </p>
-                                            <span class="testimonial-name">Sophie L.</span>
-                                            <span class="testimonial-title">Dirigeante</span>
+                                            <span class="testimonial-name">Quentin</span>
+                                            <span class="testimonial-title">Dirigeant</span>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
@@ -216,10 +216,10 @@ $page_description = "LCR DIGITAL vous accompagne dans la création de site vitri
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
-                                                Des KPI clairs et un vrai suivi, c’est rare.
+                                                L'application personnalisée m'a permis de gérer mon stock.
                                             </p>
-                                            <span class="testimonial-name">Marc D.</span>
-                                            <span class="testimonial-title">Responsable marketing</span>
+                                            <span class="testimonial-name">Laly</span>
+                                            <span class="testimonial-title">Commerçante</span>
                                         </div>
                                     </div>
                                     

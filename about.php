@@ -175,10 +175,10 @@ $page_description = "En tant qu'agence digitale basée" . city_phrase(" à ") . 
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
-                                                Le site a transformé notre présence locale et augmenté les demandes.
+                                                Grâce au site vitrine, j'ai gagné en visibilité.
                                             </p>
-                                            <span class="testimonial-name">Sophie L.</span>
-                                            <span class="testimonial-title">Dirigeante</span>
+                                            <span class="testimonial-name">Quentin</span>
+                                            <span class="testimonial-title">Dirigeant</span>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
@@ -189,10 +189,10 @@ $page_description = "En tant qu'agence digitale basée" . city_phrase(" à ") . 
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
-                                                Un accompagnement clair et une mise en ligne rapide.
+                                                L'application personnalisée m'a permis de gérer mon stock.
                                             </p>
-                                            <span class="testimonial-name">Marc D.</span>
-                                            <span class="testimonial-title">Responsable marketing</span>
+                                            <span class="testimonial-name">Laly</span>
+                                            <span class="testimonial-title">Commerçante</span>
                                         </div>
                                     </div>
                                 </div>

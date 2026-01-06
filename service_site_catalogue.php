@@ -65,12 +65,12 @@ $page_description = "Vous souhaitez présenter vos produits sans e-commerce ? Op
                                             </p>
                                         </div>
                                         <ul class="check-list">
-                                            <li>Fiches produits claires</li>
-                                            <li>Filtres et catégories</li>
-                                            <li>Navigation fluide</li>
-                                            <li>Demande de devis</li>
-                                            <li>SEO sur les pages clés</li>
-                                            <li>Gestion simple</li>
+                                            <li>Présenter vos produits sans vente en ligne</li>
+                                            <li>Fiches produits claires et détaillées</li>
+                                            <li>Navigation et filtres simples</li>
+                                            <li>Mises à jour faciles</li>
+                                            <li>Générer des demandes de devis</li>
+                                            <li>SEO sur vos gammes</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -202,10 +202,10 @@ $page_description = "Vous souhaitez présenter vos produits sans e-commerce ? Op
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
-                                                Notre trafic a progressé dès le premier mois de campagne.
+                                                Grâce au site vitrine, j'ai gagné en visibilité.
                                             </p>
-                                            <span class="testimonial-name">Sophie L.</span>
-                                            <span class="testimonial-title">Dirigeante</span>
+                                            <span class="testimonial-name">Quentin</span>
+                                            <span class="testimonial-title">Dirigeant</span>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
@@ -216,10 +216,10 @@ $page_description = "Vous souhaitez présenter vos produits sans e-commerce ? Op
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
-                                                Des KPI clairs et un vrai suivi, c’est rare.
+                                                L'application personnalisée m'a permis de gérer mon stock.
                                             </p>
-                                            <span class="testimonial-name">Marc D.</span>
-                                            <span class="testimonial-title">Responsable marketing</span>
+                                            <span class="testimonial-name">Laly</span>
+                                            <span class="testimonial-title">Commerçante</span>
                                         </div>
                                     </div>
                                     

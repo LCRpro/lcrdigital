@@ -65,12 +65,12 @@ $page_description = "Lancez votre boutique en ligne" . city_phrase(" à ") . " a
                                             </p>
                                         </div>
                                         <ul class="check-list">
-                                            <li>Fiches produits efficaces</li>
+                                            <li>Vendre 24/7</li>
                                             <li>Paiement sécurisé</li>
                                             <li>Tunnel d’achat optimisé</li>
-                                            <li>Relances et automatisations</li>
-                                            <li>SEO technique</li>
-                                            <li>Analytics avancés</li>
+                                            <li>Gestion des produits et stocks</li>
+                                            <li>Suivi des commandes</li>
+                                            <li>Analytics pour piloter la conversion</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -202,10 +202,10 @@ $page_description = "Lancez votre boutique en ligne" . city_phrase(" à ") . " a
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
-                                                Notre trafic a progressé dès le premier mois de campagne.
+                                                Grâce au site vitrine, j'ai gagné en visibilité.
                                             </p>
-                                            <span class="testimonial-name">Sophie L.</span>
-                                            <span class="testimonial-title">Dirigeante</span>
+                                            <span class="testimonial-name">Quentin</span>
+                                            <span class="testimonial-title">Dirigeant</span>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
@@ -216,10 +216,10 @@ $page_description = "Lancez votre boutique en ligne" . city_phrase(" à ") . " a
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
-                                                Des KPI clairs et un vrai suivi, c’est rare.
+                                                L'application personnalisée m'a permis de gérer mon stock.
                                             </p>
-                                            <span class="testimonial-name">Marc D.</span>
-                                            <span class="testimonial-title">Responsable marketing</span>
+                                            <span class="testimonial-name">Laly</span>
+                                            <span class="testimonial-title">Commerçante</span>
                                         </div>
                                     </div>
                                     

@@ -65,12 +65,12 @@ $page_description = "LCR DIGITAL conçoit des applications mobiles iOS et Androi
                                             </p>
                                         </div>
                                         <ul class="check-list">
-                                            <li>UX mobile adaptée</li>
-                                            <li>Notifications et engagement</li>
-                                            <li>Fonctionnalités sur mesure</li>
-                                            <li>Design cohérent</li>
-                                            <li>Maintenance évolutive</li>
-                                            <li>Suivi performance</li>
+                                            <li>Fidéliser vos clients</li>
+                                            <li>Notifications push ciblées</li>
+                                            <li>Expérience personnalisée</li>
+                                            <li>Disponible iOS et Android</li>
+                                            <li>Réservation ou commande simplifiée</li>
+                                            <li>Image innovante</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -202,10 +202,10 @@ $page_description = "LCR DIGITAL conçoit des applications mobiles iOS et Androi
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
-                                                Notre trafic a progressé dès le premier mois de campagne.
+                                                Grâce au site vitrine, j'ai gagné en visibilité.
                                             </p>
-                                            <span class="testimonial-name">Sophie L.</span>
-                                            <span class="testimonial-title">Dirigeante</span>
+                                            <span class="testimonial-name">Quentin</span>
+                                            <span class="testimonial-title">Dirigeant</span>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
@@ -216,10 +216,10 @@ $page_description = "LCR DIGITAL conçoit des applications mobiles iOS et Androi
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
-                                                Des KPI clairs et un vrai suivi, c’est rare.
+                                                L'application personnalisée m'a permis de gérer mon stock.
                                             </p>
-                                            <span class="testimonial-name">Marc D.</span>
-                                            <span class="testimonial-title">Responsable marketing</span>
+                                            <span class="testimonial-name">Laly</span>
+                                            <span class="testimonial-title">Commerçante</span>
                                         </div>
                                     </div>
                                     

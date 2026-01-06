@@ -521,10 +521,10 @@ $page_description = "LCR DIGITAL, votre agence web" . city_phrase(" à ") . ", s
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
-                                                Un site clair et rapide qui a doublé nos demandes de contact en 2 mois.
+                                                Grâce au site vitrine, j'ai gagné en visibilité.
                                             </p>
-                                            <span class="testimonial-name">Sophie L.</span>
-                                            <span class="testimonial-title">Dirigeante</span>
+                                            <span class="testimonial-name">Quentin</span>
+                                            <span class="testimonial-title">Dirigeant</span>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
@@ -535,10 +535,10 @@ $page_description = "LCR DIGITAL, votre agence web" . city_phrase(" à ") . ", s
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
-                                                Un vrai accompagnement, des explications simples et un rendu très pro.
+                                                L'application personnalisée m'a permis de gérer mon stock.
                                             </p>
-                                            <span class="testimonial-name">Marc D.</span>
-                                            <span class="testimonial-title">Responsable marketing</span>
+                                            <span class="testimonial-name">Laly</span>
+                                            <span class="testimonial-title">Commerçante</span>
                                         </div>
                                     </div>
                                 </div>

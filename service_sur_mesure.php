@@ -65,12 +65,12 @@ $page_description = "Vous avez un projet spécifique ? LCR DIGITAL propose du d�
                                             </p>
                                         </div>
                                         <ul class="check-list">
-                                            <li>Fonctionnalités métier</li>
-                                            <li>Intégrations API</li>
-                                            <li>Automatisations</li>
-                                            <li>Architecture évolutive</li>
-                                            <li>Sécurité renforcée</li>
-                                            <li>Support technique</li>
+                                            <li>Fonctionnalités adaptées à votre métier</li>
+                                            <li>Automatiser les tâches répétitives</li>
+                                            <li>Intégration avec vos outils</li>
+                                            <li>Solution évolutive</li>
+                                            <li>Gain de temps et d’efficacité</li>
+                                            <li>Sécurité et fiabilité</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -202,10 +202,10 @@ $page_description = "Vous avez un projet spécifique ? LCR DIGITAL propose du d�
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
-                                                Notre trafic a progressé dès le premier mois de campagne.
+                                                Grâce au site vitrine, j'ai gagné en visibilité.
                                             </p>
-                                            <span class="testimonial-name">Sophie L.</span>
-                                            <span class="testimonial-title">Dirigeante</span>
+                                            <span class="testimonial-name">Quentin</span>
+                                            <span class="testimonial-title">Dirigeant</span>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
@@ -216,10 +216,10 @@ $page_description = "Vous avez un projet spécifique ? LCR DIGITAL propose du d�
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
-                                                Des KPI clairs et un vrai suivi, c’est rare.
+                                                L'application personnalisée m'a permis de gérer mon stock.
                                             </p>
-                                            <span class="testimonial-name">Marc D.</span>
-                                            <span class="testimonial-title">Responsable marketing</span>
+                                            <span class="testimonial-name">Laly</span>
+                                            <span class="testimonial-title">Commerçante</span>
                                         </div>
                                     </div>
                                     

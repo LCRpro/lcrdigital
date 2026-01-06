@@ -259,10 +259,10 @@ $page_description = "Retrouvez les réponses aux questions les plus fréquentes 
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
-                                                Une équipe réactive et un site vraiment efficace.
+                                                Grâce au site vitrine, j'ai gagné en visibilité.
                                             </p>
-                                            <span class="testimonial-name">Sophie L.</span>
-                                            <span class="testimonial-title">Dirigeante</span>
+                                            <span class="testimonial-name">Quentin</span>
+                                            <span class="testimonial-title">Dirigeant</span>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
@@ -273,10 +273,10 @@ $page_description = "Retrouvez les réponses aux questions les plus fréquentes 
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
-                                                Une communication claire et des délais tenus.
+                                                L'application personnalisée m'a permis de gérer mon stock.
                                             </p>
-                                            <span class="testimonial-name">Marc D.</span>
-                                            <span class="testimonial-title">Responsable marketing</span>
+                                            <span class="testimonial-name">Laly</span>
+                                            <span class="testimonial-title">Commerçante</span>
                                         </div>
                                     </div>
                                 </div>

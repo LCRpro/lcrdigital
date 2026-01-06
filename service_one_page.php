@@ -65,11 +65,11 @@ $page_description = "Besoin d’un site One Page" . city_phrase(" à ") . " ? LC
                                             </p>
                                         </div>
                                         <ul class="check-list">
-                                            <li>Message clair et proposition de valeur</li>
-                                            <li>Structure orientée conversion</li>
-                                            <li>Chargement rapide</li>
-                                            <li>SEO de base intégré</li>
-                                            <li>Formulaire ou prise de contact</li>
+                                            <li>Présenter une offre unique sans distraction</li>
+                                            <li>Captez des leads rapidement</li>
+                                            <li>Parcours clair orienté action</li>
+                                            <li>Performance idéale pour la publicité</li>
+                                            <li>Mise en ligne rapide</li>
                                             <li>Mesure des conversions</li>
                                         </ul>
                                     </div>
@@ -202,10 +202,10 @@ $page_description = "Besoin d’un site One Page" . city_phrase(" à ") . " ? LC
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
-                                                Notre trafic a progressé dès le premier mois de campagne.
+                                                Grâce au site vitrine, j'ai gagné en visibilité.
                                             </p>
-                                            <span class="testimonial-name">Sophie L.</span>
-                                            <span class="testimonial-title">Dirigeante</span>
+                                            <span class="testimonial-name">Quentin</span>
+                                            <span class="testimonial-title">Dirigeant</span>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
@@ -216,10 +216,10 @@ $page_description = "Besoin d’un site One Page" . city_phrase(" à ") . " ? LC
                                                 </div>
                                             </div>
                                             <p class="testimonial-content">
-                                                Des KPI clairs et un vrai suivi, c’est rare.
+                                                L'application personnalisée m'a permis de gérer mon stock.
                                             </p>
-                                            <span class="testimonial-name">Marc D.</span>
-                                            <span class="testimonial-title">Responsable marketing</span>
+                                            <span class="testimonial-name">Laly</span>
+                                            <span class="testimonial-title">Commerçante</span>
                                         </div>
                                     </div>
                                     
