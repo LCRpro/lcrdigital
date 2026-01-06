@@ -68,14 +68,14 @@ Version: 1.0.0
 :root{
     --primary: #FFFFFF;
     --secondary: #010001;
-    --text-color: #EBDDFF;
-    --accent-color: #864FFF;
-    --accent-color-2: #191919;
-    --accent-color-3: #C34AFF;
+    --text-color: #F3D9FF;
+    --accent-color: #FF2FB3;
+    --accent-color-2: #151218;
+    --accent-color-3: #6A4BFF;
     --accent-transparent: #FFFFFF00;
     --accent-transparent-2: rgba(0, 0, 0, 0.5);
-    --accent-color-4: #F96B00;
-    --accent-color-5: #FF0000;
+    --accent-color-4: #3D6BFF;
+    --accent-color-5: #FF4FD1;
     --accent-overlay: rgba(51, 51, 51, .5);
     --font-global: "Inter", sans-serif;
     --animation-normal: 1.25s;
@@ -1500,6 +1500,16 @@ textarea.error-border{
 
 .banner-content p{
     max-width: 63%;
+}
+
+.construction-logo-wrap{
+    display: flex;
+    justify-content: center;
+}
+
+.construction-logo{
+    width: 100%;
+    max-width: 180px;
 }
 
 .banner-video-container {
