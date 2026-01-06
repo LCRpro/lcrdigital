@@ -486,7 +486,7 @@ ul{
 .card-service::before{
     content: '';
     position: absolute;
-    background-image: url('../images/dummy-img-600x700.jpg');
+    background-image: url('../images/BG6-e1714987977167.webp');
     background-position: top right;
     background-size: contain;
     background-repeat: no-repeat;

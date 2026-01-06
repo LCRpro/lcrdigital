@@ -1,4 +1,4 @@
-$(document).ready(function() {
+function initSite() {
     initCounterCount();
     initNavLink();
     initAnimate();
@@ -10,6 +10,17 @@ $(document).ready(function() {
     initSubmitContact();
     initSubmitNewsletter();
     initSubmitReply();
+}
+
+$(document).ready(function() {
+    if (window.layoutReady) {
+        initSite();
+        return;
+    }
+
+    document.addEventListener("layout:ready", function() {
+        initSite();
+    }, { once: true });
 });
 
 function initCounterCount() {
@@ -180,7 +191,7 @@ function initSearchResult() {
         {
             title: "Home",
             description: "Welcome to Lia Strategic Digital Solutions for Lasting Impact urus sit amet luctus venenatis lectus magna fringilla urna. In iaculis nunc sed augue lacus viverra vitae congue. Tincidunt augue interdum velit euismod in. Nunc mattis enim ut tellus elementum sagittis vitae et. Get Started 25 Years of Experience About Your Partner in Digital Growth and […]",
-            url: "index.html"
+            url: "/agence-digital-site-web-rouen-normandie"
         },
     ];
 

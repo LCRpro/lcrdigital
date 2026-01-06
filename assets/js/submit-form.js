@@ -1,6 +1,9 @@
 function initSubmitContact() {
     var $form = $("#contactForm");
     var $emailInput = $("#email");
+    var $nameInput = $("#name");
+    var $subjectInput = $("#subject");
+    var $messageInput = $("#message");
     var $successMessage = $("#successMessage");
     var $errorMessage = $("#errorMessage");
 
@@ -13,6 +16,9 @@ function initSubmitContact() {
 
         var isValid = true;
         $emailInput.removeClass("is-invalid");
+        $nameInput.removeClass("is-invalid");
+        $subjectInput.removeClass("is-invalid");
+        $messageInput.removeClass("is-invalid");
 
         var emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
         if ($.trim($emailInput.val()) === "" || !emailPattern.test($emailInput.val())) {
@@ -20,27 +26,51 @@ function initSubmitContact() {
             isValid = false;
         }
 
+        if ($.trim($nameInput.val()) === "") {
+            $nameInput.addClass("is-invalid");
+            isValid = false;
+        }
+
+        if ($.trim($subjectInput.val()) === "") {
+            $subjectInput.addClass("is-invalid");
+            isValid = false;
+        }
+
+        if ($.trim($messageInput.val()) === "") {
+            $messageInput.addClass("is-invalid");
+            isValid = false;
+        }
+
         if (!isValid) {
             return;
         }
 
-        setTimeout(function () {
-            var success = Math.random() > 0.3;
-
-            if (success) {
-                $successMessage.removeClass("d-none");
-                $errorMessage.addClass("d-none");
-                $form[0].reset();
-            } else {
+        $.ajax({
+            url: $form.attr("action"),
+            method: "POST",
+            dataType: "json",
+            data: $form.serialize()
+        })
+            .done(function (response) {
+                if (response && response.ok) {
+                    $successMessage.removeClass("d-none");
+                    $errorMessage.addClass("d-none");
+                    $form[0].reset();
+                } else {
+                    $successMessage.addClass("d-none");
+                    $errorMessage.removeClass("d-none");
+                }
+            })
+            .fail(function () {
                 $successMessage.addClass("d-none");
                 $errorMessage.removeClass("d-none");
-            }
-
-            setTimeout(function () {
-                $successMessage.addClass("d-none");
-                $errorMessage.addClass("d-none");
-            }, 5000);
-        }, 1000);
+            })
+            .always(function () {
+                setTimeout(function () {
+                    $successMessage.addClass("d-none");
+                    $errorMessage.addClass("d-none");
+                }, 5000);
+            });
     });
 }
 
@@ -52,7 +82,6 @@ function initSubmitNewsletter() {
     var $errorMessage = $("#errorMessage-footer");
 
     if ($form.length === 0 || $emailInput.length === 0) {
-        console.error("Form atau input email tidak ditemukan!");
         return;
     }
 
@@ -154,5 +183,7 @@ function initSubmitReply() {
 }
 
 $(document).ready(function() {
+    initSubmitContact();
     initSubmitReply();
+    initSubmitNewsletter();
 });

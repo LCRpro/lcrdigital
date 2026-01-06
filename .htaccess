@@ -1,0 +1,43 @@
+RewriteEngine On
+RewriteBase /
+
+# Allow assets and robots.txt during maintenance
+RewriteRule ^assets/ - [L]
+RewriteRule ^robots\.txt$ - [L]
+RewriteRule ^construction\.html$ - [L]
+RewriteRule ^lcr-digital-agence-digital-web-seo-normandie/?$ /construction.html [L]
+
+# Maintenance mode: serve the construction page for every request
+RewriteRule ^.*$ /construction.html [L]
+
+# SEO-friendly URLs (kept here for when maintenance mode is removed)
+RewriteRule ^$ /agence-digital-site-web-rouen-normandie [R=301,L]
+RewriteRule ^index\.html$ /agence-digital-site-web-rouen-normandie [R=301,L]
+RewriteRule ^about\.html$ /lcr-digital-agence-digital-web-normandie-rouen [R=301,L]
+RewriteRule ^blog\.html$ /blog-actualites-digitales-rouen [R=301,L]
+RewriteRule ^contact\.html$ /contact-agence-digitale-rouen [R=301,L]
+RewriteRule ^faq\.html$ /questions-frequentes-agence-digitale-rouen [R=301,L]
+RewriteRule ^portfolio\.html$ /realisations-agence-digitale-rouen [R=301,L]
+RewriteRule ^portfolio_detail\.html$ /projet-detail-agence-digitale-rouen [R=301,L]
+RewriteRule ^pricing\.html$ /tarifs-prestations-digitales-rouen [R=301,L]
+RewriteRule ^search\.html$ /recherche-site [R=301,L]
+RewriteRule ^service\.html$ /services-agence-digitale-rouen [R=301,L]
+RewriteRule ^service_detail\.html$ /service-detail-agence-digitale-rouen [R=301,L]
+RewriteRule ^single_post\.html$ /article-agence-digitale-rouen [R=301,L]
+RewriteRule ^team\.html$ /equipe-agence-digitale-rouen [R=301,L]
+RewriteRule ^404_page\.html$ /page-introuvable [R=301,L]
+
+RewriteRule ^agence-digital-site-web-rouen-normandie/?$ /index.html [L]
+RewriteRule ^lcr-digital-agence-digital-web-normandie-rouen/?$ /about.html [L]
+RewriteRule ^blog-actualites-digitales-rouen/?$ /blog.html [L]
+RewriteRule ^contact-agence-digitale-rouen/?$ /contact.html [L]
+RewriteRule ^questions-frequentes-agence-digitale-rouen/?$ /faq.html [L]
+RewriteRule ^realisations-agence-digitale-rouen/?$ /portfolio.html [L]
+RewriteRule ^projet-detail-agence-digitale-rouen/?$ /portfolio_detail.html [L]
+RewriteRule ^tarifs-prestations-digitales-rouen/?$ /pricing.html [L]
+RewriteRule ^recherche-site/?$ /search.html [L]
+RewriteRule ^services-agence-digitale-rouen/?$ /service.html [L]
+RewriteRule ^service-detail-agence-digitale-rouen/?$ /service_detail.html [L]
+RewriteRule ^article-agence-digitale-rouen/?$ /single_post.html [L]
+RewriteRule ^equipe-agence-digitale-rouen/?$ /team.html [L]
+RewriteRule ^page-introuvable/?$ /404_page.html [L]
