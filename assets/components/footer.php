@@ -1,3 +1,4 @@
+<?php require __DIR__ . "/component_bootstrap.php"; ?>
 <footer>
     <div class="section footer-banner">
         <div class="hero-container">
@@ -43,7 +44,7 @@
                                     <i class="fa-solid fa-md fa-location-dot accent-color"></i>
                                     <div class="d-flex flex-column gspace-1">
                                         <p class="mb-0">Adresse</p>
-                                        <p class="mb-0" data-city-text="address">Rouen</p>
+                                        <p class="mb-0"><?= city_text("Rouen", $city) ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -53,9 +54,9 @@
                                 <h5 class="accent-color">Liens rapides</h5>
                                 <div class="footer-list-underline"></div>
                                 <ul class="footer-list">
-                                    <li><a href="/agence-digitale">A propos</a></li>
-                                    <li><a href="/questions-frequentes-agence-digitale">FAQ</a></li>
-                                    <li><a href="/contact-agence-web">Contact</a></li>
+                                    <li><a href="<?= e(route_with_city("agence-digitale", $city_slug)) ?>">A propos</a></li>
+                                    <li><a href="<?= e(route_with_city("questions-frequentes-agence-digitale", $city_slug)) ?>">FAQ</a></li>
+                                    <li><a href="<?= e(route_with_city("contact-agence-web", $city_slug)) ?>">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -64,12 +65,12 @@
                                 <h5 class="accent-color">Services</h5>
                                 <div class="footer-list-underline"></div>
                                 <ul class="footer-list">
-                                    <li><a href="/creation-site-one-page">One Page</a></li>
-                                    <li><a href="/creation-site-vitrine">Site vitrine</a></li>
-                                    <li><a href="/creation-site-catalogue">Site catalogue</a></li>
-                                    <li><a href="/creation-site-ecommerce">Site e-commerce</a></li>
-                                    <li><a href="/creation-application-mobile">Application mobile</a></li>
-                                    <li><a href="/developpement-web-sur-mesure">Développement personnalisé</a></li>
+                                    <li><a href="<?= e(route_with_city("creation-site-one-page", $city_slug)) ?>">One Page</a></li>
+                                    <li><a href="<?= e(route_with_city("creation-site-vitrine", $city_slug)) ?>">Site vitrine</a></li>
+                                    <li><a href="<?= e(route_with_city("creation-site-catalogue", $city_slug)) ?>">Site catalogue</a></li>
+                                    <li><a href="<?= e(route_with_city("creation-site-ecommerce", $city_slug)) ?>">Site e-commerce</a></li>
+                                    <li><a href="<?= e(route_with_city("creation-application-mobile", $city_slug)) ?>">Application mobile</a></li>
+                                    <li><a href="<?= e(route_with_city("developpement-web-sur-mesure", $city_slug)) ?>">Développement personnalisé</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -78,7 +79,7 @@
                                 <h5 class="accent-color">Conseils & contact</h5>
                                 <div class="footer-list-underline"></div>
                                 <p>Recevez des conseils web et SEO. Contactez-nous pour les recevoir.</p>
-                                <a href="/contact-agence-web" class="btn btn-accent">Nous contacter</a>
+                                <a href="<?= e(route_with_city("contact-agence-web", $city_slug)) ?>" class="btn btn-accent">Nous contacter</a>
                             </div>
                         </div>
                     </div>

@@ -52,5 +52,5 @@ RewriteRule ^creation-site-catalogue-([a-z0-9-]+)/?$ /service_site_catalogue.php
 RewriteRule ^creation-site-ecommerce-([a-z0-9-]+)/?$ /service_ecommerce.php?ville=$1 [L,QSA]
 RewriteRule ^creation-application-mobile-([a-z0-9-]+)/?$ /service_app_mobile.php?ville=$1 [L,QSA]
 RewriteRule ^developpement-web-sur-mesure-([a-z0-9-]+)/?$ /service_sur_mesure.php?ville=$1 [L,QSA]
-RewriteRule ^article-agence-digitale-rouen/?$ /single_post.html [L]
-RewriteRule ^page-introuvable/?$ /404_page.html [L]
+RewriteRule ^article-agence-digitale-rouen/?$ /single_post.php?ville=rouen [L,QSA]
+RewriteRule ^page-introuvable/?$ /404_page.php [L]

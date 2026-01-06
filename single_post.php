@@ -1,15 +1,22 @@
+<?php require __DIR__ . "/city_bootstrap.php";
+$page_title = "Article - LCR DIGITAL";
+$page_description = "Article de blog LCR DIGITAL sur le web, le SEO et le marketing digital.";
+?>
 <!DOCTYPE html>
-<html lang="fr" data-title="Article - LCR DIGITAL" data-description="Article de blog LCR DIGITAL sur le web, le SEO et le marketing digital.">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <script src="./assets/js/head.js"></script>
+    <?php require __DIR__ . "/assets/components/head.php"; ?>
 </head>
 <body>
     
-    <div id="site-header"></div>
+    <div id="site-header">
+        <?php require __DIR__ . "/assets/components/header.php"; ?>
+    </div>
 
     
-    <div id="site-sidebar"></div>
+    <div id="site-sidebar">
+        <?php require __DIR__ . "/assets/components/sidebar.php"; ?>
+    </div>
 
     
     <main>
@@ -195,14 +202,15 @@
     </main>
 
     
-    <div id="site-footer"></div>
+    <div id="site-footer">
+        <?php require __DIR__ . "/assets/components/footer.php"; ?>
+    </div>
 
     <script src="./assets/js/vendor/jquery.min.js"></script>
     <script src="./assets/js/vendor/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/vendor/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendor/isotope.pkgd.min.js"></script>
     <script src="./assets/js/vendor/fslightbox.js"></script>
-    <script src="./assets/js/layout.js?v=4?v=4?v=3"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/swiper-script.js"></script>
     <script src="./assets/js/submit-form.js"></script>

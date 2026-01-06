@@ -1,8 +1,11 @@
+<?php require __DIR__ . "/city_bootstrap.php";
+$page_title = "Agence digital LCR | Création de sites web pour plus de visibilité";
+$page_description = "Agence digital LCR : création de sites web performants pour booster votre visibilité et vos ventes.";
+?>
 <!DOCTYPE html>
-<html lang="fr" data-title="Agence digital LCR | Création de sites web pour plus de visibilité" data-description="Agence digital LCR : création de sites web performants pour booster votre visibilité et vos ventes.">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <script src="./assets/js/head.js"></script>
+    <?php require __DIR__ . "/assets/components/head.php"; ?>
 </head>
 <body>
     <main>

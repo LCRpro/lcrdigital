@@ -1,6 +1,6 @@
 (() => {
     const head = document.head;
-    if (!head || head.querySelector("[data-head-component]")) {
+    if (!head) {
         return;
     }
 
@@ -19,18 +19,4 @@
         }
         descriptionTag.setAttribute("content", pageDescription);
     }
-
-    fetch("./assets/components/head.html")
-        .then((response) => response.text())
-        .then((html) => {
-            const wrapper = document.createElement("div");
-            wrapper.innerHTML = html.trim();
-            const nodes = Array.from(wrapper.children);
-            const anchor = document.currentScript || head.firstChild;
-            nodes.forEach((node) => {
-                node.setAttribute("data-head-component", "true");
-                head.insertBefore(node, anchor);
-            });
-        })
-        .catch(() => {});
 })();

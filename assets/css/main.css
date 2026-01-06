@@ -53,15 +53,6 @@ Version: 1.0.0
 
 /* 01. Import Vendor */
 
-@import url('../webfonts/font-family-inter.css');
-@import url('../css/vendor/bootstrap.min.css');
-@import url('../css/vendor/fontawesome.css');
-@import url('../css/vendor/brands.css');
-@import url('../css/vendor/regular.css');
-@import url('../css/vendor/solid.css');
-@import url('../css/vendor/flatpickr.min.css');
-@import url('../css/vendor/swiper-bundle.min.css');
-@import url('../css/vendor/animate.min.css');
 
 /* 02. Global Site Settings */
 
@@ -2690,7 +2681,7 @@ textarea.error-border{
 /* 33. Animation Style */
 
 .animate-box{
-    opacity: 0;
+    opacity: 1;
 }
 
 /* 34 Custom List */

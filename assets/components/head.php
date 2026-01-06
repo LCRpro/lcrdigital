@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php
+$page_title_value = $page_title ?? "LCR DIGITAL";
+$page_description_value = $page_description ?? "Agence web LCR DIGITAL.";
+$page_title_safe = function_exists("e")
+    ? e($page_title_value)
+    : htmlspecialchars((string) $page_title_value, ENT_QUOTES, "UTF-8");
+$page_description_safe = function_exists("e")
+    ? e($page_description_value)
+    : htmlspecialchars((string) $page_description_value, ENT_QUOTES, "UTF-8");
+?>
+<title><?= $page_title_safe ?></title>
+<meta name="description" content="<?= $page_description_safe ?>">
+<link rel="stylesheet" href="./assets/webfonts/font-family-inter.css">
+<link rel="stylesheet" href="./assets/css/vendor/bootstrap.min.css">
+<link rel="stylesheet" href="./assets/css/vendor/fontawesome.css">
+<link rel="stylesheet" href="./assets/css/vendor/brands.css">
+<link rel="stylesheet" href="./assets/css/vendor/regular.css">
+<link rel="stylesheet" href="./assets/css/vendor/solid.css">
+<link rel="stylesheet" href="./assets/css/vendor/flatpickr.min.css">
+<link rel="stylesheet" href="./assets/css/vendor/swiper-bundle.min.css">
+<link rel="stylesheet" href="./assets/css/vendor/animate.min.css">
+<link rel="stylesheet" href="./assets/css/main.css">
+<link rel="stylesheet" href="./assets/css/responsive.css">
+<link rel="shortcut icon" href="./assets/images/lcr-digital-logo.png" type="image/x-icon">

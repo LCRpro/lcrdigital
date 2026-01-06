@@ -13,14 +13,7 @@ function initSite() {
 }
 
 $(document).ready(function() {
-    if (window.layoutReady) {
-        initSite();
-        return;
-    }
-
-    document.addEventListener("layout:ready", function() {
-        initSite();
-    }, { once: true });
+    initSite();
 });
 
 function initCounterCount() {
