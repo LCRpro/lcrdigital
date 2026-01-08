@@ -300,7 +300,6 @@ $page_description = "Retrouvez les réponses aux questions les plus fréquentes 
     <script src="./assets/js/vendor/fslightbox.js"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/swiper-script.js"></script>
-    <script src="./assets/js/submit-form.js"></script>
     <script src="./assets/js/video_embedded.js"></script>
 </body>
 </html>

@@ -224,7 +224,6 @@ $page_description = "En tant qu'agence digitale basée" . city_phrase(" à ") . 
     <script src="./assets/js/vendor/fslightbox.js"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/swiper-script.js"></script>
-    <script src="./assets/js/submit-form.js"></script>
     <script src="./assets/js/video_embedded.js"></script>
 </body>
 </html>

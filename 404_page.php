@@ -43,7 +43,6 @@ $page_description = "Page introuvable. Revenez a l'accueil de LCR DIGITAL.";
     <script src="./assets/js/banner.js"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/swiper-script.js"></script>
-    <script src="./assets/js/submit-form.js"></script>
     <script src="./assets/js/vendor/isotope.pkgd.min.js"></script>
     <script src="./assets/js/vendor/fslightbox.js"></script>
     <script src="./assets/js/video_embedded.js"></script>

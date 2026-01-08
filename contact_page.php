@@ -2,6 +2,145 @@
 $page_title = "Contactez votre agence web" . city_phrase(" à ") . " | LCR DIGITAL";
 $page_description = "Un projet web ? Une question ? Contactez LCR DIGITAL, agence web" . city_phrase(" à ") . ", pour obtenir un devis ou échanger avec notre équipe.";
 ?>
+
+<?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . "/city_bootstrap.php";
+
+/* =========================
+   META
+========================= */
+$page_title = "Contactez votre agence web" . city_phrase(" à ") . " | LCR DIGITAL";
+$page_description = "Un projet web ? Une question ? Contactez LCR DIGITAL, agence web" . city_phrase(" à ") . ", pour obtenir un devis ou échanger avec notre équipe.";
+
+/* =========================
+   CONFIG SMTP HOSTINGER
+========================= */
+$SMTP_HOST = getenv('SMTP_HOST');
+$SMTP_PORT = getenv('SMTP_PORT') ?: 587;
+$SMTP_USER = getenv('SMTP_USER');
+$SMTP_PASS = getenv('SMTP_PASSWORD');
+
+$MAIL_FROM = getenv('SMTP_FROM_EMAIL') ?: $SMTP_USER;
+$MAIL_NAME = getenv('SMTP_FROM_NAME') ?: 'LCR DIGITAL';
+$MAIL_TO   = getenv('SMTP_TO_EMAIL') ?: $SMTP_USER;
+
+/* =========================
+   TURNSTILE
+========================= */
+$TURNSTILE_SITE_KEY   = getenv('CF_TURNSTILE_SITE_KEY');
+$TURNSTILE_SECRET_KEY = getenv('CF_TURNSTILE_SECRET_KEY');
+
+/* =========================
+   FORM STATE
+========================= */
+$form_success = false;
+$form_error = '';
+
+$first_name = $last_name = $email = $phone = $subject = $message = '';
+
+/* =========================
+   VERIFY TURNSTILE
+========================= */
+function verify_turnstile(string $secret, string $token): bool
+{
+    if ($secret === '' || $token === '') {
+        return false;
+    }
+
+    $payload = http_build_query([
+        'secret' => $secret,
+        'response' => $token,
+        'remoteip' => $_SERVER['REMOTE_ADDR'] ?? ''
+    ]);
+
+    $context = stream_context_create([
+        'http' => [
+            'method'  => 'POST',
+            'header'  => "Content-Type: application/x-www-form-urlencoded\r\n",
+            'content' => $payload,
+            'timeout' => 5
+        ]
+    ]);
+
+    $response = @file_get_contents(
+        'https://challenges.cloudflare.com/turnstile/v0/siteverify',
+        false,
+        $context
+    );
+
+    if ($response === false) {
+        return false;
+    }
+
+    $json = json_decode($response, true);
+    return !empty($json['success']);
+}
+
+/* =========================
+   TRAITEMENT FORMULAIRE
+========================= */
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $first_name = trim($_POST['first_name'] ?? '');
+    $last_name  = trim($_POST['last_name'] ?? '');
+    $email      = trim($_POST['email'] ?? '');
+    $phone      = trim($_POST['phone'] ?? '');
+    $subject    = trim($_POST['subject'] ?? '');
+    $message    = trim($_POST['message'] ?? '');
+    $token      = $_POST['cf-turnstile-response'] ?? '';
+
+    if (!$first_name || !$last_name || !$email || !$subject || !$message) {
+        $form_error = "Merci de remplir tous les champs obligatoires.";
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $form_error = "Adresse e-mail invalide.";
+    } elseif (!verify_turnstile($TURNSTILE_SECRET_KEY, $token)) {
+        $form_error = "La vérification de sécurité a échoué.";
+    } else {
+        try {
+            $mail = new PHPMailer(true);
+
+            $mail->isSMTP();
+            $mail->Host       = $SMTP_HOST;
+            $mail->SMTPAuth   = true;
+            $mail->Username   = $SMTP_USER;
+            $mail->Password   = $SMTP_PASS;
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+            $mail->Port       = (int) $SMTP_PORT;
+
+            $mail->CharSet = 'UTF-8';
+
+            $mail->setFrom($MAIL_FROM, $MAIL_NAME);
+            $mail->addAddress($MAIL_TO);
+            $mail->addReplyTo($email, "$first_name $last_name");
+
+            $mail->isHTML(true);
+            $mail->Subject = $subject;
+
+            $safe_message = nl2br(htmlspecialchars($message, ENT_QUOTES, 'UTF-8'));
+
+            $mail->Body = "
+                <h3>Nouveau message depuis le site</h3>
+                <p><strong>Nom :</strong> {$first_name} {$last_name}</p>
+                <p><strong>Email :</strong> {$email}</p>
+                <p><strong>Téléphone :</strong> {$phone}</p>
+                <hr>
+                <p>{$safe_message}</p>
+            ";
+
+            $mail->send();
+
+            $form_success = true;
+            $first_name = $last_name = $email = $phone = $subject = $message = '';
+
+        } catch (Exception $e) {
+            $form_error = "Une erreur est survenue lors de l’envoi. Merci de réessayer plus tard.";
+        }
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -94,7 +233,7 @@ $page_description = "Un projet web ? Une question ? Contactez LCR DIGITAL, agenc
                     </div>
                     <div class="col">
                         <div class="contact-form-layout">
-                            <form action="contact.php" method="post" id="contactForm" class="form">
+            <form method="post" class="form">
                                 <div class="row row-cols-md-2 row-cols-1 grid-spacer-2">
                                     <div class="col">
                                         <div class="d-flex flex-column gspace-1">
@@ -136,6 +275,16 @@ $page_description = "Un projet web ? Une question ? Contactez LCR DIGITAL, agenc
      data-theme="light">
 </div>
 
+ <?php if ($form_success): ?>
+                <div class="alert alert-success mb-3">
+                    ✅ Votre message a bien été envoyé. Nous vous répondrons rapidement.
+                </div>
+            <?php elseif ($form_error): ?>
+                <div class="alert alert-danger mb-3">
+                    ❌ <?= htmlspecialchars($form_error) ?>
+                </div>
+            <?php endif; ?>
+
                                 <button type="submit" class="btn btn-accent">Envoyer</button>
                                 <div id="successMessage" class="mt-2 success d-none">
                                     <p><span class="fa-solid fa-check text-success"></span> Message envoyé.</p>
@@ -174,7 +323,6 @@ $page_description = "Un projet web ? Une question ? Contactez LCR DIGITAL, agenc
     <script src="./assets/js/vendor/fslightbox.js"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/swiper-script.js"></script>
-    <script src="./assets/js/submit-form.js"></script>
     <script src="./assets/js/video_embedded.js"></script>
 </body>
 </html>

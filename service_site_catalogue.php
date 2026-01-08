@@ -252,7 +252,6 @@ $page_description = "Vous souhaitez présenter vos produits sans e-commerce ? Op
     <script src="./assets/js/vendor/fslightbox.js"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/swiper-script.js"></script>
-    <script src="./assets/js/submit-form.js"></script>
     <script src="./assets/js/video_embedded.js"></script>
 </body>
 </html>

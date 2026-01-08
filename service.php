@@ -272,7 +272,6 @@ $page_description = "Découvrez tous les services de LCR DIGITAL : création de 
     <script src="./assets/js/vendor/fslightbox.js"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/swiper-script.js"></script>
-    <script src="./assets/js/submit-form.js"></script>
     <script src="./assets/js/video_embedded.js"></script>
 </body>
 </html>
