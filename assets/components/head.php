@@ -24,6 +24,7 @@ $page_description_safe = function_exists("e")
 <link rel="stylesheet" href="./assets/css/main.css">
 <link rel="stylesheet" href="./assets/css/responsive.css">
 <link rel="shortcut icon" href="./assets/images/lcr-digital-logo.png" type="image/x-icon">
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QKXJJHS8SZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

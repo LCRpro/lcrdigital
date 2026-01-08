@@ -130,6 +130,12 @@ $page_description = "Un projet web ? Une question ? Contactez LCR DIGITAL, agenc
                                     <label for="Message">Message</label>
                                     <textarea name="message" id="message" rows="4" placeholder="Décrivez votre besoin" required></textarea>
                                 </div>
+
+                                <div class="cf-turnstile"
+     data-sitekey="0x4AAAAAACLXBkPf7rmEgpVL"
+     data-theme="light">
+</div>
+
                                 <button type="submit" class="btn btn-accent">Envoyer</button>
                                 <div id="successMessage" class="mt-2 success d-none">
                                     <p><span class="fa-solid fa-check text-success"></span> Message envoyé.</p>
