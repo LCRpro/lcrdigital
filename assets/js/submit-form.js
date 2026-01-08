@@ -7,8 +7,9 @@ function initSubmitContact() {
     var $messageInput = $("#message");
     var $successMessage = $("#successMessage");
     var $errorMessage = $("#errorMessage");
+    var $errorText = $errorMessage.find("p");
 
-    if ($form.length === 0 || $emailInput.length === 0) {
+    if ($form.length === 0) {
         return;
     }
 
@@ -16,14 +17,16 @@ function initSubmitContact() {
         event.preventDefault();
 
         var isValid = true;
-        $emailInput.removeClass("is-invalid");
-        $firstNameInput.removeClass("is-invalid");
-        $lastNameInput.removeClass("is-invalid");
-        $subjectInput.removeClass("is-invalid");
-        $messageInput.removeClass("is-invalid");
 
-        var emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-        if ($.trim($emailInput.val()) === "" || !emailPattern.test($emailInput.val())) {
+        $emailInput.add($firstNameInput)
+            .add($lastNameInput)
+            .add($subjectInput)
+            .add($messageInput)
+            .removeClass("is-invalid");
+
+        var emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,}$/i;
+
+        if (!emailPattern.test($emailInput.val())) {
             $emailInput.addClass("is-invalid");
             isValid = false;
         }
@@ -52,34 +55,35 @@ function initSubmitContact() {
             return;
         }
 
+        // Reset messages
+        $successMessage.addClass("d-none");
+        $errorMessage.addClass("d-none");
+
         $.ajax({
-            url: $form.attr("action"),
+            url: "/contact.php", // 🔥 URL ABSOLUE (IMPORTANT)
             method: "POST",
             dataType: "json",
             data: $form.serialize()
         })
-            .done(function (response) {
-                if (response && response.ok) {
-                    $successMessage.removeClass("d-none");
-                    $errorMessage.addClass("d-none");
-                    $form[0].reset();
-                } else {
-                    $successMessage.addClass("d-none");
-                    $errorMessage.removeClass("d-none");
-                }
-            })
-            .fail(function () {
-                $successMessage.addClass("d-none");
+        .done(function (response) {
+            console.log("Réponse serveur :", response);
+
+            if (response && response.ok === true) {
+                $successMessage.removeClass("d-none");
+                $form[0].reset();
+            } else {
+                $errorText.text(response.message || "Une erreur est survenue.");
                 $errorMessage.removeClass("d-none");
-            })
-            .always(function () {
-                setTimeout(function () {
-                    $successMessage.addClass("d-none");
-                    $errorMessage.addClass("d-none");
-                }, 5000);
-            });
+            }
+        })
+        .fail(function (xhr) {
+            console.error("Erreur AJAX :", xhr.responseText);
+            $errorText.text("Erreur serveur. Veuillez réessayer plus tard.");
+            $errorMessage.removeClass("d-none");
+        });
     });
 }
+
 
 
 function initSubmitNewsletter() {
