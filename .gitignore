@@ -1,0 +1,35 @@
+# Dépendances PHP
+/vendor/
+
+# Fichiers d’environnement
+.env
+
+# Logs
+*.log
+logs/
+storage/logs/
+
+# Cache
+cache/
+tmp/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# IDE / Éditeurs
+.idea/
+.vscode/
+*.swp
+
+# Node (si jamais)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Docker
+docker-compose.override.yml
+
+# Tests / coverage
+coverage/
+.phpunit.result.cache
