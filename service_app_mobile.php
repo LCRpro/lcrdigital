@@ -46,10 +46,10 @@ $page_description = "LCR DIGITAL conçoit des applications mobiles iOS et Androi
                             <h3 class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Vue d’ensemble</h3>
                                                         <div>
                                 <p>
-                                    Une application mobile pour offrir une expérience fluide et accessible à vos utilisateurs.
+                                    Une application mobile sur mesure pour créer un canal direct avec vos clients.
                                 </p>
                                 <p>
-                                    Nous concevons des apps utiles, simples et performantes.
+                                    Des apps utiles, simples et performantes qui font revenir vos utilisateurs.
                                 </p>
                             </div>
                             <h4>Bénéfices</h4>
@@ -58,10 +58,10 @@ $page_description = "LCR DIGITAL conçoit des applications mobiles iOS et Androi
                                     <div class="d-flex flex-column gspace-2">
                                         <div>
                                             <p>
-                                                Un outil puissant pour fidéliser et automatiser.
+                                                Un outil puissant pour fidéliser et augmenter l’engagement.
                                             </p>
                                             <p>
-                                                Pensé pour une expérience mobile optimale.
+                                                Pensé pour une expérience mobile fluide et efficace.
                                             </p>
                                         </div>
                                         <ul class="check-list">
@@ -69,8 +69,8 @@ $page_description = "LCR DIGITAL conçoit des applications mobiles iOS et Androi
                                             <li>Notifications push ciblées</li>
                                             <li>Expérience personnalisée</li>
                                             <li>Disponible iOS et Android</li>
-                                            <li>Réservation ou commande simplifiée</li>
-                                            <li>Image innovante</li>
+                                            <li>Actions et achats simplifiés</li>
+                                            <li>Image de marque innovante</li>
                                         </ul>
                                     </div>
                                 </div>

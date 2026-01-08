@@ -49,7 +49,7 @@ $page_description = "Vous souhaitez présenter vos produits sans e-commerce ? Op
                                     Idéal pour exposer vos gammes de produits ou services sans vente directe.
                                 </p>
                                 <p>
-                                    Mise en avant des catégories, fiches détaillées et demande de devis simplifiée.
+                                    Catégories lisibles, fiches détaillées et demandes de devis faciles.
                                 </p>
                             </div>
                             <h4>Bénéfices</h4>
@@ -58,19 +58,19 @@ $page_description = "Vous souhaitez présenter vos produits sans e-commerce ? Op
                                     <div class="d-flex flex-column gspace-2">
                                         <div>
                                             <p>
-                                                Un catalogue structuré pour guider vos visiteurs.
+                                                Un catalogue structuré qui valorise vos gammes.
                                             </p>
                                             <p>
-                                                Un parcours fluide pour favoriser les demandes.
+                                                Un parcours fluide qui pousse à la demande de devis.
                                             </p>
                                         </div>
                                         <ul class="check-list">
-                                            <li>Présenter vos produits sans vente en ligne</li>
-                                            <li>Fiches produits claires et détaillées</li>
-                                            <li>Navigation et filtres simples</li>
-                                            <li>Mises à jour faciles</li>
-                                            <li>Générer des demandes de devis</li>
-                                            <li>SEO sur vos gammes</li>
+                                            <li>Valoriser vos gammes sans boutique</li>
+                                            <li>Fiches produits qui convainquent</li>
+                                            <li>Navigation et filtres efficaces</li>
+                                            <li>Mises à jour rapides</li>
+                                            <li>Plus de demandes de devis</li>
+                                            <li>SEO sur vos catégories</li>
                                         </ul>
                                     </div>
                                 </div>

@@ -46,10 +46,10 @@ $page_description = "Lancez votre boutique en ligne" . city_phrase(" à ") . " a
                             <h3 class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Vue d’ensemble</h3>
                                                         <div>
                                 <p>
-                                    Une boutique en ligne prête à vendre avec un tunnel d’achat optimisé.
+                                    Une boutique en ligne prête à vendre, rapide, rassurante et sécurisée.
                                 </p>
                                 <p>
-                                    Nous travaillons la performance, la confiance et la conversion.
+                                    Nous optimisons chaque étape pour augmenter vos ventes.
                                 </p>
                             </div>
                             <h4>Bénéfices</h4>
@@ -58,19 +58,19 @@ $page_description = "Lancez votre boutique en ligne" . city_phrase(" à ") . " a
                                     <div class="d-flex flex-column gspace-2">
                                         <div>
                                             <p>
-                                                Un e-commerce qui transforme vos visiteurs en clients.
+                                                Un e-commerce conçu pour convertir et fidéliser.
                                             </p>
                                             <p>
-                                                Optimisations UX et SEO pour augmenter le chiffre d’affaires.
+                                                UX, SEO et tunnel d’achat optimisés pour augmenter le chiffre d’affaires.
                                             </p>
                                         </div>
                                         <ul class="check-list">
                                             <li>Vendre 24/7</li>
                                             <li>Paiement sécurisé</li>
                                             <li>Tunnel d’achat optimisé</li>
-                                            <li>Gestion des produits et stocks</li>
+                                            <li>Gestion simple des produits</li>
                                             <li>Suivi des commandes</li>
-                                            <li>Analytics pour piloter la conversion</li>
+                                            <li>Analytics pour booster la conversion</li>
                                         </ul>
                                     </div>
                                 </div>

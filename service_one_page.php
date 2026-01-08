@@ -46,10 +46,10 @@ $page_description = "Besoin d’un site One Page" . city_phrase(" à ") . " ? LC
                             <h3 class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Vue d’ensemble</h3>
                                                         <div>
                                 <p>
-                                    Une landing page pensée pour capter l’attention et transformer rapidement vos visiteurs en prospects.
+                                    Une landing page qui capte l’attention et transforme vos visiteurs en prospects qualifiés.
                                 </p>
                                 <p>
-                                    Idéal pour lancer une offre, valider un concept ou concentrer l’action sur un seul objectif.
+                                    Parfaite pour une offre, une campagne ou un lancement rapide avec un seul objectif : convertir.
                                 </p>
                             </div>
                             <h4>Bénéfices</h4>
@@ -58,19 +58,19 @@ $page_description = "Besoin d’un site One Page" . city_phrase(" à ") . " ? LC
                                     <div class="d-flex flex-column gspace-2">
                                         <div>
                                             <p>
-                                                Une page courte, percutante et optimisée pour la conversion.
+                                                Un parcours ultra direct qui pousse à l’action dès les premières secondes.
                                             </p>
                                             <p>
-                                                Conçue pour générer des leads qualifiés en un minimum d’étapes.
+                                                Pensée pour maximiser les demandes de contact et les conversions.
                                             </p>
                                         </div>
                                         <ul class="check-list">
-                                            <li>Présenter une offre unique sans distraction</li>
-                                            <li>Captez des leads rapidement</li>
-                                            <li>Parcours clair orienté action</li>
-                                            <li>Performance idéale pour la publicité</li>
-                                            <li>Mise en ligne rapide</li>
-                                            <li>Mesure des conversions</li>
+                                            <li>Acquisition rapide de prospects</li>
+                                            <li>Message impactant en quelques secondes</li>
+                                            <li>Call-to-action unique et clair</li>
+                                            <li>Optimisée pour la publicité</li>
+                                            <li>Collecte de leads simplifiée</li>
+                                            <li>Mesure des performances</li>
                                         </ul>
                                     </div>
                                 </div>

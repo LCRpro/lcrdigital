@@ -46,10 +46,10 @@ $page_description = "Vous avez un projet spécifique ? LCR DIGITAL propose du d�
                             <h3 class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Vue d’ensemble</h3>
                                                         <div>
                                 <p>
-                                    Des fonctionnalités spécifiques et des intégrations métier adaptées à votre activité.
+                                    Des fonctionnalités spécifiques et des intégrations métier qui répondent à vos objectifs business.
                                 </p>
                                 <p>
-                                    Nous développons des solutions fiables, évolutives et sécurisées.
+                                    Des solutions fiables, évolutives et sécurisées qui font gagner du temps.
                                 </p>
                             </div>
                             <h4>Bénéfices</h4>
@@ -58,10 +58,10 @@ $page_description = "Vous avez un projet spécifique ? LCR DIGITAL propose du d�
                                     <div class="d-flex flex-column gspace-2">
                                         <div>
                                             <p>
-                                                Une solution sur mesure pour gagner du temps et automatiser.
+                                                Une solution sur mesure pour automatiser et accélérer votre activité.
                                             </p>
                                             <p>
-                                                Conçue pour s’intégrer à vos outils existants.
+                                                Conçue pour s’intégrer parfaitement à vos outils.
                                             </p>
                                         </div>
                                         <ul class="check-list">

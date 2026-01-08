@@ -46,10 +46,10 @@ $page_description = "LCR DIGITAL vous accompagne dans la création de site vitri
                             <h3 class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Vue d’ensemble</h3>
                                                         <div>
                                 <p>
-                                    Un site vitrine pour présenter votre activité et inspirer confiance dès la première visite.
+                                    Un site vitrine pour présenter votre activité et rassurer vos prospects dès la première visite.
                                 </p>
                                 <p>
-                                    Nous construisons un site rapide, esthétique et optimisé pour le référencement local.
+                                    Nous créons un site rapide, élégant et optimisé pour attirer des clients locaux.
                                 </p>
                             </div>
                             <h4>Bénéfices</h4>
@@ -58,19 +58,19 @@ $page_description = "LCR DIGITAL vous accompagne dans la création de site vitri
                                     <div class="d-flex flex-column gspace-2">
                                         <div>
                                             <p>
-                                                Un site qui clarifie votre offre et facilite la prise de contact.
+                                                Une vitrine professionnelle qui donne envie de vous contacter.
                                             </p>
                                             <p>
-                                                Optimisé pour vous rendre visible sur les recherches locales.
+                                                Optimisée pour vous rendre visible localement et générer des demandes.
                                             </p>
                                         </div>
                                         <ul class="check-list">
                                             <li>Présenter vos services clairement</li>
-                                            <li>Rassurer avec preuves et avis</li>
+                                            <li>Convaincre avec preuves et avis</li>
                                             <li>Générer des demandes de devis</li>
-                                            <li>Améliorer votre visibilité locale</li>
-                                            <li>Image professionnelle et crédible</li>
-                                            <li>Site adapté mobile</li>
+                                            <li>Gagner en visibilité locale</li>
+                                            <li>Renforcer votre crédibilité</li>
+                                            <li>Site parfaitement mobile</li>
                                         </ul>
                                     </div>
                                 </div>
