@@ -38,7 +38,7 @@ $first_name = $last_name = $email = $phone = $subject = $message = '';
 /* =========================
    VERIFY RECAPTCHA
 ========================= */
-function verify_recaptcha(string $secret, string $token): bool
+function verify_recaptcha_v3(string $secret, string $token): bool
 {
     if ($secret === '' || $token === '') {
         return false;
@@ -57,8 +57,12 @@ function verify_recaptcha(string $secret, string $token): bool
     }
 
     $json = json_decode($response, true);
-    return !empty($json['success']);
+
+    return !empty($json['success'])
+        && ($json['score'] ?? 0) >= 0.5
+        && ($json['action'] ?? '') === 'contact';
 }
+
 
 /* =========================
    TRAITEMENT FORMULAIRE
@@ -76,8 +80,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $form_error = "Merci de remplir tous les champs obligatoires.";
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $form_error = "Adresse e-mail invalide.";
-    } elseif (!verify_recaptcha($RECAPTCHA_SECRET_KEY, $recaptcha)) {
-        $form_error = "Veuillez confirmer que vous n’êtes pas un robot.";
+    } elseif (!verify_recaptcha_v3($RECAPTCHA_SECRET_KEY, $recaptcha)) {
+    $form_error = "La vérification de sécurité a échoué.";
     } else {
         try {
             $mail = new PHPMailer(true);
@@ -126,9 +130,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="fr">
 <head>
     <?php require __DIR__ . "/assets/components/head.php"; ?>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js?render=<?= htmlspecialchars($RECAPTCHA_SITE_KEY) ?>"></script>
 
 </head>
+
 <body data-city="<?= e($city) ?>" data-city-slug="<?= e($city_slug) ?>">
     
     <div id="site-header">
@@ -252,9 +257,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     <label for="Message">Message</label>
                                     <textarea name="message" id="message" rows="4" placeholder="Décrivez votre besoin" required></textarea>
                                 </div>
-<div class="g-recaptcha"
-     data-sitekey="6LffnEQsAAAAAI51vEZ3QbDpkFkyna5JiY1CYU8n">
-</div>
+
+<input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
 
 
  <?php if ($form_success): ?>
@@ -301,5 +305,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/swiper-script.js"></script>
     <script src="./assets/js/video_embedded.js"></script>
+    <script>
+grecaptcha.ready(function () {
+    grecaptcha.execute('<?= addslashes($RECAPTCHA_SITE_KEY) ?>', {
+        action: 'contact'
+    }).then(function (token) {
+        document.getElementById('g-recaptcha-response').value = token;
+    });
+});
+</script>
+
 </body>
 </html>
