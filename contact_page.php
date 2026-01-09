@@ -13,7 +13,7 @@ require __DIR__ . '/vendor/autoload.php';
    CONFIG SMTP HOSTINGER
 ========================= */
 $SMTP_HOST = getenv('SMTP_HOST');
-$SMTP_PORT = getenv('SMTP_PORT') ?: 465;
+$SMTP_PORT = getenv('SMTP_PORT') ?: 587;
 $SMTP_USER = getenv('SMTP_USER');
 $SMTP_PASS = getenv('SMTP_PASSWORD');
 
@@ -82,17 +82,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $form_error = "Adresse e-mail invalide.";
     } elseif (!verify_recaptcha_v3($RECAPTCHA_SECRET_KEY, $recaptcha)) {
     $form_error = "La vérification de sécurité a échoué.";
+
     } else {
         try {
             $mail = new PHPMailer(true);
 
             $mail->isSMTP();
-            $mail->Host       = 'smtp.hostinger.com';
+            $mail->Host       = $SMTP_HOST;
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'contact@lcr-digital.fr';
+            $mail->Username   = $SMTP_USER;
             $mail->Password   = $SMTP_PASS;
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-            $mail->Port       = '465';
+            $mail->Port       = (int) $SMTP_PORT;
 
             $mail->CharSet = 'UTF-8';
 
@@ -113,8 +114,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <hr>
                 <p>{$safe_message}</p>
             ";
-$mail->SMTPDebug = 2;
-$mail->Debugoutput = 'error_log';
 
             $mail->send();
 
@@ -221,7 +220,7 @@ $mail->Debugoutput = 'error_log';
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <!-- <div class="col">
                         <div class="contact-form-layout">
             <form method="post" class="form">
                                 <div class="row row-cols-md-2 row-cols-1 grid-spacer-2">
@@ -277,7 +276,7 @@ $mail->Debugoutput = 'error_log';
                                 
                             </form>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
