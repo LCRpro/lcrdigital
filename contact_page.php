@@ -7,25 +7,23 @@ $page_description = "Un projet web ? Une question ? Contactez LCR DIGITAL, agenc
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require __DIR__ . '/vendor/autoload.php';
-
 /* =========================
    CONFIG SMTP HOSTINGER
 ========================= */
-$SMTP_HOST = getenv('SMTP_HOST');
-$SMTP_PORT = getenv('SMTP_PORT') ?: 587;
-$SMTP_USER = getenv('SMTP_USER');
-$SMTP_PASS = getenv('SMTP_PASSWORD');
+$SMTP_HOST = $_ENV['SMTP_HOST'] ?? '';
+$SMTP_PORT = $_ENV['SMTP_PORT'] ?? 587;
+$SMTP_USER = $_ENV['SMTP_USER'] ?? '';
+$SMTP_PASS = $_ENV['SMTP_PASSWORD'] ?? '';
 
-$MAIL_FROM = getenv('SMTP_FROM_EMAIL') ?: $SMTP_USER;
-$MAIL_NAME = getenv('SMTP_FROM_NAME') ?: 'LCR DIGITAL';
-$MAIL_TO   = getenv('SMTP_TO_EMAIL') ?: $SMTP_USER;
+$MAIL_FROM = $_ENV['SMTP_FROM_EMAIL'] ?? $SMTP_USER;
+$MAIL_NAME = $_ENV['SMTP_FROM_NAME'] ?? 'LCR DIGITAL';
+$MAIL_TO   = $_ENV['SMTP_TO_EMAIL'] ?? $SMTP_USER;
 
 /* =========================
    GOOGLE RECAPTCHA
 ========================= */
-$RECAPTCHA_SITE_KEY   = getenv('RECAPTCHA_SITE_KEY');
-$RECAPTCHA_SECRET_KEY = getenv('RECAPTCHA_SECRET_KEY');
+$RECAPTCHA_SITE_KEY   = $_ENV['RECAPTCHA_SITE_KEY'] ?? '';
+$RECAPTCHA_SECRET_KEY = $_ENV['RECAPTCHA_SECRET_KEY'] ?? '';
 
 /* =========================
    FORM STATE
@@ -40,6 +38,12 @@ $first_name = $last_name = $email = $phone = $subject = $message = '';
 ========================= */
 function verify_recaptcha_v3(string $secret, string $token): bool
 {
+    // Skip reCAPTCHA on localhost
+    $host = $_SERVER['HTTP_HOST'] ?? '';
+    if (strpos($host, 'localhost') !== false || $host === '127.0.0.1') {
+        return true;
+    }
+
     if ($secret === '' || $token === '') {
         return false;
     }
@@ -80,8 +84,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $form_error = "Merci de remplir tous les champs obligatoires.";
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $form_error = "Adresse e-mail invalide.";
-    } elseif (!verify_recaptcha_v3($RECAPTCHA_SECRET_KEY, $recaptcha)) {
-    $form_error = "La vérification de sécurité a échoué.";
+    } elseif ($RECAPTCHA_SECRET_KEY && !verify_recaptcha_v3($RECAPTCHA_SECRET_KEY, $recaptcha)) {
+        $form_error = "La vérification de sécurité a échoué.";
 
     } else {
         try {
@@ -131,7 +135,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="fr">
 <head>
     <?php require __DIR__ . "/assets/components/head.php"; ?>
+<?php if ($RECAPTCHA_SITE_KEY): ?>
 <script src="https://www.google.com/recaptcha/api.js?render=<?= htmlspecialchars($RECAPTCHA_SITE_KEY) ?>"></script>
+<?php endif; ?>
 
 </head>
 
@@ -220,63 +226,58 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="col">
+                    <div class="col">
                         <div class="contact-form-layout">
-            <form method="post" class="form">
+                            <?php if ($form_success): ?>
+                                <div class="alert alert-success mb-3">
+                                    Votre message a bien été envoyé. Nous vous répondrons rapidement.
+                                </div>
+                            <?php elseif ($form_error): ?>
+                                <div class="alert alert-danger mb-3">
+                                    <?= htmlspecialchars($form_error) ?>
+                                </div>
+                            <?php endif; ?>
+                            <form method="post" class="form">
                                 <div class="row row-cols-md-2 row-cols-1 grid-spacer-2">
                                     <div class="col">
                                         <div class="d-flex flex-column gspace-1">
                                             <label for="first_name">Prénom</label>
-                                            <input type="text" name="first_name" id="first_name" placeholder="Votre prénom" required>
+                                            <input type="text" name="first_name" id="first_name" placeholder="Votre prénom" value="<?= htmlspecialchars($first_name) ?>" required>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="d-flex flex-column gspace-1">
                                             <label for="last_name">Nom</label>
-                                            <input type="text" name="last_name" id="last_name" placeholder="Votre nom" required>
+                                            <input type="text" name="last_name" id="last_name" placeholder="Votre nom" value="<?= htmlspecialchars($last_name) ?>" required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="d-flex flex-column gspace-1">
-                                    <label for="Email">Email</label>
-                                    <input type="email" name="email" id="email" placeholder="Votre email" required>
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" placeholder="Votre email" value="<?= htmlspecialchars($email) ?>" required>
                                 </div>
                                 <div class="d-flex flex-column gspace-1">
-                                    <label for="Phone">Téléphone</label>
-                                    <input type="tel" name="phone" id="phone" placeholder="Votre téléphone">
+                                    <label for="phone">Téléphone</label>
+                                    <input type="tel" name="phone" id="phone" placeholder="Votre téléphone" value="<?= htmlspecialchars($phone) ?>">
                                 </div>
                                 <div class="d-flex flex-column gspace-1">
-                                    <label for="Subject">Sujet</label>
+                                    <label for="subject">Sujet</label>
                                     <select name="subject" id="subject" required>
-                                        <option value="" disabled selected>Choisir un sujet</option>
-                                        <option value="Contact">Contact</option>
-                                        <option value="Devis">Devis</option>
-                                        <option value="Autre">Autre</option>
+                                        <option value="" disabled <?= $subject === '' ? 'selected' : '' ?>>Choisir un sujet</option>
+                                        <option value="Contact" <?= $subject === 'Contact' ? 'selected' : '' ?>>Contact</option>
+                                        <option value="Devis" <?= $subject === 'Devis' ? 'selected' : '' ?>>Devis</option>
+                                        <option value="Autre" <?= $subject === 'Autre' ? 'selected' : '' ?>>Autre</option>
                                     </select>
                                 </div>
                                 <div class="d-flex flex-column gspace-1">
-                                    <label for="Message">Message</label>
-                                    <textarea name="message" id="message" rows="4" placeholder="Décrivez votre besoin" required></textarea>
+                                    <label for="message">Message</label>
+                                    <textarea name="message" id="message" rows="4" placeholder="Décrivez votre besoin" required><?= htmlspecialchars($message) ?></textarea>
                                 </div>
-
-<input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
-
-
- <?php if ($form_success): ?>
-                <div class="alert alert-success mb-3">
-                    ✅ Votre message a bien été envoyé. Nous vous répondrons rapidement.
-                </div>
-            <?php elseif ($form_error): ?>
-                <div class="alert alert-danger mb-3">
-                    ❌ <?= htmlspecialchars($form_error) ?>
-                </div>
-            <?php endif; ?>
-
+                                <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
                                 <button type="submit" class="btn btn-accent">Envoyer</button>
-                                
                             </form>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -285,8 +286,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="section">
             <div class="hero-container">
                 <iframe loading="lazy" class="maps"
-                        src="https://maps.google.com/maps?q=<?= rawurlencode($city === '' ? 'France' : $city) ?>&amp;t=m&amp;z=13&amp;output=embed&amp;iwloc=near"
-                        title="<?= city_or_default('France') ?>" aria-label="<?= city_or_default('France') ?>">
+                        src="https://maps.google.com/maps?q=Rouen&amp;t=m&amp;z=13&amp;output=embed&amp;iwloc=near"
+                        title="Rouen" aria-label="Rouen">
                 </iframe>
             </div>
         </div>
@@ -304,9 +305,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <script src="./assets/js/vendor/isotope.pkgd.min.js"></script>
     <script src="./assets/js/vendor/fslightbox.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/submit-form.js"></script>
     <script src="./assets/js/swiper-script.js"></script>
     <script src="./assets/js/video_embedded.js"></script>
-    <script>
+<?php if ($RECAPTCHA_SITE_KEY): ?>
+<script>
 grecaptcha.ready(function () {
     grecaptcha.execute('<?= addslashes($RECAPTCHA_SITE_KEY) ?>', {
         action: 'contact'
@@ -315,6 +318,7 @@ grecaptcha.ready(function () {
     });
 });
 </script>
+<?php endif; ?>
 
 </body>
 </html>

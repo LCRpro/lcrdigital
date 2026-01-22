@@ -37,13 +37,41 @@ $page_description_safe = function_exists("e")
 <link rel="stylesheet" href="./assets/css/vendor/animate.min.css">
 <link rel="stylesheet" href="./assets/css/main.css">
 <link rel="stylesheet" href="./assets/css/responsive.css">
+<link rel="stylesheet" href="./assets/css/tarteaucitron.css">
 <link rel="shortcut icon" href="./assets/images/lcr-digital-logo.png" type="image/x-icon">
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QKXJJHS8SZ"></script>
+<script src="./assets/js/tarteaucitron.js"></script>
+<script src="./assets/js/lang/tarteaucitron.fr.js"></script>
+<script src="./assets/js/tarteaucitron.services.js"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QKXJJHS8SZ');
+tarteaucitron.init({
+    "privacyUrl": "",
+    "bodyPosition": "bottom",
+    "hashtag": "#tarteaucitron",
+    "cookieName": "tarteaucitron",
+    "orientation": "bottom",
+    "groupServices": false,
+    "serviceDefaultState": "wait",
+    "showAlertSmall": false,
+    "cookieslist": false,
+    "closePopup": false,
+    "showIcon": true,
+    "iconPosition": "BottomRight",
+    "adblocker": false,
+    "DenyAllCta": true,
+    "AcceptAllCta": true,
+    "highPrivacy": true,
+    "alwaysNeedConsent": false,
+    "handleBrowserDNTRequest": false,
+    "removeCredit": true,
+    "moreInfoLink": true,
+    "useExternalCss": true,
+    "useExternalJs": false,
+    "mandatory": true,
+    "mandatoryCta": false,
+    "googleConsentMode": true,
+    "partnersList": false
+});
+(tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+tarteaucitron.user.gtagUa = 'G-QKXJJHS8SZ';
 </script>

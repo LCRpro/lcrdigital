@@ -87,11 +87,10 @@
                 </div>
 
                 <div class="copyright-container">
-                    <p>Copyright © 2024 LCR DIGITAL, tous droits reserves.</p>
+                    <p>Copyright © 2026 LCR DIGITAL, tous droits reserves.</p>
 
                     <div class="d-flex flex-row align-items-center gspace-2">
-                        <a href="#" class="legal-link">Politique de confidentialite</a>
-                        <a href="#" class="legal-link">Conditions d'utilisation</a>
+                        <a href="/mentions-legales" class="legal-link">Mentions légales</a>
                     </div>
                 </div>
             </div>

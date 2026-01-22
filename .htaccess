@@ -7,8 +7,7 @@ AddCharset UTF-8 .html .php
 RewriteRule ^assets/ - [L]
 RewriteRule ^robots\.txt$ - [L]
 
-# SEO-friendly URLs (kept here for when maintenance mode is removed)
-RewriteRule ^$ /agence-web [R=301,L]
+# SEO-friendly URLs
 RewriteCond %{THE_REQUEST} \s/+index\.html[?\s]
 RewriteRule ^index\.html$ /agence-web [R=301,L]
 RewriteCond %{THE_REQUEST} \s/+about\.html[?\s]
@@ -38,6 +37,7 @@ RewriteRule ^creation-site-catalogue/?$ /service_site_catalogue.php [L,QSA]
 RewriteRule ^creation-site-ecommerce/?$ /service_ecommerce.php [L,QSA]
 RewriteRule ^creation-application-mobile/?$ /service_app_mobile.php [L,QSA]
 RewriteRule ^developpement-web-sur-mesure/?$ /service_sur_mesure.php [L,QSA]
+RewriteRule ^mentions-legales/?$ /mentions_legales.php [L,QSA]
 
 # Redirections 301 des anciennes URLs vers les nouvelles
 RewriteRule ^agence-web-([a-z0-9-]+)/?$ /agence-web/$1 [R=301,L]

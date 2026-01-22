@@ -6,6 +6,7 @@ $page_description = "Page introuvable. Revenez a l'accueil de LCR DIGITAL.";
 <html lang="fr">
 <head>
     <?php require __DIR__ . "/assets/components/head.php"; ?>
+    <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
     

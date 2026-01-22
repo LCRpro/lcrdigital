@@ -6,6 +6,7 @@ $page_description = "Article de blog LCR DIGITAL sur le web, le SEO et le market
 <html lang="fr">
 <head>
     <?php require __DIR__ . "/assets/components/head.php"; ?>
+    <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
     
