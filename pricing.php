@@ -181,7 +181,7 @@ $page_description = "Consultez nos tarifs pour la création de site internet, le
                         <p>Nos clients disposent d’une application mobile pour piloter leur site en autonomie : réalisations, contenus et données clés, où qu’ils soient.</p>
                         <div class="card card-chooseus highlight">
                             <div class="chooseus-icon">
-                                <img src="./assets/images/trophy-digital-marketing-marketing-sports-and-competition-award@4x1.webp" alt="" class="img-fluid">
+                                <img src="/assets/images/trophy-digital-marketing-marketing-sports-and-competition-award@4x1.webp" alt="" class="img-fluid">
                             </div>
                             <div class="d-flex flex-column gspace-2">
                                 <h5>Analytique du site</h5>
@@ -190,7 +190,7 @@ $page_description = "Consultez nos tarifs pour la création de site internet, le
                         </div>
                         <div class="card card-chooseus">
                             <div class="chooseus-icon">
-                                <img src="./assets/images/keyword-digital-marketing-seo-magnifier-research-marketing@4x1.webp" alt="" class="img-fluid">
+                                <img src="/assets/images/keyword-digital-marketing-seo-magnifier-research-marketing@4x1.webp" alt="" class="img-fluid">
                             </div>
                             <div class="d-flex flex-column gspace-2">
                                 <h5>Autonomie éditoriale</h5>
@@ -199,7 +199,7 @@ $page_description = "Consultez nos tarifs pour la création de site internet, le
                         </div>
                         <div class="card card-chooseus">
                             <div class="chooseus-icon">
-                                <img src="./assets/images/bar-chart-line-graph-setting-monitor-analysis-statistics@4x1.webp" alt="" class="img-fluid">
+                                <img src="/assets/images/bar-chart-line-graph-setting-monitor-analysis-statistics@4x1.webp" alt="" class="img-fluid">
                             </div>
                             <div class="d-flex flex-column gspace-2">
                                 <h5>Pilotage commercial</h5>
@@ -212,7 +212,7 @@ $page_description = "Consultez nos tarifs pour la création de site internet, le
                             <i class="fa-solid fa-circle"></i>
                         </div>
                         <div class="image-container chooseus-image">
-                            <img src="./assets/images/dashboard.png" alt="" class="img-fluid">
+                            <img src="/assets/images/dashboard.png" alt="" class="img-fluid">
                         </div>
                         <div class="chooseus-image-footer">
                             <div class="icon-wrapper">
@@ -294,13 +294,13 @@ $page_description = "Consultez nos tarifs pour la création de site internet, le
         <?php require __DIR__ . "/assets/components/footer.php"; ?>
     </div>
 
-    <script src="./assets/js/vendor/jquery.min.js"></script>
-    <script src="./assets/js/vendor/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/vendor/swiper-bundle.min.js"></script>
-    <script src="./assets/js/vendor/isotope.pkgd.min.js"></script>
-    <script src="./assets/js/vendor/fslightbox.js"></script>
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/swiper-script.js"></script>
-    <script src="./assets/js/video_embedded.js"></script>
+    <script src="/assets/js/vendor/jquery.min.js"></script>
+    <script src="/assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/vendor/swiper-bundle.min.js"></script>
+    <script src="/assets/js/vendor/isotope.pkgd.min.js"></script>
+    <script src="/assets/js/vendor/fslightbox.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/swiper-script.js"></script>
+    <script src="/assets/js/video_embedded.js"></script>
 </body>
 </html>

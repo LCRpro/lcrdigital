@@ -4,7 +4,7 @@
         <nav class="navbar navbar-expand-xl">
             <div class="container-fluid">
                 <div class="logo-container header-logo">
-                    <a class="navbar-brand" href="<?= e(route_with_city("agence-web", $city_slug)) ?>"><img src="./assets/images/lcr-digital-logo.png" class="img-fluid" alt="LCR DIGITAL"></a>
+                    <a class="navbar-brand" href="<?= e(route_with_city("agence-web", $city_slug)) ?>"><img src="/assets/images/lcr-digital-logo.png" class="img-fluid" alt="LCR DIGITAL"></a>
                 </div>
                 <div class="nav-link-wrapper">
                     <button class="btn nav-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"

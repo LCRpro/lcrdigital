@@ -65,12 +65,12 @@ $page_description = "Article de blog LCR DIGITAL sur le web, le SEO et le market
                                 <div class="row row-cols-md-2 row-cols-1 grid-spacer-2">
                                     <div class="col">
                                         <div class="image-container">
-                                            <img src="./assets/images/dummy-img-600x400.jpg" alt="" class="img-fluid">
+                                            <img src="/assets/images/dummy-img-600x400.jpg" alt="" class="img-fluid">
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="image-container">
-                                            <img src="./assets/images/dummy-img-600x400.jpg" alt="" class="img-fluid">
+                                            <img src="/assets/images/dummy-img-600x400.jpg" alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -79,7 +79,7 @@ $page_description = "Article de blog LCR DIGITAL sur le web, le SEO et le market
                                 <div class="row row-cols-md-2 row-cols-1 grid-spacer-2">
                                     <div class="col">
                                         <div class="image-container">
-                                            <img src="./assets/images/dummy-img-600x400.jpg" alt="" class="img-fluid">
+                                            <img src="/assets/images/dummy-img-600x400.jpg" alt="" class="img-fluid">
                                         </div>
                                     </div>
                                     <div class="col">
@@ -156,7 +156,7 @@ $page_description = "Article de blog LCR DIGITAL sur le web, le SEO et le market
                                 <h4>Articles récents</h4>
                                 <div class="other-post-content">
                                     <div class="post-image">
-                                        <img src="./assets/images/dummy-img-600x400.jpg" alt="" class="image-fluq">
+                                        <img src="/assets/images/dummy-img-600x400.jpg" alt="" class="image-fluq">
                                     </div>
                                     <div class="d-grid">
                                         <a href="/article-agence-digitale-rouen" class="other-blog-link">SEO local : comment dominer les recherches à Rouen</a>
@@ -165,7 +165,7 @@ $page_description = "Article de blog LCR DIGITAL sur le web, le SEO et le market
                                 </div>
                                 <div class="other-post-content">
                                     <div class="post-image">
-                                        <img src="./assets/images/dummy-img-600x400.jpg" alt="" class="image-fluq">
+                                        <img src="/assets/images/dummy-img-600x400.jpg" alt="" class="image-fluq">
                                     </div>
                                     <div class="d-grid">
                                         <a href="/article-agence-digitale-rouen" class="other-blog-link">5 optimisations pour convertir plus avec votre site</a>
@@ -174,7 +174,7 @@ $page_description = "Article de blog LCR DIGITAL sur le web, le SEO et le market
                                 </div>
                                 <div class="other-post-content">
                                     <div class="post-image">
-                                        <img src="./assets/images/dummy-img-600x400.jpg" alt="" class="image-fluq">
+                                        <img src="/assets/images/dummy-img-600x400.jpg" alt="" class="image-fluq">
                                     </div>
                                     <div class="d-grid">
                                         <a href="/article-agence-digitale-rouen" class="other-blog-link">Créer un contenu qui répond aux vraies questions clients</a>
@@ -201,13 +201,13 @@ $page_description = "Article de blog LCR DIGITAL sur le web, le SEO et le market
         <?php require __DIR__ . "/assets/components/footer.php"; ?>
     </div>
 
-    <script src="./assets/js/vendor/jquery.min.js"></script>
-    <script src="./assets/js/vendor/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/vendor/swiper-bundle.min.js"></script>
-    <script src="./assets/js/vendor/isotope.pkgd.min.js"></script>
-    <script src="./assets/js/vendor/fslightbox.js"></script>
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/swiper-script.js"></script>
-    <script src="./assets/js/video_embedded.js"></script>
+    <script src="/assets/js/vendor/jquery.min.js"></script>
+    <script src="/assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/vendor/swiper-bundle.min.js"></script>
+    <script src="/assets/js/vendor/isotope.pkgd.min.js"></script>
+    <script src="/assets/js/vendor/fslightbox.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/swiper-script.js"></script>
+    <script src="/assets/js/video_embedded.js"></script>
 </body>
 </html>

@@ -49,7 +49,7 @@ $page_description = "Découvrez tous les services de LCR DIGITAL : création de 
                         <div class="card card-service-wrapper animate-box animated animate__animated" data-animate="animate__fadeIn">
                             <div class="card card-service">
                                 <div>
-                                    <img src="./assets/images/S4.webp" alt="" class="img-fluid">
+                                    <img src="/assets/images/S4.webp" alt="" class="img-fluid">
                                 </div>
                                 <h4>One Page</h4>
                                 <p>Une landing page claire et rapide pour capter des leads et valider votre offre.</p>
@@ -63,7 +63,7 @@ $page_description = "Découvrez tous les services de LCR DIGITAL : création de 
                         <div class="card card-service-wrapper animate-box animated animate__animated" data-animate="animate__fadeIn">
                             <div class="card card-service highlight-service">
                                 <div>
-                                    <img src="./assets/images/S5.webp" alt="" class="img-fluid">
+                                    <img src="/assets/images/S5.webp" alt="" class="img-fluid">
                                 </div>
                                 <h4>Site vitrine</h4>
                                 <p>Présentez votre activité avec un site professionnel, rassurant et optimisé pour le local.</p>
@@ -77,7 +77,7 @@ $page_description = "Découvrez tous les services de LCR DIGITAL : création de 
                         <div class="card card-service-wrapper animate-box animated animate__animated" data-animate="animate__fadeIn">
                             <div class="card card-service">
                                 <div>
-                                    <img src="./assets/images/S1.webp" alt="" class="img-fluid">
+                                    <img src="/assets/images/S1.webp" alt="" class="img-fluid">
                                 </div>
                                 <h4>Site catalogue</h4>
                                 <p>Exposez vos produits et services avec des fiches claires et une navigation fluide.</p>
@@ -91,7 +91,7 @@ $page_description = "Découvrez tous les services de LCR DIGITAL : création de 
                         <div class="card card-service-wrapper animate-box animated animate__animated" data-animate="animate__fadeIn">
                             <div class="card card-service">
                                 <div>
-                                    <img src="./assets/images/S3.webp" alt="" class="img-fluid">
+                                    <img src="/assets/images/S3.webp" alt="" class="img-fluid">
                                 </div>
                                 <h4>Site e-commerce</h4>
                                 <p>Boutique en ligne prête à vendre : tunnel d’achat optimisé et paiements sécurisés.</p>
@@ -105,7 +105,7 @@ $page_description = "Découvrez tous les services de LCR DIGITAL : création de 
                         <div class="card card-service-wrapper animate-box animated animate__animated" data-animate="animate__fadeIn">
                             <div class="card card-service">
                                 <div>
-                                    <img src="./assets/images/S6.webp" alt="" class="img-fluid">
+                                    <img src="/assets/images/S6.webp" alt="" class="img-fluid">
                                 </div>
                                 <h4>Application mobile</h4>
                                 <p>Applications iOS/Android pour fidéliser et simplifier l’expérience client.</p>
@@ -119,7 +119,7 @@ $page_description = "Découvrez tous les services de LCR DIGITAL : création de 
                         <div class="card card-service-wrapper animate-box animated animate__animated" data-animate="animate__fadeIn">
                             <div class="card card-service">
                                 <div>
-                                    <img src="./assets/images/S4.webp" alt="" class="img-fluid">
+                                    <img src="/assets/images/S4.webp" alt="" class="img-fluid">
                                 </div>
                                 <h4>Développement personnalisé</h4>
                                 <p>Fonctionnalités sur mesure, intégrations métier et automatisations.</p>
@@ -144,7 +144,7 @@ $page_description = "Découvrez tous les services de LCR DIGITAL : création de 
                         <p>Nos clients disposent d’une application mobile pour piloter leur site en autonomie : réalisations, contenus et données clés, où qu’ils soient.</p>
                         <div class="card card-chooseus highlight">
                             <div class="chooseus-icon">
-                                <img src="./assets/images/trophy-digital-marketing-marketing-sports-and-competition-award@4x1.webp" alt="" class="img-fluid">
+                                <img src="/assets/images/trophy-digital-marketing-marketing-sports-and-competition-award@4x1.webp" alt="" class="img-fluid">
                             </div>
                             <div class="d-flex flex-column gspace-2">
                                 <h5>Analytique du site</h5>
@@ -153,7 +153,7 @@ $page_description = "Découvrez tous les services de LCR DIGITAL : création de 
                         </div>
                         <div class="card card-chooseus">
                             <div class="chooseus-icon">
-                                <img src="./assets/images/keyword-digital-marketing-seo-magnifier-research-marketing@4x1.webp" alt="" class="img-fluid">
+                                <img src="/assets/images/keyword-digital-marketing-seo-magnifier-research-marketing@4x1.webp" alt="" class="img-fluid">
                             </div>
                             <div class="d-flex flex-column gspace-2">
                                 <h5>Autonomie éditoriale</h5>
@@ -162,7 +162,7 @@ $page_description = "Découvrez tous les services de LCR DIGITAL : création de 
                         </div>
                         <div class="card card-chooseus">
                             <div class="chooseus-icon">
-                                <img src="./assets/images/bar-chart-line-graph-setting-monitor-analysis-statistics@4x1.webp" alt="" class="img-fluid">
+                                <img src="/assets/images/bar-chart-line-graph-setting-monitor-analysis-statistics@4x1.webp" alt="" class="img-fluid">
                             </div>
                             <div class="d-flex flex-column gspace-2">
                                 <h5>Pilotage commercial</h5>
@@ -175,14 +175,14 @@ $page_description = "Découvrez tous les services de LCR DIGITAL : création de 
                             <i class="fa-solid fa-circle"></i>
                         </div>
                        <div class="image-container chooseus-image">
-                            <img src="./assets/images/dashboard.png" alt="" class="img-fluid">
+                            <img src="/assets/images/dashboard.png" alt="" class="img-fluid">
                         </div>
 
                         <div class="app-availability">
                             <span>Disponible sur :</span>
-                            <img src="./assets/images/appstore.png" alt="App Store">
-                            <img src="./assets/images/playstore.avif" alt="Google Play">
-                            <img src="./assets/images/web.png" alt="Web">
+                            <img src="/assets/images/appstore.png" alt="App Store">
+                            <img src="/assets/images/playstore.avif" alt="Google Play">
+                            <img src="/assets/images/web.png" alt="Web">
                         </div>
 
                         <div class="chooseus-image-footer">
@@ -265,13 +265,13 @@ $page_description = "Découvrez tous les services de LCR DIGITAL : création de 
         <?php require __DIR__ . "/assets/components/footer.php"; ?>
     </div>
 
-    <script src="./assets/js/vendor/jquery.min.js"></script>
-    <script src="./assets/js/vendor/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/vendor/swiper-bundle.min.js"></script>
-    <script src="./assets/js/vendor/isotope.pkgd.min.js"></script>
-    <script src="./assets/js/vendor/fslightbox.js"></script>
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/swiper-script.js"></script>
-    <script src="./assets/js/video_embedded.js"></script>
+    <script src="/assets/js/vendor/jquery.min.js"></script>
+    <script src="/assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/vendor/swiper-bundle.min.js"></script>
+    <script src="/assets/js/vendor/isotope.pkgd.min.js"></script>
+    <script src="/assets/js/vendor/fslightbox.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/swiper-script.js"></script>
+    <script src="/assets/js/video_embedded.js"></script>
 </body>
 </html>

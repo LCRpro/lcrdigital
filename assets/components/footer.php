@@ -5,7 +5,7 @@
             <div class="d-flex flex-column gspace-2">
                 <div class="footer-header">
                     <div class="logo-container footer">
-                        <img src="./assets/images/lcr-digital-logo.png" alt="LCR DIGITAL" class="img-fluid">
+                        <img src="/assets/images/lcr-digital-logo.png" alt="LCR DIGITAL" class="img-fluid">
                     </div>
                     <p>Agence web LCR DIGITAL : creation de sites performants, visibles et pensés pour convertir.</p>
                     <div class="social-container">

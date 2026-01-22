@@ -26,23 +26,23 @@ $page_description_safe = function_exists("e")
 <meta name="twitter:description" content="<?= $page_description_safe ?>">
 <meta name="twitter:image" content="https://lcr-digital.fr/assets/images/lcr-digital-logo.png">
 <?php require __DIR__ . "/schema_localbusiness.php"; ?>
-<link rel="stylesheet" href="./assets/webfonts/font-family-inter.css">
-<link rel="stylesheet" href="./assets/css/vendor/bootstrap.min.css">
-<link rel="stylesheet" href="./assets/css/vendor/fontawesome.css">
-<link rel="stylesheet" href="./assets/css/vendor/brands.css">
-<link rel="stylesheet" href="./assets/css/vendor/regular.css">
-<link rel="stylesheet" href="./assets/css/vendor/solid.css">
-<link rel="stylesheet" href="./assets/css/vendor/flatpickr.min.css">
-<link rel="stylesheet" href="./assets/css/vendor/swiper-bundle.min.css">
-<link rel="stylesheet" href="./assets/css/vendor/animate.min.css">
-<link rel="stylesheet" href="./assets/css/main.css">
-<link rel="stylesheet" href="./assets/css/responsive.css">
-<link rel="stylesheet" href="./assets/css/tarteaucitron.css">
-<link rel="shortcut icon" href="./assets/images/lcr-digital-logo.png" type="image/x-icon">
+<link rel="stylesheet" href="/assets/webfonts/font-family-inter.css">
+<link rel="stylesheet" href="/assets/css/vendor/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/css/vendor/fontawesome.css">
+<link rel="stylesheet" href="/assets/css/vendor/brands.css">
+<link rel="stylesheet" href="/assets/css/vendor/regular.css">
+<link rel="stylesheet" href="/assets/css/vendor/solid.css">
+<link rel="stylesheet" href="/assets/css/vendor/flatpickr.min.css">
+<link rel="stylesheet" href="/assets/css/vendor/swiper-bundle.min.css">
+<link rel="stylesheet" href="/assets/css/vendor/animate.min.css">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/responsive.css">
+<link rel="stylesheet" href="/assets/css/tarteaucitron.css">
+<link rel="shortcut icon" href="/assets/images/lcr-digital-logo.png" type="image/x-icon">
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-<script src="./assets/js/tarteaucitron.js"></script>
-<script src="./assets/js/lang/tarteaucitron.fr.js"></script>
-<script src="./assets/js/tarteaucitron.services.js"></script>
+<script src="/assets/js/tarteaucitron.js"></script>
+<script src="/assets/js/lang/tarteaucitron.fr.js"></script>
+<script src="/assets/js/tarteaucitron.services.js"></script>
 <script>
 tarteaucitron.init({
     "privacyUrl": "",

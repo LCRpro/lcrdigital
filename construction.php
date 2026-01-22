@@ -14,7 +14,7 @@ $page_description = "Agence digital LCR : création de sites web performants pou
             <div class="hero-container">
                 <div class="banner-content">
                     <div class="construction-logo-wrap">
-                        <img src="./assets/images/lcr-digital-logo.png" alt="LCR DIGITAL" class="construction-logo img-fluid">
+                        <img src="/assets/images/lcr-digital-logo.png" alt="LCR DIGITAL" class="construction-logo img-fluid">
                     </div>
                     <div class="align-items-center">
                         <div class="banner-sub-heading">

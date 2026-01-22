@@ -76,7 +76,7 @@ $page_description = "Lancez votre boutique en ligne" . city_phrase(" à ") . " a
                                 </div>
                                 <div class="col">
                                     <div class="image-container animate-box animated animate__animated" data-animate="animate__fadeIn">
-                                        <img src="./assets/images/ecommerce.png" alt="<?= img_alt('Création site e-commerce boutique en ligne') ?>" class="img-fluid">
+                                        <img src="/assets/images/ecommerce.png" alt="<?= img_alt('Création site e-commerce boutique en ligne') ?>" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
@@ -167,7 +167,7 @@ $page_description = "Lancez votre boutique en ligne" . city_phrase(" à ") . " a
                         <p>Nos clients disposent d’une application mobile pour piloter leur site en autonomie : réalisations, contenus et données clés, où qu’ils soient.</p>
                         <div class="card card-chooseus highlight">
                             <div class="chooseus-icon">
-                                <img src="./assets/images/trophy-digital-marketing-marketing-sports-and-competition-award@4x1.webp" alt="<?= img_alt('Analytique du site') ?>" class="img-fluid">
+                                <img src="/assets/images/trophy-digital-marketing-marketing-sports-and-competition-award@4x1.webp" alt="<?= img_alt('Analytique du site') ?>" class="img-fluid">
                             </div>
                             <div class="d-flex flex-column gspace-2">
                                 <h5>Analytique du site</h5>
@@ -176,7 +176,7 @@ $page_description = "Lancez votre boutique en ligne" . city_phrase(" à ") . " a
                         </div>
                         <div class="card card-chooseus">
                             <div class="chooseus-icon">
-                                <img src="./assets/images/keyword-digital-marketing-seo-magnifier-research-marketing@4x1.webp" alt="<?= img_alt('Autonomie éditoriale') ?>" class="img-fluid">
+                                <img src="/assets/images/keyword-digital-marketing-seo-magnifier-research-marketing@4x1.webp" alt="<?= img_alt('Autonomie éditoriale') ?>" class="img-fluid">
                             </div>
                             <div class="d-flex flex-column gspace-2">
                                 <h5>Autonomie éditoriale</h5>
@@ -185,7 +185,7 @@ $page_description = "Lancez votre boutique en ligne" . city_phrase(" à ") . " a
                         </div>
                         <div class="card card-chooseus">
                             <div class="chooseus-icon">
-                                <img src="./assets/images/bar-chart-line-graph-setting-monitor-analysis-statistics@4x1.webp" alt="<?= img_alt('Pilotage commercial') ?>" class="img-fluid">
+                                <img src="/assets/images/bar-chart-line-graph-setting-monitor-analysis-statistics@4x1.webp" alt="<?= img_alt('Pilotage commercial') ?>" class="img-fluid">
                             </div>
                             <div class="d-flex flex-column gspace-2">
                                 <h5>Pilotage commercial</h5>
@@ -198,14 +198,14 @@ $page_description = "Lancez votre boutique en ligne" . city_phrase(" à ") . " a
                             <i class="fa-solid fa-circle"></i>
                         </div>
                             <div class="image-container chooseus-image">
-                            <img src="./assets/images/dashboard.png" alt="<?= img_alt('Dashboard application client LCR Digital') ?>" class="img-fluid">
+                            <img src="/assets/images/dashboard.png" alt="<?= img_alt('Dashboard application client LCR Digital') ?>" class="img-fluid">
                         </div>
 
                         <div class="app-availability">
                             <span>Disponible sur :</span>
-                            <img src="./assets/images/appstore.png" alt="App Store">
-                            <img src="./assets/images/playstore.avif" alt="Google Play">
-                            <img src="./assets/images/web.png" alt="Web">
+                            <img src="/assets/images/appstore.png" alt="App Store">
+                            <img src="/assets/images/playstore.avif" alt="Google Play">
+                            <img src="/assets/images/web.png" alt="Web">
                         </div>
 
                         <div class="chooseus-image-footer">
@@ -276,13 +276,13 @@ $page_description = "Lancez votre boutique en ligne" . city_phrase(" à ") . " a
         <?php require __DIR__ . "/assets/components/footer.php"; ?>
     </div>
 
-    <script src="./assets/js/vendor/jquery.min.js"></script>
-    <script src="./assets/js/vendor/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/vendor/swiper-bundle.min.js"></script>
-    <script src="./assets/js/vendor/isotope.pkgd.min.js"></script>
-    <script src="./assets/js/vendor/fslightbox.js"></script>
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/swiper-script.js"></script>
-    <script src="./assets/js/video_embedded.js"></script>
+    <script src="/assets/js/vendor/jquery.min.js"></script>
+    <script src="/assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/vendor/swiper-bundle.min.js"></script>
+    <script src="/assets/js/vendor/isotope.pkgd.min.js"></script>
+    <script src="/assets/js/vendor/fslightbox.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/swiper-script.js"></script>
+    <script src="/assets/js/video_embedded.js"></script>
 </body>
 </html>

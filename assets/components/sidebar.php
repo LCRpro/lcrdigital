@@ -5,7 +5,7 @@
         <div class="sidebar">
             <div class="sidebar-header">
                 <div class="logo-container sidebar-logo">
-                    <img src="./assets/images/lcr-digital-logo.png" alt="LCR DIGITAL" class="img-fluid">
+                    <img src="/assets/images/lcr-digital-logo.png" alt="LCR DIGITAL" class="img-fluid">
                 </div>
                 <button class="close-btn btn-white-accent"><span>X</span></button>
             </div>
