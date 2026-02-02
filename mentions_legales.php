@@ -28,7 +28,7 @@ $page_description = "Mentions légales du site LCR DIGITAL, agence web à Rouen.
                     <h2>Informations légales</h2>
                     <h1 class="banner-h1">Mentions légales</h1>
                     <nav class="breadcrumb">
-                        <a href="<?= e(route_with_city("agence-web", $city_slug)) ?>">Accueil</a>
+                        <a href="<?= e(route_with_city("", $city_slug)) ?>">Accueil</a>
                         <span class="separator"><i class="fa-solid fa-chevron-right"></i></span>
                         <a href="#" class="current">Mentions légales</a>
                     </nav>

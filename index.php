@@ -1,6 +1,6 @@
 <?php require __DIR__ . "/city_bootstrap.php";
-$page_title = "Agence web" . city_phrase(" à ") . " – Création de site internet & applications | LCR DIGITAL";
-$page_description = "LCR DIGITAL, votre agence web" . city_phrase(" à ") . ", spécialisée en création de sites internet (vitrine, e-commerce, catalogue, one page) et applications mobiles sur mesure.";
+$page_title = "Agence Web" . city_phrase(" à ") . " – Création Site Internet, Site Vitrine & E-commerce | LCR DIGITAL";
+$page_description = "LCR DIGITAL, agence web" . city_phrase(" à ") . " spécialisée en création de site internet professionnel : site vitrine, site e-commerce, application mobile et développement sur mesure. Devis gratuit.";
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -35,17 +35,16 @@ $page_description = "LCR DIGITAL, votre agence web" . city_phrase(" à ") . ", s
                                 <span>LCR DIGITAL</span>
                             </div>
                             <h1 class="animate-box animated animate__animated" data-animate="animate__fadeInUp">
-                                Des sites web
-                                <span class="h1-wrapper">qui convertissent</span>
+                                Création de Site Internet <span class="h1-wrapper">Professionnel</span>
                             </h1>
                             <p>Nous concevons des expériences web rapides, lisibles et SEO-ready pour générer plus de contacts qualifiés.</p>
                             <div class="hero-cta">
-                                <a href="<?= e(route_with_city("agence-digitale", $city_slug)) ?>" class="btn btn-accent">Nos services</a>
-                                <a href="<?= e(route_with_city("contact-agence-web", $city_slug)) ?>" class="btn btn-accent-outline">Demander un devis</a>
+                                <a href="<?= e(route_with_city("services", $city_slug)) ?>" class="btn btn-accent">Nos services</a>
+                                <a href="<?= e(route_with_city("contact", $city_slug)) ?>" class="btn btn-accent-outline">Demander un devis</a>
                             </div>
                             <div class="hero-highlights">
                                 <span class="hero-highlight">SEO local &amp; technique</span>
-                                <span class="hero-highlight">UX orientee conversion</span>
+                                <span class="hero-highlight">UX orientée conversion</span>
                                 <span class="hero-highlight">Performance mesurable</span>
                             </div>
                         </div>
@@ -53,11 +52,11 @@ $page_description = "LCR DIGITAL, votre agence web" . city_phrase(" à ") . ", s
                             <div class="hero-card">
                                 <h4>Inclus dans nos offres</h4>
                                 <ul class="hero-list">
-                                    <li>Application mobile client + modules dedies</li>
-                                    <li>SEO local &amp; technique pour une vraie visibilite</li>
+                                    <li>Application mobile client + modules dédiés</li>
+                                    <li>SEO local &amp; technique pour une vraie visibilité</li>
                                     <li>Performances, vitesse et suivi des conversions</li>
                                 </ul>
-                                <a href="<?= e(route_with_city("agence-digitale", $city_slug)) ?>" class="hero-link">Voir tous nos services</a>
+                                <a href="<?= e(route_with_city("services", $city_slug)) ?>" class="hero-link">Voir tous nos services</a>
                             </div>
                         </div>
                     </div>
@@ -67,47 +66,60 @@ $page_description = "LCR DIGITAL, votre agence web" . city_phrase(" à ") . ", s
 
 
         
-        <div class="section about-banner">
+        <div class="section about-section">
             <div class="hero-container">
-                <div class="row row-cols-xl-2 row-cols-1 grid-spacer-2">
+                <div class="row row-cols-xl-2 row-cols-1 grid-spacer-4 align-items-center">
                     <div class="col">
-                        <div class="d-flex flex-column gspace-2 position-relative">
-                            <div class="card card-about">
-                                <span class="wrapper">
-                                    <span class="number">5</span>
-                                </span>
-                                <p class="title">ans d'expérience</p>
-                            </div>
-                            <div class="image-container about-img">
+                        <div class="about-image-wrapper animate-box animated animate__animated" data-animate="animate__fadeInLeft">
+                            <div class="about-image-main">
                                 <img src="/assets/images/about.png" alt="<?= img_alt('Agence web LCR Digital') ?>" class="img-fluid">
+                            </div>
+                            <div class="about-stats-card">
+                                <div class="about-stat">
+                                    <span class="about-stat-number">5+</span>
+                                    <span class="about-stat-label">Années d'expérience</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="about-detail animate-box animated animate__animated" data-animate="animate__fadeInRight">
-                            <h6 class="accent-color">À propos</h6>
-                            <h3>Votre partenaire pour la visibilité digitale et la conversion</h3>
-                            <p>LCR DIGITAL accompagne les entreprises de Normandie avec des sites rapides, esthétiques et pensés pour transformer. Nous combinons stratégie, design et SEO pour générer des contacts et des ventes en ligne.</p>
-                            <div class="row row-cols-md-2 row-cols-1 grid-spacer-2">
-                                <div class="col">
-                                    <ul class="check-list">
-                                        <li>Audit et stratégie digitale</li>
-                                        <li>UX/UI orientée conversion</li>
-                                        <li>SEO local et technique</li>
-                                        <li>Suivi des performances</li>
-                                    </ul>
+                        <div class="d-flex flex-column gspace-3 animate-box animated animate__animated" data-animate="animate__fadeInRight">
+                            <h6 class="accent-color">L'agence LCR Digital</h6>
+                            <h3>Votre partenaire digital en Normandie</h3>
+                            <p>Nous accompagnons les TPE, PME et indépendants dans leur transformation digitale. Notre approche : comprendre votre métier, définir des objectifs clairs et créer un site qui génère des résultats concrets.</p>
+
+                            <div class="about-features">
+                                <div class="about-feature-item">
+                                    <div class="about-feature-icon">
+                                        <i class="fa-solid fa-bullseye"></i>
+                                    </div>
+                                    <div class="about-feature-text">
+                                        <h5>Orienté résultats</h5>
+                                        <p>Des sites pensés pour convertir vos visiteurs en clients.</p>
+                                    </div>
                                 </div>
-                                <div class="col">
-                                    <ul class="check-list">
-                                        <li>Sites vitrine et e-commerce</li>
-                                        <li>Contenus optimisés SEO</li>
-                                        <li>Maintenance et évolutivité</li>
-                                        <li>Accompagnement humain</li>
-                                    </ul>
+                                <div class="about-feature-item">
+                                    <div class="about-feature-icon">
+                                        <i class="fa-solid fa-handshake"></i>
+                                    </div>
+                                    <div class="about-feature-text">
+                                        <h5>Proximité</h5>
+                                        <p>Un interlocuteur unique, disponible et réactif.</p>
+                                    </div>
+                                </div>
+                                <div class="about-feature-item">
+                                    <div class="about-feature-icon">
+                                        <i class="fa-solid fa-rocket"></i>
+                                    </div>
+                                    <div class="about-feature-text">
+                                        <h5>Performance</h5>
+                                        <p>Sites rapides, SEO optimisé et suivi des conversions.</p>
+                                    </div>
                                 </div>
                             </div>
+
                             <div>
-                                <a href="<?= e(route_with_city("agence-digitale", $city_slug)) ?>" class="btn btn-accent">En savoir plus</a>
+                                <a href="<?= e(route_with_city("agence", $city_slug)) ?>" class="btn btn-accent">Découvrir l'agence</a>
                             </div>
                         </div>
                     </div>
@@ -120,92 +132,72 @@ $page_description = "LCR DIGITAL, votre agence web" . city_phrase(" à ") . ", s
         <div class="section">
             <div class="hero-container">
                 <div class="d-flex flex-column gspace-4">
-                    <div class="d-flex flex-column align-items-center text-center gspace-2">
+                    <div class="d-flex flex-column align-items-center text-center gspace-2 animate-box animated animate__animated" data-animate="animate__fadeInUp">
                         <h6 class="accent-color">Services</h6>
                         <h3>Des solutions web qui génèrent des résultats</h3>
                         <p>De la landing page au e-commerce complet, nous construisons des sites adaptés à vos objectifs, optimisés pour le SEO et la conversion.</p>
                     </div>
-                    <div class="service-content-wrapper">
-                        <div class="card card-service-wrapper animate-box animated animate__animated" data-animate="animate__fadeIn">
-                            <div class="card card-service">
-                                <div>
-                                <img src="/assets/images/S4.webp" alt="<?= img_alt('Création site one page') ?>" class="img-fluid">
-                                </div>
-                                <h4>One Page</h4>
-                                <p>Une landing page claire et rapide pour capter des leads et valider votre offre.</p>
-                                <div class="service-cta">
-                                <a href="<?= e(route_with_city("creation-site-one-page", $city_slug)) ?>" class="service-link">En savoir plus</a>
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card card-service-wrapper animate-box animated animate__animated" data-animate="animate__fadeIn">
-                            <div class="card card-service highlight-service">
-                                <div>
-                                <img src="/assets/images/S5.webp" alt="<?= img_alt('Création site vitrine') ?>" class="img-fluid">
-                                </div>
-                                <h4>Site vitrine</h4>
-                                <p>Présentez votre activité avec un site professionnel, rassurant et optimisé pour le local.</p>
-                                <div class="service-cta">
-                                <a href="<?= e(route_with_city("creation-site-vitrine", $city_slug)) ?>" class="service-link">En savoir plus</a>
-                                    <i class="fa-solid fa-arrow-right"></i>
+                    <div class="row row-cols-xl-4 row-cols-md-2 row-cols-1 grid-spacer-3">
+                        <div class="col">
+                            <div class="card card-service-wrapper animate-box animated animate__animated" data-animate="animate__fadeIn">
+                                <div class="card card-service highlight-service">
+                                    <div>
+                                        <img src="/assets/images/S5.webp" alt="<?= img_alt('Création site web') ?>" class="img-fluid">
+                                    </div>
+                                    <h4>Site Web</h4>
+                                    <p>Sites vitrine, landing pages et catalogues pour présenter votre activité et générer des contacts.</p>
+                                    <div class="service-cta">
+                                        <a href="<?= e(route_with_city("site-web", $city_slug)) ?>" class="service-link">En savoir plus</a>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="card card-service-wrapper animate-box animated animate__animated" data-animate="animate__fadeIn">
-                            <div class="card card-service">
-                                <div>
-                                <img src="/assets/images/S1.webp" alt="<?= img_alt('Création site catalogue') ?>" class="img-fluid">
-                                </div>
-                                <h4>Site catalogue</h4>
-                                <p>Exposez vos produits et services avec des fiches claires et une navigation fluide.</p>
-                                <div class="service-cta">
-                                <a href="<?= e(route_with_city("creation-site-catalogue", $city_slug)) ?>" class="service-link">En savoir plus</a>
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card card-service-wrapper animate-box animated animate__animated" data-animate="animate__fadeIn">
-                            <div class="card card-service">
-                                <div>
-                                <img src="/assets/images/S3.webp" alt="<?= img_alt('Création site e-commerce') ?>" class="img-fluid">
-                                </div>
-                                <h4>Site E-commerce</h4>
-                                <p>Boutique en ligne prête à vendre : tunnel d’achat optimisé et paiements sécurisés.</p>
-                                <div class="service-cta">
-                                <a href="<?= e(route_with_city("creation-site-ecommerce", $city_slug)) ?>" class="service-link">En savoir plus</a>
-                                    <i class="fa-solid fa-arrow-right"></i>
+                        <div class="col">
+                            <div class="card card-service-wrapper animate-box animated animate__animated" data-animate="animate__fadeIn">
+                                <div class="card card-service">
+                                    <div>
+                                        <img src="/assets/images/S3.webp" alt="<?= img_alt('Création site e-commerce') ?>" class="img-fluid">
+                                    </div>
+                                    <h4>E-commerce</h4>
+                                    <p>Boutique en ligne prête à vendre : tunnel d'achat optimisé et paiements sécurisés.</p>
+                                    <div class="service-cta">
+                                        <a href="<?= e(route_with_city("ecommerce", $city_slug)) ?>" class="service-link">En savoir plus</a>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="card card-service-wrapper animate-box animated animate__animated" data-animate="animate__fadeIn">
-                            <div class="card card-service">
-                                <div>
-                                <img src="/assets/images/S6.webp" alt="<?= img_alt('Création application mobile') ?>" class="img-fluid">
-                                </div>
-                                <h4>Application Mobile</h4>
-                                <p>Applications iOS/Android pour fidéliser et simplifier l’expérience client.</p>
-                                <div class="service-cta">
-                                <a href="<?= e(route_with_city("creation-application-mobile", $city_slug)) ?>" class="service-link">En savoir plus</a>
-                                    <i class="fa-solid fa-arrow-right"></i>
+                        <div class="col">
+                            <div class="card card-service-wrapper animate-box animated animate__animated" data-animate="animate__fadeIn">
+                                <div class="card card-service">
+                                    <div>
+                                        <img src="/assets/images/S6.webp" alt="<?= img_alt('Création application mobile') ?>" class="img-fluid">
+                                    </div>
+                                    <h4>Application Mobile</h4>
+                                    <p>Applications iOS et Android pour fidéliser vos clients et digitaliser votre activité.</p>
+                                    <div class="service-cta">
+                                        <a href="<?= e(route_with_city("application-mobile", $city_slug)) ?>" class="service-link">En savoir plus</a>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="card card-service-wrapper animate-box animated animate__animated" data-animate="animate__fadeIn">
-                            <div class="card card-service">
-                                <div>
-                                <img src="/assets/images/S4.webp" alt="<?= img_alt('Développement web sur mesure') ?>" class="img-fluid">
-                                </div>
-                                <h4>Développement personnalisé</h4>
-                                <p>Fonctionnalités sur mesure, intégrations métier et automatisations adaptées.</p>
-                                <div class="service-cta">
-                                <a href="<?= e(route_with_city("developpement-web-sur-mesure", $city_slug)) ?>" class="service-link">En savoir plus</a>
-                                    <i class="fa-solid fa-arrow-right"></i>
+                        <div class="col">
+                            <div class="card card-service-wrapper animate-box animated animate__animated" data-animate="animate__fadeIn">
+                                <div class="card card-service">
+                                    <div>
+                                        <img src="/assets/images/S4.webp" alt="<?= img_alt('Développement web sur mesure') ?>" class="img-fluid">
+                                    </div>
+                                    <h4>Sur mesure</h4>
+                                    <p>Outils métier, intégrations API, automatisations et fonctionnalités personnalisées.</p>
+                                    <div class="service-cta">
+                                        <a href="<?= e(route_with_city("developpement-sur-mesure", $city_slug)) ?>" class="service-link">En savoir plus</a>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -215,59 +207,52 @@ $page_description = "LCR DIGITAL, votre agence web" . city_phrase(" à ") . ", s
         </div>
 
         
-        <div class="section whychooseus-banner">
+        <div class="section app-section">
             <div class="hero-container">
-                <div class="whychooseus-wrapper">
-                    <div class="chooseus-details animate-box animated animate__animated" data-animate="animate__fadeInLeft">
-                        <h6 class="accent-color">Valeur</h6>
-                        <h3>Une application dédiée à nos clients</h3>
-                        <p>Nos clients disposent d’une application mobile pour piloter leur site en autonomie : réalisations, contenus et données clés, où qu’ils soient.</p>
-                        <div class="card card-chooseus highlight">
-                            <div class="chooseus-icon">
-                                <img src="/assets/images/trophy-digital-marketing-marketing-sports-and-competition-award@4x1.webp" alt="<?= img_alt('Analytique du site') ?>" class="img-fluid">
-                            </div>
-                            <div class="d-flex flex-column gspace-2">
-                                <h5>Analytique du site</h5>
-                                <p>Suivi des performances et des indicateurs clés en temps réel.</p>
-                            </div>
-                        </div>
-                        <div class="card card-chooseus">
-                            <div class="chooseus-icon">
-                                <img src="/assets/images/keyword-digital-marketing-seo-magnifier-research-marketing@4x1.webp" alt="<?= img_alt('Autonomie éditoriale') ?>" class="img-fluid">
-                            </div>
-                            <div class="d-flex flex-column gspace-2">
-                                <h5>Autonomie éditoriale</h5>
-                                <p>Gestion des réalisations, articles, actualités en toute autonomie.</p>
-                            </div>
-                        </div>
-                        <div class="card card-chooseus">
-                            <div class="chooseus-icon">
-                                <img src="/assets/images/bar-chart-line-graph-setting-monitor-analysis-statistics@4x1.webp" alt="<?= img_alt('Pilotage commercial') ?>" class="img-fluid">
-                            </div>
-                            <div class="d-flex flex-column gspace-2">
-                                <h5>Pilotage commercial</h5>
-                                <p>Suivi des ventes et du chiffre d’affaires depuis l’application.</p>
-                            </div>
-                        </div>
+                <div class="d-flex flex-column gspace-4">
+                    <div class="d-flex flex-column align-items-center text-center gspace-2 animate-box animated animate__animated" data-animate="animate__fadeInUp">
+                        <h6 class="accent-color">Gestion de votre site web</h6>
+                        <h3>Une application pour piloter votre site</h3>
+                        <p>Nos clients bénéficient d'une application mobile et web pour gérer leur site en toute autonomie.</p>
                     </div>
-                    <div class="chooseus-image-layout animate-box animated animate__animated" data-animate="animate__fadeInRight">
-                        <div class="chooseus-image-header">
-                            <i class="fa-solid fa-circle"></i>
-                        </div>
-                            <div class="image-container chooseus-image">
-                            <img src="/assets/images/dashboard.png" alt="<?= img_alt('Dashboard application client LCR Digital') ?>" class="img-fluid">
-                        </div>
 
-                        <div class="app-availability">
-                            <span>Disponible sur :</span>
-                            <img src="/assets/images/appstore.png" alt="App Store">
-                            <img src="/assets/images/playstore.avif" alt="Google Play">
-                            <img src="/assets/images/web.png" alt="Web">
+                    <div class="row row-cols-xl-2 row-cols-1 grid-spacer-4 align-items-center">
+                        <div class="col order-xl-1">
+                            <div class="d-flex flex-column gspace-3 animate-box animated animate__animated" data-animate="animate__fadeInLeft">
+                                <div class="app-feature-card">
+                                    <div class="app-feature-number">01</div>
+                                    <div class="app-feature-content">
+                                        <h5>Analytique en temps réel</h5>
+                                        <p>Suivez vos visiteurs, pages vues et conversions directement depuis l'app.</p>
+                                    </div>
+                                </div>
+                                <div class="app-feature-card">
+                                    <div class="app-feature-number">02</div>
+                                    <div class="app-feature-content">
+                                        <h5>Gestion de contenu</h5>
+                                        <p>Ajoutez vos réalisations, articles et actualités en quelques clics.</p>
+                                    </div>
+                                </div>
+                                <div class="app-feature-card">
+                                    <div class="app-feature-number">03</div>
+                                    <div class="app-feature-content">
+                                        <h5>Suivi commercial</h5>
+                                        <p>Visualisez vos ventes et votre chiffre d'affaires en un coup d'œil.</p>
+                                    </div>
+                                </div>
+                                <div class="app-stores">
+                                    <span>Disponible sur :</span>
+                                    <div class="app-stores-icons">
+                                        <img src="/assets/images/appstore.png" alt="App Store">
+                                        <img src="/assets/images/playstore.avif" alt="Google Play">
+                                        <img src="/assets/images/web.png" alt="Web">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="chooseus-image-footer">
-                            <div class="icon-wrapper">
-                                <i class="fa-regular fa-square"></i>
+                        <div class="col order-xl-2" style="margin-top: -3%;">
+                            <div class="app-mockup animate-box animated animate__animated" data-animate="animate__fadeInRight">
+                                <img src="/assets/images/dashboard.png" alt="<?= img_alt('Dashboard application client LCR Digital') ?>" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -275,14 +260,13 @@ $page_description = "LCR DIGITAL, votre agence web" . city_phrase(" à ") . ", s
             </div>
         </div>
 
-        
         <div class="section contactus-banner">
             <div class="hero-container">
                 <div class="contactus-content">
                     <h3 class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Parlons de votre projet digital</h3>
                     <p class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Un site performant commence par une bonne stratégie. Nous vous aidons à cadrer le message, la structure et les priorités pour générer plus de contacts et de ventes.</p>
                     <div>
-                        <a href="<?= e(route_with_city("contact-agence-web", $city_slug)) ?>" class="btn btn-accent">Nous contacter</a>
+                        <a href="<?= e(route_with_city("contact", $city_slug)) ?>" class="btn btn-accent">Nous contacter</a>
                     </div>
                 </div>
             </div>
@@ -292,11 +276,11 @@ $page_description = "LCR DIGITAL, votre agence web" . city_phrase(" à ") . ", s
        <div class="section portfolio-banner">
     <div class="hero-container">
         <div class="d-flex flex-column gspace-4 position-relative z-2">
-            <div class="d-flex flex-column gspace-2 align-items-center text-center">
+            <div class="d-flex flex-column gspace-2 align-items-center text-center animate-box animated animate__animated" data-animate="animate__fadeInUp">
                 <h6 class="accent-color">Réalisations</h6>
                 <h3>Des projets qui transforment</h3>
                 <p>
-                    Une sélection de réalisations et d’accompagnements pensés pour la performance et la visibilité.
+                    Une sélection de réalisations et d'accompagnements pensés pour la performance et la visibilité.
                 </p>
             </div>
             <div class="row row-cols-xl-2 row-cols-md-2 row-cols-1 
@@ -366,7 +350,7 @@ $page_description = "LCR DIGITAL, votre agence web" . city_phrase(" à ") . ", s
                         </div>
 
                         <div class="portfolio-content">
-                            <h5>Sitre vitrine LCR DIGITAL</h5>
+                            <h5>Site vitrine LCR DIGITAL</h5>
 
                             <div class="d-flex flex-row gspace-4">
                                 <div class="portfolio-meta">
@@ -387,7 +371,7 @@ $page_description = "LCR DIGITAL, votre agence web" . city_phrase(" à ") . ", s
 
                             <div class="portfolio-description">
                                 <p>
-                                    Site vitrine permettant à l’entreprise Lapouge Paysage de présenter ses services.
+                                    Site vitrine de notre agence web avec présentation de nos services et réalisations.
                                 </p>
                                <div class="portfolio-btn-wrapper">
                                     <div class="portfolio-btn">
@@ -431,7 +415,7 @@ $page_description = "LCR DIGITAL, votre agence web" . city_phrase(" à ") . ", s
                             des sites clairs, efficaces et orientés conversion.
                         </p>
                         <div>
-                            <a href="<?= e(route_with_city("agence-digitale", $city_slug)) ?>" class="btn btn-accent-2">
+                            <a href="<?= e(route_with_city("agence", $city_slug)) ?>" class="btn btn-accent-2">
                                 <div class="d-flex flex-row align-items-center gspace-1">
                                     <span>Découvrir l’agence</span>
                                     <i class="fa-solid fa-arrow-right"></i>
@@ -471,7 +455,7 @@ data-animate="animate__fadeIn">
                                 rapide et optimisé pour le référencement local.
                             </p>
                             <div>
-                                <a href="<?= e(route_with_city("creation-site-vitrine", $city_slug)) ?>" class="btn btn-accent-2">
+                                <a href="<?= e(route_with_city("site-web", $city_slug)) ?>" class="btn btn-accent-2">
                                     <div class="d-flex flex-row align-items-center gspace-1">
                                         <span>Voir l’offre</span>
                                         <i class="fa-solid fa-arrow-right"></i>
@@ -489,7 +473,7 @@ data-animate="animate__fadeIn">
                                 conçus pour accompagner votre croissance.
                             </p>
                             <div>
-                                <a href="<?= e(route_with_city("developpement-web-sur-mesure", $city_slug)) ?>" class="btn btn-accent-2">
+                                <a href="<?= e(route_with_city("developpement-sur-mesure", $city_slug)) ?>" class="btn btn-accent-2">
                                     <div class="d-flex flex-row align-items-center gspace-1">
                                         <span>Découvrir le service</span>
                                         <i class="fa-solid fa-arrow-right"></i>
@@ -509,7 +493,7 @@ data-animate="animate__fadeIn">
                             évolutions futures et optimisation continue.
                         </p>
                         <div>
-                            <a href="<?= e(route_with_city("contact-agence-web", $city_slug)) ?>" class="btn btn-accent-2">
+                            <a href="<?= e(route_with_city("contact", $city_slug)) ?>" class="btn btn-accent-2">
                                 <div class="d-flex flex-row align-items-center gspace-1">
                                     <span>Discuter du projet</span>
                                     <i class="fa-solid fa-arrow-right"></i>
@@ -528,55 +512,6 @@ data-animate="animate__fadeIn">
 
 
         
-        <div class="section">
-            <div class="hero-container">
-                <div class="row row-cols-xl-2 row-cols-1 grid-spacer-2">
-                    <div class="col">
-                        <div class="d-flex flex-column gspace-2 animate-box animated animate__animated" data-animate="animate__fadeInLeft">
-                            <h6 class="accent-color">Témoignages</h6>
-                            <h3>Ce que nos clients apprécient</h3>
-                            <p>Réactivité, clarté et résultats. Nous construisons des sites qui servent vos objectifs business.</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="overflow-hidden animate-box animated animate__animated" data-animate="animate__fadeInRight">
-                            <div class="swiper swiperTestimonial">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="card card-testimonial">
-                                            <div>
-                                                <div class="testimonial-image">
-                                                    <i class="fa-solid fa-user"></i>
-                                                </div>
-                                            </div>
-                                            <p class="testimonial-content">
-                                                "Grâce au site vitrine, j'ai gagné en visibilité.""
-                                            </p>
-                                            <span class="testimonial-name">Quentin</span>
-                                            <span class="testimonial-title">Dirigeant</span>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card card-testimonial">
-                                            <div>
-                                                <div class="testimonial-image">
-                                                    <i class="fa-solid fa-user"></i>
-                                                </div>
-                                            </div>
-                                            <p class="testimonial-content">
-                                             "L'application personnalisée m'a permis de gérer mon stock.""
-                                            </p>
-                                            <span class="testimonial-name">Laly</span>
-                                            <span class="testimonial-title">Commerçante</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </main>
 
     

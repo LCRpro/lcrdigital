@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lcr-digital.fr/sitemap2.xml
+Sitemap: https://lcr-digital.fr/sitemap.xml

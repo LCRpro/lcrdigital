@@ -29,7 +29,7 @@ $page_description = "Article de blog LCR DIGITAL sur le web, le SEO et le market
                     <h2>SEO local : comment dominer les recherches à Rouen</h2>
                     <h1 class="banner-h1">LCR DIGITAL - SEO local : comment dominer les recherches à Rouen</h1>
                     <nav class="breadcrumb">
-                        <a href="<?= e(route_with_city("agence-web", $city_slug)) ?>">Accueil</a>
+                        <a href="<?= e(route_with_city("", $city_slug)) ?>">Accueil</a>
                         <span class="separator"><i class="fa-solid fa-chevron-right"></i></span>
                         <a href="#">Blog</a>
                         <span class="separator"><i class="fa-solid fa-chevron-right"></i></span>
@@ -186,7 +186,7 @@ $page_description = "Article de blog LCR DIGITAL sur le web, le SEO et le market
                                 <h4>Un projet web en tête ?</h4>
                                 <p>Nous vous aidons à construire un site qui attire et convertit.</p>
                                 <div>
-                                    <a href="<?= e(route_with_city("contact-agence-web", $city_slug)) ?>" class="btn btn-accent">Nous contacter</a>
+                                    <a href="<?= e(route_with_city("contact", $city_slug)) ?>" class="btn btn-accent">Nous contacter</a>
                                 </div>
                             </div>
                         </div>

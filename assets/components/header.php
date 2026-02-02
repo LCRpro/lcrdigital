@@ -4,7 +4,7 @@
         <nav class="navbar navbar-expand-xl">
             <div class="container-fluid">
                 <div class="logo-container header-logo">
-                    <a class="navbar-brand" href="<?= e(route_with_city("agence-web", $city_slug)) ?>"><img src="/assets/images/lcr-digital-logo.png" class="img-fluid" alt="LCR DIGITAL"></a>
+                    <a class="navbar-brand" href="<?= e(route_with_city("", $city_slug)) ?>"><img src="/assets/images/lcr-digital-logo.png" class="img-fluid" alt="LCR DIGITAL"></a>
                 </div>
                 <div class="nav-link-wrapper">
                     <button class="btn nav-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -14,34 +14,31 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="<?= e(route_with_city("agence-web", $city_slug)) ?>">Accueil</a>
+                                <a class="nav-link" aria-current="page" href="<?= e(route_with_city("", $city_slug)) ?>">Accueil</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="<?= e(route_with_city("agence-digitale", $city_slug)) ?>">A propos</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Nos services <i class="fa-solid fa-angle-down"></i>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="<?= e(route_with_city("services-web", $city_slug)) ?>">Tous nos services</a></li>
-                                    <li><a class="dropdown-item" href="<?= e(route_with_city("creation-site-one-page", $city_slug)) ?>">One Page</a></li>
-                                    <li><a class="dropdown-item" href="<?= e(route_with_city("creation-site-vitrine", $city_slug)) ?>">Site vitrine</a></li>
-                                    <li><a class="dropdown-item" href="<?= e(route_with_city("creation-site-catalogue", $city_slug)) ?>">Site catalogue</a></li>
-                                    <li><a class="dropdown-item" href="<?= e(route_with_city("creation-site-ecommerce", $city_slug)) ?>">Site e-commerce</a></li>
-                                    <li><a class="dropdown-item" href="<?= e(route_with_city("creation-application-mobile", $city_slug)) ?>">Application mobile</a></li>
-                                    <li><a class="dropdown-item" href="<?= e(route_with_city("developpement-web-sur-mesure", $city_slug)) ?>">Développement personnalisé</a></li>
-                                </ul>
+                                <a class="nav-link" href="<?= e(route_with_city("site-web", $city_slug)) ?>">Site Web</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?= e(route_with_city("tarifs-creation-site-web", $city_slug)) ?>">Tarifs</a>
+                                <a class="nav-link" href="<?= e(route_with_city("ecommerce", $city_slug)) ?>">Ecommerce</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?= e(route_with_city("application-mobile", $city_slug)) ?>">App mobile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?= e(route_with_city("developpement-sur-mesure", $city_slug)) ?>">Développement sur mesure</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?= e(route_with_city("secteurs-activite", $city_slug)) ?>">Secteurs d'activité</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?= e(route_with_city("agence", $city_slug)) ?>">L'agence</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="navbar-cta-container">
-                    <a href="<?= e(route_with_city("contact-agence-web", $city_slug)) ?>" class="btn btn-accent-outline">Contact</a>
+                    <a href="<?= e(route_with_city("contact", $city_slug)) ?>" class="btn btn-accent-outline">Contact</a>
                 </div>
             </div>
         </nav>

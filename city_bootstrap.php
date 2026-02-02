@@ -54,6 +54,20 @@ function city_or_default($fallback) {
 
 function route_with_city($base, $city_slug) {
     $base = ltrim($base, "/");
+
+    // Map des anciennes routes vers les nouvelles URLs SEO
+    $seo_routes = [
+        "site-web" => "creation-site-vitrine",
+        "ecommerce" => "creation-site-ecommerce",
+        "application-mobile" => "developpement-application-mobile",
+        "agence" => "agence-web",
+    ];
+
+    // Remplacer par l'URL SEO si disponible
+    if (isset($seo_routes[$base])) {
+        $base = $seo_routes[$base];
+    }
+
     if ($city_slug === "") {
         return "/" . $base;
     }

@@ -129,8 +129,10 @@ function initSidebar() {
     var $closeBtn = $(".close-btn");
     var $overlay = $(".sidebar-overlay");
     var $sidebar = $(".sidebar");
+    var $body = $("body");
 
     $menuBtn.on("click", function () {
+        $body.addClass("sidebar-open");
         $overlay.addClass("active");
         setTimeout(function () {
             $sidebar.addClass("active");
@@ -141,6 +143,7 @@ function initSidebar() {
         $sidebar.removeClass("active");
         setTimeout(function () {
             $overlay.removeClass("active");
+            $body.removeClass("sidebar-open");
         }, 200);
     });
 
@@ -148,6 +151,7 @@ function initSidebar() {
         $sidebar.removeClass("active");
         setTimeout(function () {
             $overlay.removeClass("active");
+            $body.removeClass("sidebar-open");
         }, 200);
     });
 }

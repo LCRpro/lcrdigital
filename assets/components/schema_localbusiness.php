@@ -69,7 +69,7 @@ $schema = [
     "@type" => "LocalBusiness",
     "@id" => "https://lcr-digital.fr/#localbusiness",
     "name" => "LCR DIGITAL",
-    "description" => "Agence web specialisee en creation de sites internet, applications mobiles et SEO en Normandie.",
+    "description" => "Agence web spécialisée en création de site internet professionnel, création de site vitrine, création de site e-commerce, développement d'application mobile et développement sur mesure en Normandie.",
     "url" => "https://lcr-digital.fr",
     "logo" => "https://lcr-digital.fr/assets/images/lcr-digital-logo.png",
     "image" => "https://lcr-digital.fr/assets/images/lcr-digital-logo.png",
@@ -107,38 +107,54 @@ $schema = [
     ],
     "hasOfferCatalog" => [
         "@type" => "OfferCatalog",
-        "name" => "Services de creation web",
+        "name" => "Services de création de site internet et développement web",
         "itemListElement" => [
             [
                 "@type" => "Offer",
                 "itemOffered" => [
                     "@type" => "Service",
-                    "name" => "Creation de site vitrine",
-                    "description" => "Conception de sites vitrines professionnels et responsives"
+                    "name" => "Création de site vitrine",
+                    "description" => "Création de site vitrine professionnel et responsive pour présenter votre activité et générer des contacts qualifiés"
                 ]
             ],
             [
                 "@type" => "Offer",
                 "itemOffered" => [
                     "@type" => "Service",
-                    "name" => "Creation de site e-commerce",
-                    "description" => "Developpement de boutiques en ligne performantes"
+                    "name" => "Création de site e-commerce",
+                    "description" => "Création de site e-commerce et boutique en ligne avec paiement sécurisé et gestion des stocks"
                 ]
             ],
             [
                 "@type" => "Offer",
                 "itemOffered" => [
                     "@type" => "Service",
-                    "name" => "Creation d'application mobile",
-                    "description" => "Developpement d'applications mobiles sur mesure"
+                    "name" => "Développement application mobile",
+                    "description" => "Développement d'applications mobiles iOS et Android sur mesure pour entreprises"
                 ]
             ],
             [
                 "@type" => "Offer",
                 "itemOffered" => [
                     "@type" => "Service",
-                    "name" => "SEO et referencement",
-                    "description" => "Optimisation pour les moteurs de recherche"
+                    "name" => "Développement web sur mesure",
+                    "description" => "Développement sur mesure d'outils métier, intégrations API et automatisations personnalisées"
+                ]
+            ],
+            [
+                "@type" => "Offer",
+                "itemOffered" => [
+                    "@type" => "Service",
+                    "name" => "Création de site internet professionnel",
+                    "description" => "Création de site internet professionnel optimisé SEO pour améliorer votre visibilité en ligne"
+                ]
+            ],
+            [
+                "@type" => "Offer",
+                "itemOffered" => [
+                    "@type" => "Service",
+                    "name" => "Référencement naturel SEO",
+                    "description" => "Optimisation SEO et référencement local pour améliorer votre positionnement sur Google"
                 ]
             ]
         ]

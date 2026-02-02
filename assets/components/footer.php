@@ -7,7 +7,7 @@
                     <div class="logo-container footer">
                         <img src="/assets/images/lcr-digital-logo.png" alt="LCR DIGITAL" class="img-fluid">
                     </div>
-                    <p>Agence web LCR DIGITAL : creation de sites performants, visibles et pensés pour convertir.</p>
+                    <p>Agence web LCR DIGITAL : création de sites performants, visibles et pensés pour convertir.</p>
                     <div class="social-container">
                         <a href="https://www.facebook.com/profile.php?id=61586348482305#" target="_blank" class="social-item">
                             <i class="fa-brands fa-facebook-f"></i>
@@ -18,7 +18,7 @@
                     </div>
                 </div>
 
-                
+
                 <div class="footer-link">
                     <div class="underline-footer"></div>
                     <div class="row row-cols-xl-4 row-cols-md-2 row-cols-1 g-3">
@@ -54,9 +54,10 @@
                                 <h5 class="accent-color">Liens rapides</h5>
                                 <div class="footer-list-underline"></div>
                                 <ul class="footer-list">
-                                    <li><a href="<?= e(route_with_city("agence-digitale", $city_slug)) ?>">A propos</a></li>
-                                    <li><a href="<?= e(route_with_city("questions-frequentes-agence-digitale", $city_slug)) ?>">FAQ</a></li>
-                                    <li><a href="<?= e(route_with_city("contact-agence-web", $city_slug)) ?>">Contact</a></li>
+                                    <li><a href="<?= e(route_with_city("", $city_slug)) ?>">Accueil</a></li>
+                                    <li><a href="<?= e(route_with_city("agence", $city_slug)) ?>">L'agence</a></li>
+                                    <li><a href="<?= e(route_with_city("secteurs-activite", $city_slug)) ?>">Secteurs d'activité</a></li>
+                                    <li><a href="<?= e(route_with_city("contact", $city_slug)) ?>">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -65,21 +66,23 @@
                                 <h5 class="accent-color">Services</h5>
                                 <div class="footer-list-underline"></div>
                                 <ul class="footer-list">
-                                    <li><a href="<?= e(route_with_city("creation-site-one-page", $city_slug)) ?>">One Page</a></li>
-                                    <li><a href="<?= e(route_with_city("creation-site-vitrine", $city_slug)) ?>">Site vitrine</a></li>
-                                    <li><a href="<?= e(route_with_city("creation-site-catalogue", $city_slug)) ?>">Site catalogue</a></li>
-                                    <li><a href="<?= e(route_with_city("creation-site-ecommerce", $city_slug)) ?>">Site e-commerce</a></li>
-                                    <li><a href="<?= e(route_with_city("creation-application-mobile", $city_slug)) ?>">Application mobile</a></li>
-                                    <li><a href="<?= e(route_with_city("developpement-web-sur-mesure", $city_slug)) ?>">Développement personnalisé</a></li>
+                                    <li><a href="<?= e(route_with_city("site-web", $city_slug)) ?>">Site Web</a></li>
+                                    <li><a href="<?= e(route_with_city("ecommerce", $city_slug)) ?>">E-commerce</a></li>
+                                    <li><a href="<?= e(route_with_city("application-mobile", $city_slug)) ?>">Application mobile</a></li>
+                                    <li><a href="<?= e(route_with_city("developpement-sur-mesure", $city_slug)) ?>">Développement sur mesure</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col">
                             <div class="d-flex flex-column gspace-2 text-xl-start text-center align-items-xl-start align-items-center">
-                                <h5 class="accent-color">Conseils & contact</h5>
+                                <h5 class="accent-color">Tarifs</h5>
                                 <div class="footer-list-underline"></div>
-                                <p>Recevez des conseils web et SEO. Contactez-nous pour les recevoir.</p>
-                                <a href="<?= e(route_with_city("contact-agence-web", $city_slug)) ?>" class="btn btn-accent">Nous contacter</a>
+                                <ul class="footer-list">
+                                    <li><a href="/tarif-site-web">Tarif Site Web</a></li>
+                                    <li><a href="/tarif-ecommerce">Tarif E-commerce</a></li>
+                                    <li><a href="/tarif-application-mobile">Tarif Application Mobile</a></li>
+                                    <li><a href="/tarif-developpement-sur-mesure">Tarif Sur Mesure</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -87,7 +90,7 @@
                 </div>
 
                 <div class="copyright-container">
-                    <p>Copyright © 2026 LCR DIGITAL, tous droits reserves.</p>
+                    <p>Copyright © 2026 LCR DIGITAL, tous droits réservés.</p>
 
                     <div class="d-flex flex-row align-items-center gspace-2">
                         <a href="/mentions-legales" class="legal-link">Mentions légales</a>

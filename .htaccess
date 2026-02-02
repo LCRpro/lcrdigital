@@ -6,66 +6,77 @@ AddCharset UTF-8 .html .php
 # Allow assets and robots.txt
 RewriteRule ^assets/ - [L]
 RewriteRule ^robots\.txt$ - [L]
+RewriteRule ^sitemap2\.xml$ - [L]
 
-# SEO-friendly URLs
-RewriteCond %{THE_REQUEST} \s/+index\.html[?\s]
-RewriteRule ^index\.html$ /agence-web [R=301,L]
-RewriteCond %{THE_REQUEST} \s/+about\.html[?\s]
-RewriteRule ^about\.html$ /agence-digitale [R=301,L]
-RewriteCond %{THE_REQUEST} \s/+contact\.html[?\s]
-RewriteRule ^contact\.html$ /contact-agence-web [R=301,L]
-RewriteCond %{THE_REQUEST} \s/+faq\.html[?\s]
-RewriteRule ^faq\.html$ /questions-frequentes-agence-digitale [R=301,L]
-RewriteCond %{THE_REQUEST} \s/+pricing\.html[?\s]
-RewriteRule ^pricing\.html$ /tarifs-creation-site-web [R=301,L]
-RewriteCond %{THE_REQUEST} \s/+service\.html[?\s]
-RewriteRule ^service\.html$ /services-web [R=301,L]
-RewriteCond %{THE_REQUEST} \s/+single_post\.html[?\s]
-RewriteRule ^single_post\.html$ /article-agence-digitale-rouen [R=301,L]
-RewriteCond %{THE_REQUEST} \s/+404_page\.html[?\s]
-RewriteRule ^404_page\.html$ /page-introuvable [R=301,L]
+# =============================================
+# REDIRECTIONS 301 - Anciennes URLs vers nouvelles
+# =============================================
 
-RewriteRule ^agence-web/?$ /index.php [L,QSA]
-RewriteRule ^agence-digitale/?$ /about.php [L,QSA]
-RewriteRule ^contact-agence-web/?$ /contact_page.php [L,QSA]
-RewriteRule ^questions-frequentes-agence-digitale/?$ /faq.php [L,QSA]
-RewriteRule ^tarifs-creation-site-web/?$ /pricing.php [L,QSA]
-RewriteRule ^services-web/?$ /service.php [L,QSA]
-RewriteRule ^creation-site-one-page/?$ /service_one_page.php [L,QSA]
-RewriteRule ^creation-site-vitrine/?$ /service_site_vitrine.php [L,QSA]
-RewriteRule ^creation-site-catalogue/?$ /service_site_catalogue.php [L,QSA]
-RewriteRule ^creation-site-ecommerce/?$ /service_ecommerce.php [L,QSA]
-RewriteRule ^creation-application-mobile/?$ /service_app_mobile.php [L,QSA]
-RewriteRule ^developpement-web-sur-mesure/?$ /service_sur_mesure.php [L,QSA]
+# Anciennes pages supprimées → Pages correspondantes
+RewriteRule ^creation-site-one-page/?$ /creation-site-vitrine [R=301,L]
+RewriteRule ^creation-site-catalogue/?$ /creation-site-vitrine [R=301,L]
+RewriteRule ^services-web/?$ / [R=301,L]
+RewriteRule ^tarifs-creation-site-web/?$ /contact [R=301,L]
+
+# Anciennes URLs avec ville → Nouvelles URLs
+RewriteRule ^creation-site-one-page/([a-z0-9-]+)/?$ /creation-site-vitrine/$1 [R=301,L]
+RewriteRule ^creation-site-catalogue/([a-z0-9-]+)/?$ /creation-site-vitrine/$1 [R=301,L]
+RewriteRule ^services-web/([a-z0-9-]+)/?$ /$1 [R=301,L]
+RewriteRule ^tarifs-creation-site-web/([a-z0-9-]+)/?$ /contact/$1 [R=301,L]
+
+# Anciennes URLs courtes → URLs SEO
+RewriteRule ^site-web/?$ /creation-site-vitrine [R=301,L]
+RewriteRule ^site-web/([a-z0-9-]+)/?$ /creation-site-vitrine/$1 [R=301,L]
+RewriteRule ^ecommerce/?$ /creation-site-ecommerce [R=301,L]
+RewriteRule ^ecommerce/([a-z0-9-]+)/?$ /creation-site-ecommerce/$1 [R=301,L]
+RewriteRule ^application-mobile/?$ /developpement-application-mobile [R=301,L]
+RewriteRule ^application-mobile/([a-z0-9-]+)/?$ /developpement-application-mobile/$1 [R=301,L]
+RewriteRule ^agence/?$ /agence-web [R=301,L]
+RewriteRule ^agence/([a-z0-9-]+)/?$ /agence-web/$1 [R=301,L]
+
+# Anciennes URLs renommées
+RewriteRule ^tarif-site-vitrine/?$ /tarif-site-web [R=301,L]
+RewriteRule ^agence-digitale/?$ /agence-web [R=301,L]
+RewriteRule ^agence-digitale/([a-z0-9-]+)/?$ /agence-web/$1 [R=301,L]
+RewriteRule ^creation-application-mobile/?$ /developpement-application-mobile [R=301,L]
+RewriteRule ^creation-application-mobile/([a-z0-9-]+)/?$ /developpement-application-mobile/$1 [R=301,L]
+RewriteRule ^developpement-web-sur-mesure/?$ /developpement-sur-mesure [R=301,L]
+RewriteRule ^developpement-web-sur-mesure/([a-z0-9-]+)/?$ /developpement-sur-mesure/$1 [R=301,L]
+RewriteRule ^contact-agence-web/?$ /contact [R=301,L]
+RewriteRule ^contact-agence-web/([a-z0-9-]+)/?$ /contact/$1 [R=301,L]
+
+# =============================================
+# URLs SEO - Pages sans ville
+# =============================================
+RewriteRule ^creation-site-vitrine/?$ /site_web.php [L,QSA]
+RewriteRule ^creation-site-ecommerce/?$ /ecommerce.php [L,QSA]
+RewriteRule ^developpement-application-mobile/?$ /application_mobile.php [L,QSA]
+RewriteRule ^developpement-sur-mesure/?$ /developpement_sur_mesure.php [L,QSA]
+RewriteRule ^secteurs-activite/?$ /secteurs_activite.php [L,QSA]
+RewriteRule ^agence-web/?$ /agence.php [L,QSA]
+RewriteRule ^contact/?$ /contact.php [L,QSA]
 RewriteRule ^mentions-legales/?$ /mentions_legales.php [L,QSA]
+RewriteRule ^services/?$ /services.php [L,QSA]
 
-# Redirections 301 des anciennes URLs vers les nouvelles
-RewriteRule ^agence-web-([a-z0-9-]+)/?$ /agence-web/$1 [R=301,L]
-RewriteRule ^agence-digitale-([a-z0-9-]+)/?$ /agence-digitale/$1 [R=301,L]
-RewriteRule ^contact-agence-web-([a-z0-9-]+)/?$ /contact-agence-web/$1 [R=301,L]
-RewriteRule ^questions-frequentes-agence-digitale-([a-z0-9-]+)/?$ /questions-frequentes-agence-digitale/$1 [R=301,L]
-RewriteRule ^tarifs-creation-site-web-([a-z0-9-]+)/?$ /tarifs-creation-site-web/$1 [R=301,L]
-RewriteRule ^services-web-([a-z0-9-]+)/?$ /services-web/$1 [R=301,L]
-RewriteRule ^service-detail-agence-digitale-rouen/?$ /creation-site-vitrine/rouen [R=301,L]
-RewriteRule ^creation-site-one-page-([a-z0-9-]+)/?$ /creation-site-one-page/$1 [R=301,L]
-RewriteRule ^creation-site-vitrine-([a-z0-9-]+)/?$ /creation-site-vitrine/$1 [R=301,L]
-RewriteRule ^creation-site-catalogue-([a-z0-9-]+)/?$ /creation-site-catalogue/$1 [R=301,L]
-RewriteRule ^creation-site-ecommerce-([a-z0-9-]+)/?$ /creation-site-ecommerce/$1 [R=301,L]
-RewriteRule ^creation-application-mobile-([a-z0-9-]+)/?$ /creation-application-mobile/$1 [R=301,L]
-RewriteRule ^developpement-web-sur-mesure-([a-z0-9-]+)/?$ /developpement-web-sur-mesure/$1 [R=301,L]
+# Pages Tarifs
+RewriteRule ^tarif-site-web/?$ /tarif_site_web.php [L,QSA]
+RewriteRule ^tarif-ecommerce/?$ /tarif_ecommerce.php [L,QSA]
+RewriteRule ^tarif-application-mobile/?$ /tarif_mobile.php [L,QSA]
+RewriteRule ^tarif-developpement-sur-mesure/?$ /tarif_sur_mesure.php [L,QSA]
 
-# Nouvelles URLs avec /url/ville
-RewriteRule ^agence-web/([a-z0-9-]+)/?$ /index.php?ville=$1 [L,QSA]
-RewriteRule ^agence-digitale/([a-z0-9-]+)/?$ /about.php?ville=$1 [L,QSA]
-RewriteRule ^contact-agence-web/([a-z0-9-]+)/?$ /contact_page.php?ville=$1 [L,QSA]
-RewriteRule ^questions-frequentes-agence-digitale/([a-z0-9-]+)/?$ /faq.php?ville=$1 [L,QSA]
-RewriteRule ^tarifs-creation-site-web/([a-z0-9-]+)/?$ /pricing.php?ville=$1 [L,QSA]
-RewriteRule ^services-web/([a-z0-9-]+)/?$ /service.php?ville=$1 [L,QSA]
-RewriteRule ^creation-site-one-page/([a-z0-9-]+)/?$ /service_one_page.php?ville=$1 [L,QSA]
-RewriteRule ^creation-site-vitrine/([a-z0-9-]+)/?$ /service_site_vitrine.php?ville=$1 [L,QSA]
-RewriteRule ^creation-site-catalogue/([a-z0-9-]+)/?$ /service_site_catalogue.php?ville=$1 [L,QSA]
-RewriteRule ^creation-site-ecommerce/([a-z0-9-]+)/?$ /service_ecommerce.php?ville=$1 [L,QSA]
-RewriteRule ^creation-application-mobile/([a-z0-9-]+)/?$ /service_app_mobile.php?ville=$1 [L,QSA]
-RewriteRule ^developpement-web-sur-mesure/([a-z0-9-]+)/?$ /service_sur_mesure.php?ville=$1 [L,QSA]
-RewriteRule ^article-agence-digitale-rouen/?$ /single_post.php?ville=rouen [L,QSA]
-RewriteRule ^page-introuvable/?$ /404_page.php [L]
+# =============================================
+# URLs SEO - Pages avec ville
+# =============================================
+RewriteRule ^creation-site-vitrine/([a-z0-9-]+)/?$ /site_web.php?ville=$1 [L,QSA]
+RewriteRule ^creation-site-ecommerce/([a-z0-9-]+)/?$ /ecommerce.php?ville=$1 [L,QSA]
+RewriteRule ^developpement-application-mobile/([a-z0-9-]+)/?$ /application_mobile.php?ville=$1 [L,QSA]
+RewriteRule ^developpement-sur-mesure/([a-z0-9-]+)/?$ /developpement_sur_mesure.php?ville=$1 [L,QSA]
+RewriteRule ^secteurs-activite/([a-z0-9-]+)/?$ /secteurs_activite.php?ville=$1 [L,QSA]
+RewriteRule ^agence-web/([a-z0-9-]+)/?$ /agence.php?ville=$1 [L,QSA]
+RewriteRule ^contact/([a-z0-9-]+)/?$ /contact.php?ville=$1 [L,QSA]
+RewriteRule ^services/([a-z0-9-]+)/?$ /services.php?ville=$1 [L,QSA]
+
+# =============================================
+# Pages villes (accueil localisé)
+# =============================================
+RewriteRule ^([a-z0-9-]+)/?$ /index.php?ville=$1 [L,QSA]
