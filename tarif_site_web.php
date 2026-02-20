@@ -1,6 +1,6 @@
 <?php require __DIR__ . "/city_bootstrap.php";
 $page_title = "Tarif Site Web" . city_phrase(" à ") . " – Prix Création Site Internet | LCR DIGITAL";
-$page_description = "Tarifs création site web" . city_phrase(" à ") . " dès 200€/mois : site vitrine, référencement local, hébergement et maintenance inclus. 3 formules TPE/PME : Site web, Visibilité, Digitalisation. Devis gratuit et personnalisé.";
+$page_description = "Tarifs création site web" . city_phrase(" à ") . " sur devis personnalisé. Chaque projet est unique : site vitrine, référencement local, hébergement, maintenance. Analyse gratuite de votre projet, devis détaillé sous 48h.";
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -9,101 +9,60 @@ $page_description = "Tarifs création site web" . city_phrase(" à ") . " dès 2
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "ItemList",
-        "name": "Tarifs Site Web LCR DIGITAL",
-        "description": "Offres et tarifs pour la création de site internet professionnel",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "item": {
-                    "@type": "Offer",
-                    "name": "Forfait Site Web",
-                    "description": "Site internet vitrine avec hébergement, nom de domaine, SSL, design responsive et jusqu'à 8 pages",
-                    "price": "200",
-                    "priceCurrency": "EUR",
-                    "priceSpecification": {
-                        "@type": "UnitPriceSpecification",
-                        "price": "200",
-                        "priceCurrency": "EUR",
-                        "unitText": "MONTH"
-                    },
-                    "seller": {
-                        "@type": "Organization",
-                        "name": "LCR DIGITAL"
-                    },
-                    "availability": "https://schema.org/InStock",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Création de site web vitrine",
-                        "provider": {
-                            "@type": "Organization",
-                            "name": "LCR DIGITAL"
-                        }
-                    }
-                }
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "item": {
-                    "@type": "Offer",
-                    "name": "Forfait Visibilité",
-                    "description": "Site internet avec référencement local, optimisation SEO avancée, Google My Business et jusqu'à 12 pages",
-                    "price": "260",
-                    "priceCurrency": "EUR",
-                    "priceSpecification": {
-                        "@type": "UnitPriceSpecification",
-                        "price": "260",
-                        "priceCurrency": "EUR",
-                        "unitText": "MONTH"
-                    },
-                    "seller": {
-                        "@type": "Organization",
-                        "name": "LCR DIGITAL"
-                    },
-                    "availability": "https://schema.org/InStock",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Création de site web avec référencement",
-                        "provider": {
-                            "@type": "Organization",
-                            "name": "LCR DIGITAL"
-                        }
-                    }
-                }
-            },
-            {
-                "@type": "ListItem",
-                "position": 3,
-                "item": {
-                    "@type": "Offer",
-                    "name": "Forfait Digitalisation",
-                    "description": "Site internet avec stratégie SEO complète, référencement sur 10 villes, pages illimitées et support prioritaire",
-                    "price": "350",
-                    "priceCurrency": "EUR",
-                    "priceSpecification": {
-                        "@type": "UnitPriceSpecification",
-                        "price": "350",
-                        "priceCurrency": "EUR",
-                        "unitText": "MONTH"
-                    },
-                    "seller": {
-                        "@type": "Organization",
-                        "name": "LCR DIGITAL"
-                    },
-                    "availability": "https://schema.org/InStock",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Création de site web avec référencement avancé",
-                        "provider": {
-                            "@type": "Organization",
-                            "name": "LCR DIGITAL"
-                        }
-                    }
-                }
+        "@type": "Service",
+        "name": "Création de Site Web",
+        "description": "Service de création de sites internet professionnels sur mesure : site vitrine, référencement local, hébergement et maintenance inclus",
+        "provider": {
+            "@type": "Organization",
+            "name": "LCR DIGITAL"
+        },
+        "areaServed": "FR",
+        "offers": {
+            "@type": "Offer",
+            "name": "Création de site web professionnel",
+            "description": "Création de site internet sur mesure avec design responsive, hébergement, nom de domaine, SSL, SEO et maintenance",
+            "price": "Sur devis",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+                "@type": "Organization",
+                "name": "LCR DIGITAL"
             }
-        ]
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Services Création de Site Web",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Site vitrine professionnel"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Référencement local SEO"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Hébergement et maintenance"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Google My Business et visibilité locale"
+                    }
+                }
+            ]
+        }
     }
     </script>
     <script type="application/ld+json">
@@ -133,18 +92,10 @@ $page_description = "Tarifs création site web" . city_phrase(" à ") . " dès 2
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "Quelle formule choisir pour mon entreprise ?",
+                "name": "Pourquoi le tarif est-il sur devis ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Le forfait Site Web convient aux artisans et indépendants débutant sur internet. Le forfait Visibilité est idéal pour les TPE/PME souhaitant être trouvées localement. Le forfait Digitalisation s'adresse aux entreprises visant une forte présence en ligne sur plusieurs villes."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Puis-je changer de forfait plus tard ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Oui, vous pouvez passer à un forfait supérieur à tout moment. Par exemple, débuter avec le forfait Site Web puis évoluer vers Visibilité lorsque votre activité se développe. Le passage à un forfait inférieur est également possible sous conditions."
+                    "text": "Le coût d'un site web varie selon le nombre de pages, les fonctionnalités souhaitées (prise de RDV, chat, galerie, multilingue), le niveau de référencement local et les intégrations tierces. Un devis détaillé permet d'estimer précisément votre projet et d'y intégrer uniquement ce dont vous avez besoin."
                 }
             },
             {
@@ -157,10 +108,18 @@ $page_description = "Tarifs création site web" . city_phrase(" à ") . " dès 2
             },
             {
                 "@type": "Question",
-                "name": "Que se passe-t-il après les 24 mois ?",
+                "name": "Proposez-vous le référencement local ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Après l'engagement initial de 24 mois, votre abonnement se poursuit sans engagement avec les mêmes tarifs. Vous pouvez résilier à tout moment avec un préavis de 30 jours. Vous conservez la propriété de vos contenus et nom de domaine."
+                    "text": "Oui, nous intégrons une stratégie de référencement local adaptée à votre activité et votre zone géographique : optimisation SEO, Google My Business, pages dédiées par ville et suivi des positions. L'étendue du référencement est définie avec vous lors de l'analyse du projet."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Comment se déroule la création du site ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nous commençons par une analyse complète de votre projet (objectifs, cibles, concurrents, fonctionnalités). Nous vous soumettons ensuite un devis détaillé puis, après validation, nous concevons le design, intégrons le contenu, optimisons le SEO et mettons en ligne votre site. Vous êtes accompagné à chaque étape."
                 }
             }
         ]
@@ -195,312 +154,147 @@ $page_description = "Tarifs création site web" . city_phrase(" à ") . " dès 2
         <div class="section">
             <div class="hero-container">
                 <div class="d-flex flex-column gspace-4">
-                    <div class="d-flex flex-column align-items-center text-center gspace-2 animate-box animated animate__animated" data-animate="animate__fadeInUp">
-                        <h6 class="accent-color">Nos formules</h6>
-                        <h3>Choisissez la formule adaptée à vos besoins</h3>
-                        <p>Des tarifs transparents, sans surprise. Paiement en une fois ou en plusieurs fois possible.</p>
-                    </div>
-
-                    <div class="pricing-table-container">
-                        <div class="row row-cols-1 row-cols-lg-3 g-4">
-                            <!-- Site web -->
-                            <div class="col">
-                                <div class="pricing-card animate-box animated animate__animated" data-animate="animate__fadeInUp">
-                                    <div class="pricing-card-header" style="background: linear-gradient(135deg, #6A4BFF 0%, #3D6BFF 100%);">
-                                        <h4>Site web</h4>
-                                        <p>Site web</p>
+                    <!-- Section principale Sur Devis -->
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="d-flex flex-column gspace-3 animate-box animated animate__animated" data-animate="animate__fadeInLeft">
+                                <h6 class="accent-color">Projet sur mesure</h6>
+                                <h3>Chaque site web est unique</h3>
+                                <p>La création d'un site internet dépend de nombreux facteurs : nombre de pages, fonctionnalités souhaitées, niveau de référencement local, intégrations tierces, volume de contenu à rédiger...</p>
+                                <p>C'est pourquoi nous ne proposons pas de tarifs fixes. Nous analysons votre besoin et vous fournissons un <strong>devis personnalisé et détaillé</strong>, adapté à votre activité et vos objectifs.</p>
+                                <div class="d-flex flex-column gspace-2" style="background: rgba(255,255,255,0.05); border-radius: 12px; padding: 1.5rem; border: 1px solid rgba(255,255,255,0.1);">
+                                    <div class="d-flex align-items-center gspace-2">
+                                        <i class="fa-solid fa-circle-check accent-color fa-lg"></i>
+                                        <span>Devis gratuit et sans engagement</span>
                                     </div>
-                                    <div class="pricing-card-price">
-                                        <span class="price-from">à partir de</span>
-                                        <div class="price-main">
-                                            <span class="amount">200<sup>€</sup></span>
-                                            <span class="price-period">/mois</span>
-                                        </div>
-                                        <span class="price-setup">+ 500€ de mise en place</span>
+                                    <div class="d-flex align-items-center gspace-2">
+                                        <i class="fa-solid fa-circle-check accent-color fa-lg"></i>
+                                        <span>Réponse sous 48h</span>
                                     </div>
-                                    <div class="pricing-card-body">
-                                        <div class="pricing-category">
-                                            <div class="pricing-category-title">
-                                                <i class="fa-solid fa-globe"></i>
-                                                <span>Site web</span>
-                                            </div>
-                                            <ul class="pricing-list">
-                                                <li class="included"><i class="fa-solid fa-check"></i> Hébergement inclus</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Nom de domaine inclus</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Certificat SSL (HTTPS)</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Design responsive</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Jusqu'à 8 pages</li>
-                                            </ul>
-                                        </div>
-                                        <div class="pricing-category">
-                                            <div class="pricing-category-title">
-                                                <i class="fa-solid fa-magnifying-glass"></i>
-                                                <span>SEO & visibilité</span>
-                                            </div>
-                                            <ul class="pricing-list">
-                                                <li class="included"><i class="fa-solid fa-check"></i> Optimisation SEO de base</li>
-                                                <li class="not-included"><i class="fa-solid fa-xmark"></i> Référencement local</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Google Analytics</li>
-                                                <li class="not-included"><i class="fa-solid fa-xmark"></i> Google My Business</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Email professionnel</li>
-                                            </ul>
-                                        </div>
-                                        <div class="pricing-category">
-                                            <div class="pricing-category-title">
-                                                <i class="fa-solid fa-envelope"></i>
-                                                <span>Formulaire & contact</span>
-                                            </div>
-                                            <ul class="pricing-list">
-                                                <li class="included"><i class="fa-solid fa-check"></i> Formulaires de contact</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Google Maps intégré</li>
-                                                <li class="not-included"><i class="fa-solid fa-xmark"></i> Prise de RDV en ligne</li>
-                                                <li class="not-included"><i class="fa-solid fa-xmark"></i> Chat en ligne</li>
-                                            </ul>
-                                        </div>
-                                        <div class="pricing-category">
-                                            <div class="pricing-category-title">
-                                                <i class="fa-solid fa-headset"></i>
-                                                <span>Support & maintenance</span>
-                                            </div>
-                                            <ul class="pricing-list">
-                                                <li class="included"><i class="fa-solid fa-check"></i> Maintenance incluse (5h/mois)</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Mises à jour sécurité</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Support email</li>
-                                                <li class="not-included"><i class="fa-solid fa-xmark"></i> Support prioritaire</li>
-                                            </ul>
-                                        </div>
-                                        <div class="pricing-category">
-                                            <div class="pricing-category-title">
-                                                <i class="fa-solid fa-cube"></i>
-                                                <span>Modules</span>
-                                            </div>
-                                            <ul class="pricing-list">
-                                                <li class="included"><i class="fa-solid fa-check"></i> Accès à tous les modules</li>
-                                            </ul>
-                                        </div>
-                                        <div class="pricing-category">
-                                            <div class="pricing-category-title">
-                                                <i class="fa-solid fa-plus-circle"></i>
-                                                <span>Options & évolutions</span>
-                                            </div>
-                                            <ul class="pricing-list">
-                                                <li class="included"><i class="fa-solid fa-check"></i> Page supplémentaire : 50€</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Modification hors forfait : 70€/h</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Rédaction contenu : 80€/page</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Refonte graphique : 400€</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Galerie photos/vidéos : 100€</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Intégration newsletter : 150€</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Traduction : 60€/page</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="pricing-card-footer">
-                                        <a href="<?= e(route_with_city("contact", $city_slug)) ?>" class="btn btn-accent-outline w-100">Demander un devis</a>
+                                    <div class="d-flex align-items-center gspace-2">
+                                        <i class="fa-solid fa-circle-check accent-color fa-lg"></i>
+                                        <span>Paiement échelonné possible</span>
                                     </div>
                                 </div>
-                            </div>
-
-                            <!-- Visibilité -->
-                            <div class="col">
-                                <div class="pricing-card featured animate-box animated animate__animated" data-animate="animate__fadeInUp">
-                                    <div class="pricing-card-badge">Populaire</div>
-                                    <div class="pricing-card-header" style="background: linear-gradient(135deg, #FF2FB3 0%, #FF4FD1 100%);">
-                                        <h4>Visibilité</h4>
-                                        <p>Site + Référencement</p>
-                                    </div>
-                                    <div class="pricing-card-price">
-                                        <span class="price-from">à partir de</span>
-                                        <div class="price-main">
-                                            <span class="amount">260<sup>€</sup></span>
-                                            <span class="price-period">/mois</span>
-                                        </div>
-                                        <span class="price-setup">+ 550€ de mise en place</span>
-                                    </div>
-                                    <div class="pricing-card-body">
-                                        <div class="pricing-category">
-                                            <div class="pricing-category-title">
-                                                <i class="fa-solid fa-globe"></i>
-                                                <span>Site web</span>
-                                            </div>
-                                            <ul class="pricing-list">
-                                                <li class="included"><i class="fa-solid fa-check"></i> Hébergement inclus</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Nom de domaine inclus</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Certificat SSL (HTTPS)</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Design responsive</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Jusqu'à 12 pages</li>
-                                            </ul>
-                                        </div>
-                                        <div class="pricing-category">
-                                            <div class="pricing-category-title">
-                                                <i class="fa-solid fa-magnifying-glass"></i>
-                                                <span>SEO & visibilité</span>
-                                            </div>
-                                            <ul class="pricing-list">
-                                                <li class="included"><i class="fa-solid fa-check"></i> Optimisation SEO avancée</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Référencement local (5 villes)</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Google Analytics</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Google My Business</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Email professionnel</li>
-                                            </ul>
-                                        </div>
-                                        <div class="pricing-category">
-                                            <div class="pricing-category-title">
-                                                <i class="fa-solid fa-envelope"></i>
-                                                <span>Formulaire & contact</span>
-                                            </div>
-                                            <ul class="pricing-list">
-                                                <li class="included"><i class="fa-solid fa-check"></i> Formulaires de contact</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Google Maps intégré</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Prise de RDV en ligne</li>
-                                                <li class="not-included"><i class="fa-solid fa-xmark"></i> Chat en ligne</li>
-                                            </ul>
-                                        </div>
-                                        <div class="pricing-category">
-                                            <div class="pricing-category-title">
-                                                <i class="fa-solid fa-headset"></i>
-                                                <span>Support & maintenance</span>
-                                            </div>
-                                            <ul class="pricing-list">
-                                                <li class="included"><i class="fa-solid fa-check"></i> Maintenance incluse (5h/mois)</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Mises à jour sécurité</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Support email</li>
-                                                <li class="not-included"><i class="fa-solid fa-xmark"></i> Support prioritaire</li>
-                                            </ul>
-                                        </div>
-                                        <div class="pricing-category">
-                                            <div class="pricing-category-title">
-                                                <i class="fa-solid fa-cube"></i>
-                                                <span>Modules</span>
-                                            </div>
-                                            <ul class="pricing-list">
-                                                <li class="included"><i class="fa-solid fa-check"></i> Accès à tous les modules</li>
-                                            </ul>
-                                        </div>
-                                        <div class="pricing-category">
-                                            <div class="pricing-category-title">
-                                                <i class="fa-solid fa-plus-circle"></i>
-                                                <span>Options & évolutions</span>
-                                            </div>
-                                            <ul class="pricing-list">
-                                                <li class="included"><i class="fa-solid fa-check"></i> Page supplémentaire : 50€</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Ville supplémentaire : 5€/mois</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Modification hors forfait : 70€/h</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Rédaction contenu : 80€/page</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Refonte graphique : 400€</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Galerie photos/vidéos : 100€</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Intégration newsletter : 150€</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Traduction : 60€/page</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="pricing-card-footer">
-                                        <a href="<?= e(route_with_city("contact", $city_slug)) ?>" class="btn btn-accent w-100">Demander un devis</a>
-                                    </div>
+                                <div class="mt-2">
+                                    <a href="<?= e(route_with_city("contact", $city_slug)) ?>" class="btn btn-accent btn-lg">
+                                        <i class="fa-solid fa-paper-plane me-2"></i>Demander un devis gratuit
+                                    </a>
                                 </div>
                             </div>
-
-                            <!-- Digitalisation -->
-                            <div class="col">
-                                <div class="pricing-card animate-box animated animate__animated" data-animate="animate__fadeInUp">
-                                    <div class="pricing-card-header" style="background: linear-gradient(135deg, #3D6BFF 0%, #6A4BFF 100%);">
-                                        <h4>Digitalisation</h4>
-                                        <p>Site + Référencement Avancé</p>
-                                    </div>
-                                    <div class="pricing-card-price">
-                                        <span class="price-from">à partir de</span>
-                                        <div class="price-main">
-                                            <span class="amount">350<sup>€</sup></span>
-                                            <span class="price-period">/mois</span>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="pricing-card featured animate-box animated animate__animated" data-animate="animate__fadeInRight" style="max-width: 400px; margin: 0 auto;">
+                                <div class="pricing-card-header" style="background: linear-gradient(135deg, #6A4BFF 0%, #3D6BFF 100%);">
+                                    <h4>Site Web Professionnel</h4>
+                                    <p>Sur mesure & optimisé</p>
+                                </div>
+                                <div class="pricing-card-price">
+                                    <span class="amount" style="font-size: 2rem;">Sur devis</span>
+                                </div>
+                                <div class="pricing-card-body text-center">
+                                    <p style="opacity: 0.8; font-size: 0.95rem;">Tarification adaptée à la complexité et aux objectifs de votre projet</p>
+                                    <div class="d-flex justify-content-center gspace-3 mt-3">
+                                        <div class="text-center">
+                                            <i class="fa-solid fa-globe fa-2x" style="opacity: 0.7;"></i>
+                                            <p class="small mt-1 mb-0">Vitrine</p>
                                         </div>
-                                        <span class="price-setup">+ 650€ de mise en place</span>
-                                    </div>
-                                    <div class="pricing-card-body">
-                                        <div class="pricing-category">
-                                            <div class="pricing-category-title">
-                                                <i class="fa-solid fa-globe"></i>
-                                                <span>Site web</span>
-                                            </div>
-                                            <ul class="pricing-list">
-                                                <li class="included"><i class="fa-solid fa-check"></i> Hébergement inclus</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Nom de domaine inclus</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Certificat SSL (HTTPS)</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Design responsive</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Pages illimitées</li>
-                                            </ul>
+                                        <div class="text-center">
+                                            <i class="fa-solid fa-magnifying-glass fa-2x" style="opacity: 0.7;"></i>
+                                            <p class="small mt-1 mb-0">SEO</p>
                                         </div>
-                                        <div class="pricing-category">
-                                            <div class="pricing-category-title">
-                                                <i class="fa-solid fa-magnifying-glass"></i>
-                                                <span>SEO & visibilité</span>
-                                            </div>
-                                            <ul class="pricing-list">
-                                                <li class="included"><i class="fa-solid fa-check"></i> Stratégie SEO complète</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Référencement local (10 villes)</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Google Analytics</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Google My Business</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Email professionnel</li>
-                                            </ul>
-                                        </div>
-                                        <div class="pricing-category">
-                                            <div class="pricing-category-title">
-                                                <i class="fa-solid fa-envelope"></i>
-                                                <span>Formulaire & contact</span>
-                                            </div>
-                                            <ul class="pricing-list">
-                                                <li class="included"><i class="fa-solid fa-check"></i> Formulaires de contact</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Google Maps intégré</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Prise de RDV en ligne</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Chat en ligne</li>
-                                            </ul>
-                                        </div>
-                                        <div class="pricing-category">
-                                            <div class="pricing-category-title">
-                                                <i class="fa-solid fa-headset"></i>
-                                                <span>Support & maintenance</span>
-                                            </div>
-                                            <ul class="pricing-list">
-                                                <li class="included"><i class="fa-solid fa-check"></i> Maintenance incluse (5h/mois)</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Mises à jour sécurité</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Support email</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Support prioritaire</li>
-                                            </ul>
-                                        </div>
-                                        <div class="pricing-category">
-                                            <div class="pricing-category-title">
-                                                <i class="fa-solid fa-cube"></i>
-                                                <span>Modules</span>
-                                            </div>
-                                            <ul class="pricing-list">
-                                                <li class="included"><i class="fa-solid fa-check"></i> Accès à tous les modules</li>
-                                            </ul>
-                                        </div>
-                                        <div class="pricing-category">
-                                            <div class="pricing-category-title">
-                                                <i class="fa-solid fa-plus-circle"></i>
-                                                <span>Options & évolutions</span>
-                                            </div>
-                                            <ul class="pricing-list">
-                                                <li class="included"><i class="fa-solid fa-check"></i> Page supplémentaire : 50€</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Ville supplémentaire : 5€/mois</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Modification hors forfait : 70€/h</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Rédaction contenu : 80€/page</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Refonte graphique : 400€</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Galerie photos/vidéos : 100€</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Intégration newsletter : 150€</li>
-                                                <li class="included"><i class="fa-solid fa-check"></i> Traduction : 60€/page</li>
-                                            </ul>
+                                        <div class="text-center">
+                                            <i class="fa-solid fa-server fa-2x" style="opacity: 0.7;"></i>
+                                            <p class="small mt-1 mb-0">Hébergement</p>
                                         </div>
                                     </div>
-                                    <div class="pricing-card-footer">
-                                        <a href="<?= e(route_with_city("contact", $city_slug)) ?>" class="btn btn-accent-outline w-100">Demander un devis</a>
-                                    </div>
+                                </div>
+                                <div class="pricing-card-footer">
+                                    <a href="<?= e(route_with_city("contact", $city_slug)) ?>" class="btn btn-accent w-100">Contactez-nous</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Fonctionnalités possibles -->
+                    <div class="d-flex flex-column align-items-center text-center gspace-2 mt-5 animate-box animated animate__animated" data-animate="animate__fadeInUp">
+                        <h6 class="accent-color">Ce que nous pouvons intégrer</h6>
+                        <h3>Fonctionnalités disponibles</h3>
+                        <p>Selon vos besoins, nous intégrons les fonctionnalités adaptées à votre projet.</p>
+                    </div>
+
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                        <!-- Site web -->
+                        <div class="col">
+                            <div class="d-flex flex-column gspace-2 animate-box animated animate__animated" data-animate="animate__fadeInUp" style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 1.5rem; border: 1px solid rgba(255,255,255,0.08); height: 100%;">
+                                <div class="d-flex align-items-center gspace-2 mb-2">
+                                    <i class="fa-solid fa-globe accent-color fa-lg"></i>
+                                    <h5 class="mb-0">Site web</h5>
+                                </div>
+                                <ul style="list-style: none; padding: 0; margin: 0;">
+                                    <li class="d-flex align-items-center gspace-2 py-1"><i class="fa-solid fa-chevron-right accent-color fa-xs"></i> Design responsive sur mesure</li>
+                                    <li class="d-flex align-items-center gspace-2 py-1"><i class="fa-solid fa-chevron-right accent-color fa-xs"></i> Hébergement inclus</li>
+                                    <li class="d-flex align-items-center gspace-2 py-1"><i class="fa-solid fa-chevron-right accent-color fa-xs"></i> Nom de domaine inclus</li>
+                                    <li class="d-flex align-items-center gspace-2 py-1"><i class="fa-solid fa-chevron-right accent-color fa-xs"></i> Certificat SSL (HTTPS)</li>
+                                    <li class="d-flex align-items-center gspace-2 py-1"><i class="fa-solid fa-chevron-right accent-color fa-xs"></i> Galerie photos / vidéos</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- SEO & Visibilité -->
+                        <div class="col">
+                            <div class="d-flex flex-column gspace-2 animate-box animated animate__animated" data-animate="animate__fadeInUp" style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 1.5rem; border: 1px solid rgba(255,255,255,0.08); height: 100%;">
+                                <div class="d-flex align-items-center gspace-2 mb-2">
+                                    <i class="fa-solid fa-magnifying-glass accent-color fa-lg"></i>
+                                    <h5 class="mb-0">SEO & Visibilité</h5>
+                                </div>
+                                <ul style="list-style: none; padding: 0; margin: 0;">
+                                    <li class="d-flex align-items-center gspace-2 py-1"><i class="fa-solid fa-chevron-right accent-color fa-xs"></i> Optimisation SEO on-page</li>
+                                    <li class="d-flex align-items-center gspace-2 py-1"><i class="fa-solid fa-chevron-right accent-color fa-xs"></i> Référencement local multi-villes</li>
+                                    <li class="d-flex align-items-center gspace-2 py-1"><i class="fa-solid fa-chevron-right accent-color fa-xs"></i> Google My Business</li>
+                                    <li class="d-flex align-items-center gspace-2 py-1"><i class="fa-solid fa-chevron-right accent-color fa-xs"></i> Google Analytics</li>
+                                    <li class="d-flex align-items-center gspace-2 py-1"><i class="fa-solid fa-chevron-right accent-color fa-xs"></i> Email professionnel</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Contact & Fonctionnalités -->
+                        <div class="col">
+                            <div class="d-flex flex-column gspace-2 animate-box animated animate__animated" data-animate="animate__fadeInUp" style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 1.5rem; border: 1px solid rgba(255,255,255,0.08); height: 100%;">
+                                <div class="d-flex align-items-center gspace-2 mb-2">
+                                    <i class="fa-solid fa-envelope accent-color fa-lg"></i>
+                                    <h5 class="mb-0">Contact</h5>
+                                </div>
+                                <ul style="list-style: none; padding: 0; margin: 0;">
+                                    <li class="d-flex align-items-center gspace-2 py-1"><i class="fa-solid fa-chevron-right accent-color fa-xs"></i> Formulaire de contact</li>
+                                    <li class="d-flex align-items-center gspace-2 py-1"><i class="fa-solid fa-chevron-right accent-color fa-xs"></i> Google Maps intégré</li>
+                                    <li class="d-flex align-items-center gspace-2 py-1"><i class="fa-solid fa-chevron-right accent-color fa-xs"></i> Prise de RDV en ligne</li>
+                                    <li class="d-flex align-items-center gspace-2 py-1"><i class="fa-solid fa-chevron-right accent-color fa-xs"></i> Chat en ligne</li>
+                                    <li class="d-flex align-items-center gspace-2 py-1"><i class="fa-solid fa-chevron-right accent-color fa-xs"></i> Newsletter</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Support & Maintenance -->
+                        <div class="col">
+                            <div class="d-flex flex-column gspace-2 animate-box animated animate__animated" data-animate="animate__fadeInUp" style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 1.5rem; border: 1px solid rgba(255,255,255,0.08); height: 100%;">
+                                <div class="d-flex align-items-center gspace-2 mb-2">
+                                    <i class="fa-solid fa-headset accent-color fa-lg"></i>
+                                    <h5 class="mb-0">Support</h5>
+                                </div>
+                                <ul style="list-style: none; padding: 0; margin: 0;">
+                                    <li class="d-flex align-items-center gspace-2 py-1"><i class="fa-solid fa-chevron-right accent-color fa-xs"></i> Maintenance mensuelle</li>
+                                    <li class="d-flex align-items-center gspace-2 py-1"><i class="fa-solid fa-chevron-right accent-color fa-xs"></i> Mises à jour sécurité</li>
+                                    <li class="d-flex align-items-center gspace-2 py-1"><i class="fa-solid fa-chevron-right accent-color fa-xs"></i> Sauvegardes automatiques</li>
+                                    <li class="d-flex align-items-center gspace-2 py-1"><i class="fa-solid fa-chevron-right accent-color fa-xs"></i> Support prioritaire</li>
+                                    <li class="d-flex align-items-center gspace-2 py-1"><i class="fa-solid fa-chevron-right accent-color fa-xs"></i> Formation à la prise en main</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="text-center mt-4">
-                        <p style="color: var(--text-color); opacity: 0.8; font-size: 0.95rem;">* TVA non applicable, article 293 B du CGI. Engagement 24 mois minimum.</p>
+                        <p style="color: var(--text-color); opacity: 0.8; font-size: 0.95rem;">* TVA non applicable, article 293 B du CGI.</p>
                     </div>
                 </div>
             </div>
@@ -518,14 +312,8 @@ $page_description = "Tarifs création site web" . city_phrase(" à ") . " dès 2
                     <div class="row g-4">
                         <div class="col-lg-6">
                             <div class="d-flex flex-column gspace-2 animate-box animated animate__animated" data-animate="animate__fadeInUp" style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 2rem; border: 1px solid rgba(255,255,255,0.08);">
-                                <h3 class="h5">Quelle formule choisir pour mon entreprise ?</h3>
-                                <p style="opacity: 0.85;">Le forfait Site Web convient aux artisans et indépendants débutant sur internet. Le forfait Visibilité est idéal pour les TPE/PME souhaitant être trouvées localement. Le forfait Digitalisation s'adresse aux entreprises visant une forte présence en ligne sur plusieurs villes.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="d-flex flex-column gspace-2 animate-box animated animate__animated" data-animate="animate__fadeInUp" style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 2rem; border: 1px solid rgba(255,255,255,0.08);">
-                                <h3 class="h5">Puis-je changer de forfait plus tard ?</h3>
-                                <p style="opacity: 0.85;">Oui, vous pouvez passer à un forfait supérieur à tout moment. Par exemple, débuter avec le forfait Site Web puis évoluer vers Visibilité lorsque votre activité se développe. Le passage à un forfait inférieur est également possible sous conditions.</p>
+                                <h3 class="h5">Pourquoi le tarif est-il sur devis ?</h3>
+                                <p style="opacity: 0.85;">Le coût d'un site web varie selon le nombre de pages, les fonctionnalités souhaitées (prise de RDV, chat, galerie, multilingue), le niveau de référencement local et les intégrations tierces. Un devis détaillé permet d'estimer précisément votre projet et d'y intégrer uniquement ce dont vous avez besoin.</p>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -536,8 +324,14 @@ $page_description = "Tarifs création site web" . city_phrase(" à ") . " dès 2
                         </div>
                         <div class="col-lg-6">
                             <div class="d-flex flex-column gspace-2 animate-box animated animate__animated" data-animate="animate__fadeInUp" style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 2rem; border: 1px solid rgba(255,255,255,0.08);">
-                                <h3 class="h5">Que se passe-t-il après les 24 mois ?</h3>
-                                <p style="opacity: 0.85;">Après l'engagement initial de 24 mois, votre abonnement se poursuit sans engagement avec les mêmes tarifs. Vous pouvez résilier à tout moment avec un préavis de 30 jours. Vous conservez la propriété de vos contenus et nom de domaine.</p>
+                                <h3 class="h5">Proposez-vous le référencement local ?</h3>
+                                <p style="opacity: 0.85;">Oui, nous intégrons une stratégie de référencement local adaptée à votre activité et votre zone géographique : optimisation SEO, Google My Business, pages dédiées par ville et suivi des positions. L'étendue du référencement est définie avec vous lors de l'analyse du projet.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex flex-column gspace-2 animate-box animated animate__animated" data-animate="animate__fadeInUp" style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 2rem; border: 1px solid rgba(255,255,255,0.08);">
+                                <h3 class="h5">Comment se déroule la création du site ?</h3>
+                                <p style="opacity: 0.85;">Nous commençons par une analyse complète de votre projet (objectifs, cibles, concurrents, fonctionnalités). Nous vous soumettons ensuite un devis détaillé puis, après validation, nous concevons le design, intégrons le contenu, optimisons le SEO et mettons en ligne votre site. Vous êtes accompagné à chaque étape.</p>
                             </div>
                         </div>
                     </div>
@@ -548,8 +342,8 @@ $page_description = "Tarifs création site web" . city_phrase(" à ") . " dès 2
         <div class="section contactus-banner">
             <div class="hero-container">
                 <div class="contactus-content">
-                    <h3 class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Besoin d'un devis personnalisé ?</h3>
-                    <p class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Contactez-nous pour obtenir un tarif adapté à votre projet<?= city_phrase(' à ') ?>.</p>
+                    <h3 class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Un projet de site web ?</h3>
+                    <p class="animate-box animated animate__animated" data-animate="animate__fadeInUp">Discutons de votre projet<?= city_phrase(' à ') ?> pour établir un devis précis.</p>
                     <div>
                         <a href="<?= e(route_with_city("contact", $city_slug)) ?>" class="btn btn-accent">Demander un devis gratuit</a>
                     </div>
